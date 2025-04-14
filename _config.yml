@@ -2,7 +2,6 @@ theme: jekyll-theme-minimal
 title: Kubo-Security WU
 lsi: false
 safe: true
-source: WU
 incremental: false
 highlighter: rouge
 gist:
