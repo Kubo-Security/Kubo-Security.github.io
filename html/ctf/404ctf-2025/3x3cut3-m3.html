@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reverse - 3x3cut3_m3 &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Reverse - cbizarre 1/2" href="cbizarre.html" />
+    <link rel="prev" title="404CTF 2025" href="_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Capture The Flag (CTF)</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2024/_index.html">MidNight Flag CTF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2024/_index.html">404CTF 2024</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">404CTF 2025</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Reverse - 3x3cut3_m3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cbizarre.html">Reverse - cbizarre 1/2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cbizarre.html#reverse-cbizarre-2-2">Reverse - cbizarre 2/2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dockerflag.html">Forensic - Dockerflag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_eaux_sombres.html">Osint - En eaux sombres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fire-server.html">Web - Fire Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html">The LDAP Chronicles 1/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html#houston-we-have-a-problem-2-6">Houston, we have a problem 2/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html#named-resolve-3-6">Named Resolve 3/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html#the-gpo-mission-4-6">The GPO Mission 4/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html#the-ad-guardians-5-6">The AD Guardians 5/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html#ghost-membership-6-6">Ghost Membership 6/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="space-fleet-command.html">Web - Space Fleet Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tape_ton_mdp.html">Forensic - Tape ton mdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toorkit.html">Forensic - Toortik triflexation 1/2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toorkit.html#forensic-toortik-triflexation-2-2">Forensic - Toortik triflexation 2/2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2024/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">404CTF 2025</a></li>
+      <li class="breadcrumb-item active">Reverse - 3x3cut3_m3</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/404ctf-2025/3x3cut3-m3.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="reverse-3x3cut3-m3">
+<h1>Reverse - 3x3cut3_m3<a class="headerlink" href="#reverse-3x3cut3-m3" title="Lien vers cette rubrique"></a></h1>
+<p>On a un script powershell avec un gros base64 a l’envers,</p>
+<p>On va utiliser ce code pour le remettre a l’endroit et le décoder :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">base64</span>
+
+<span class="k">def</span> <span class="nf">decode_base64_obfuscated</span><span class="p">(</span><span class="n">encoded_reversed_str</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Prend une chaîne base64 inversée, corrige le padding, la décode.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Étape 1 : Inverser la chaîne</span>
+    <span class="n">base64_str</span> <span class="o">=</span> <span class="n">encoded_reversed_str</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="c1"># Étape 2 : Corriger le padding manquant (longueur multiple de 4)</span>
+    <span class="n">padding_needed</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">base64_str</span><span class="p">)</span> <span class="o">%</span> <span class="mi">4</span>
+    <span class="k">if</span> <span class="n">padding_needed</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">base64_str</span> <span class="o">+=</span> <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="p">(</span><span class="mi">4</span> <span class="o">-</span> <span class="n">padding_needed</span><span class="p">)</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">decoded_bytes</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">base64_str</span><span class="p">)</span>
+        <span class="n">decoded_text</span> <span class="o">=</span> <span class="n">decoded_bytes</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;replace&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">decoded_text</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Erreur de décodage : </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
+
+<span class="c1"># Exemple d&#39;utilisation</span>
+<span class="n">chaine_base64_inversee</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># remplace par la chaîne récupérée depuis le script PowerShell</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contenu décodé :</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">decode_base64_obfuscated</span><span class="p">(</span><span class="n">chaine_base64_inversee</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>On reproduit l’étape plusieurs fois jusqu’à obtenir :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span><span class="nv">064534fb2d3645b296259adeb6f2f359</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>@<span class="o">(</span><span class="m">42</span>,<span class="w"> </span><span class="m">17</span>,<span class="w"> </span><span class="m">99</span>,<span class="w"> </span><span class="m">84</span>,<span class="w"> </span><span class="m">63</span>,<span class="w"> </span><span class="m">19</span>,<span class="w"> </span><span class="m">88</span>,<span class="w"> </span><span class="m">7</span>,<span class="w"> </span><span class="m">31</span>,<span class="w"> </span><span class="m">55</span>,<span class="w"> </span><span class="m">91</span>,<span class="w"> </span><span class="m">12</span>,<span class="w"> </span><span class="m">33</span>,<span class="w"> </span><span class="m">20</span>,<span class="w"> </span><span class="m">75</span>,<span class="w"> </span><span class="m">11</span><span class="o">)</span>
+<span class="gp">$</span><span class="nv">e9a52fde54d64826ac376a409f67e592</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">(</span><span class="nv">$env</span>:USERNAME<span class="o">)</span>.Length
+
+<span class="gp">$</span><span class="nv">271add1f5e06432994b33cbf742d6682</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>Read-Host<span class="w"> </span>-Prompt<span class="w">  </span><span class="o">([</span>System.Text.Encoding<span class="o">]</span>::Default.GetString<span class="o">([</span>System.Convert<span class="o">]</span>::FromBase64String<span class="o">(</span><span class="s2">&quot;VmV1aWxsZXogZW50cmVyIGxlIG1vdCBkZSBwYXNzZSBwb3VyIGZhaXJlIGTpY29sbGVyIGxhIGZ1c+ll&quot;</span><span class="o">)))</span>
+
+<span class="gp">$</span><span class="nv">3ca127ca6cdf4d429c2373d9535141ff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>@<span class="o">()</span>
+<span class="go">    for ($284aa2e829f946bdb78f32c695237d98 = 0; $284aa2e829f946bdb78f32c695237d98 -lt $271add1f5e06432994b33cbf742d6682.Length; $284aa2e829f946bdb78f32c695237d98++) {</span>
+<span class="gp">        $</span><span class="nv">0cae3e36a0c44306b62f72deb9a5e5e2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>int<span class="o">][</span>char<span class="o">]</span><span class="nv">$271</span>add1f5e06432994b33cbf742d6682<span class="o">[</span><span class="nv">$284</span>aa2e829f946bdb78f32c695237d98<span class="o">]</span>
+<span class="gp">        $</span><span class="nv">2242a5c393534797baffd2a854831810</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">((</span><span class="nv">$0</span>cae3e36a0c44306b62f72deb9a5e5e2<span class="w"> </span>-bxor<span class="w"> </span><span class="nv">$064534</span>fb2d3645b296259adeb6f2f359<span class="o">[</span><span class="nv">$284</span>aa2e829f946bdb78f32c695237d98<span class="o">])</span><span class="w"> </span>-<span class="w"> </span><span class="nv">$e9a52fde54d64826ac376a409f67e592</span><span class="o">)</span><span class="w"> </span>%<span class="w"> </span><span class="o">[</span>math<span class="o">]</span>::Pow<span class="o">(</span><span class="m">13</span>,2<span class="o">)</span>
+<span class="go">        if ($2242a5c393534797baffd2a854831810 -lt 0) { $2242a5c393534797baffd2a854831810 += [math]::Pow(13,2) }</span>
+<span class="gp">        $</span><span class="nv">3ca127ca6cdf4d429c2373d9535141ff</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nv">$2242</span>a5c393534797baffd2a854831810
+<span class="go">    }</span>
+
+<span class="gp">    $</span><span class="nv">9514367d5ca84f4da65a355dd524ceee</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>@<span class="o">(</span><span class="m">93</span>,<span class="w"> </span><span class="m">72</span>,<span class="w"> </span><span class="m">28</span>,<span class="w"> </span><span class="m">24</span>,<span class="w"> </span><span class="m">67</span>,<span class="w"> </span><span class="m">23</span>,<span class="w"> </span><span class="m">98</span>,<span class="w"> </span><span class="m">58</span>,<span class="w"> </span><span class="m">35</span>,<span class="w"> </span><span class="m">75</span>,<span class="w"> </span><span class="m">98</span>,<span class="w"> </span><span class="m">87</span>,<span class="w"> </span><span class="m">68</span>,<span class="w"> </span><span class="m">30</span>,<span class="w"> </span><span class="m">97</span>,<span class="w"> </span><span class="m">33</span><span class="o">)</span>
+<span class="gp">$</span><span class="nv">2a9b1948d9fd492c83b8d011a8bdcda7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">$true</span>
+<span class="go">for ($284aa2e829f946bdb78f32c695237d98 = 0; $284aa2e829f946bdb78f32c695237d98 -lt $9514367d5ca84f4da65a355dd524ceee.Length; $284aa2e829f946bdb78f32c695237d98++) {</span>
+<span class="go">    if ($9514367d5ca84f4da65a355dd524ceee[$284aa2e829f946bdb78f32c695237d98] -ne $3ca127ca6cdf4d429c2373d9535141ff[$284aa2e829f946bdb78f32c695237d98]) {</span>
+<span class="gp">        $</span><span class="nv">2a9b1948d9fd492c83b8d011a8bdcda7</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">$false</span>
+<span class="go">        break</span>
+<span class="go">    }</span>
+<span class="go">}</span>
+
+<span class="go">if ($2a9b1948d9fd492c83b8d011a8bdcda7) {</span>
+<span class="gp">    $</span><span class="nv">b818610f1a504572b6af74f268620cc2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>@<span class="o">((</span><span class="m">130</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">262</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">330</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">392</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">523</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">660</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">784</span>,300<span class="o">)</span>,<span class="o">(</span><span class="m">660</span>,300<span class="o">)</span>,<span class="o">(</span><span class="m">146</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">262</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">311</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">415</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">523</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">622</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">831</span>,300<span class="o">)</span>,<span class="o">(</span><span class="m">622</span>,300<span class="o">)</span>,<span class="o">(</span><span class="m">155</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">294</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">349</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">466</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">588</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">699</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">933</span>,300<span class="o">)</span>,<span class="o">(</span><span class="m">933</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">933</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">933</span>,100<span class="o">)</span>,<span class="o">(</span><span class="m">1047</span>,400<span class="o">))</span>
+<span class="go">    foreach ($N in $b818610f1a504572b6af74f268620cc2) { [Console]::Beep($N[0],$N[1]) }</span>
+<span class="go">    Write-Host ([System.Text.Encoding]::Default.GetString([System.Convert]::FromBase64String(&quot;TW90IGRlIHBhc3NlIGNvcnJlY3QgISBMYSBmdXPpZSBzJ2Vudm9sZWVlZSAh&quot;))) -ForegroundColor Green</span>
+<span class="go">} else {</span>
+<span class="gp">    $</span><span class="nv">7d2001d954134742914aa6731ec558e2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>New-Object<span class="w"> </span>-com<span class="w"> </span>wscript.shell<span class="p">;</span><span class="w"> </span><span class="m">1</span>..50<span class="w"> </span><span class="p">|</span><span class="w"> </span>%<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nv">$7</span>d2001d954134742914aa6731ec558e2.SendKeys<span class="o">([</span>char<span class="o">]</span><span class="m">175</span><span class="o">)</span><span class="w"> </span><span class="o">}</span><span class="p">;</span>
+<span class="gp">    $</span><span class="nv">09fefe8428234a6da050e9c186a8132c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>@<span class="o">(</span>
+<span class="go">    @{ Pitch = 1059.274; Length = 300; };</span>
+<span class="go">    @{ Pitch = 1059.274; Length = 200; };</span>
+<span class="go">    @{ Pitch = 1188.995; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1059.274; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1413.961; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1334.601; Length = 950; };</span>
+
+<span class="go">    @{ Pitch = 1059.274; Length = 300; };</span>
+<span class="go">    @{ Pitch = 1059.274; Length = 200; };</span>
+<span class="go">    @{ Pitch = 1188.995; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1059.274; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1587.117; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1413.961; Length = 950; };</span>
+
+<span class="go">    @{ Pitch = 1059.274; Length = 300; };</span>
+<span class="go">    @{ Pitch = 1059.274; Length = 200; };</span>
+<span class="go">    @{ Pitch = 2118.547; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1781.479; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1413.961; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1334.601; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1188.995; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1887.411; Length = 300; };</span>
+<span class="go">    @{ Pitch = 1887.411; Length = 200; };</span>
+<span class="go">    @{ Pitch = 1781.479; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1413.961; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1587.117; Length = 500; };</span>
+<span class="go">    @{ Pitch = 1413.961; Length = 900; };</span>
+<span class="go">    );</span>
+
+<span class="go">    foreach ($Beep in $09fefe8428234a6da050e9c186a8132c) {</span>
+<span class="go">        [System.Console]::Beep($Beep[&#39;Pitch&#39;], $Beep[&#39;Length&#39;]);</span>
+<span class="go">    }</span>
+<span class="go">    Function Invoke-TextToSpeech($Text) { Add-Type -AssemblyName System.speech; $0b208177d5aa47c79e1f785faa9ae70b = New-Object System.Speech.Synthesis.SpeechSynthesizer; $0b208177d5aa47c79e1f785faa9ae70b.Speak($Text) }</span>
+<span class="go">    Invoke-TextToSpeech &quot;$([char]([byte]0x42)+[char]([byte]0x6F)+[char]([byte]0x6F)+[char]([byte]0x6D))&quot;</span>
+<span class="go">    Write-Host ([System.Text.Encoding]::Default.GetString([System.Convert]::FromBase64String(&quot;TW90IGRlIHBhc3NlIGluY29ycmVjdC4gTGEgZnVz6WUgdmllbnQgZCdleHBsb3Nlcg==&quot;))) -ForegroundColor Red</span>
+<span class="go">    (Add-Type &quot;$(</span>
+<span class="go">[char]0x5B+[char]0x44+[char]0x6C+[char]0x6C+[char]0x49+[char]0x6D+[char]0x70+[char]0x6F+[char]0x72+[char]0x74+</span>
+<span class="go">[char]0x28+[char]0x22+[char]0x75+[char]0x73+[char]0x65+[char]0x72+[char]0x33+[char]0x32+[char]0x2E+[char]0x64+</span>
+<span class="go">[char]0x6C+[char]0x6C+[char]0x22+[char]0x29+[char]0x5D+[char]0x70+[char]0x75+[char]0x62+[char]0x6C+[char]0x69+</span>
+<span class="go">[char]0x63+[char]0x20+[char]0x73+[char]0x74+[char]0x61+[char]0x74+[char]0x69+[char]0x63+[char]0x20+[char]0x65+</span>
+<span class="go">[char]0x78+[char]0x74+[char]0x65+[char]0x72+[char]0x6E+[char]0x20+[char]0x69+[char]0x6E+[char]0x74+[char]0x20+</span>
+<span class="go">[char]0x53+[char]0x65+[char]0x6E+[char]0x64+[char]0x4D+[char]0x65+[char]0x73+[char]0x73+[char]0x61+[char]0x67+</span>
+<span class="go">[char]0x65+[char]0x28+[char]0x69+[char]0x6E+[char]0x74+[char]0x20+[char]0x68+[char]0x57+[char]0x6E+[char]0x64+</span>
+<span class="go">[char]0x2C+[char]0x20+[char]0x69+[char]0x6E+[char]0x74+[char]0x20+[char]0x68+[char]0x4D+[char]0x73+[char]0x67+</span>
+<span class="go">[char]0x2C+[char]0x20+[char]0x69+[char]0x6E+[char]0x74+[char]0x20+[char]0x77+[char]0x50+[char]0x61+[char]0x72+</span>
+<span class="go">[char]0x61+[char]0x6D+[char]0x2C+[char]0x20+[char]0x69+[char]0x6E+[char]0x74+[char]0x20+[char]0x6C+[char]0x50+</span>
+<span class="go">[char]0x61+[char]0x72+[char]0x61+[char]0x6D+[char]0x29+[char]0x3B</span>
+<span class="go">)&quot; -Name a -Pas)::SendMessage(-1,0x0112,0xF170,2)</span>
+<span class="go">}</span>
+</pre></div>
+</div>
+<p>On le donne a ChatGPT qui nous explique qu’une certaine valeur est chiffré avec un XOR + la longueur du username au moment de son utilisation.
+On va donc incrémenter username_len jusqu’à obtenir la bonne valeur et un flag plausible.</p>
+<p>Script final :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cle</span> <span class="o">=</span> <span class="p">[</span><span class="mi">42</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">88</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<span class="n">username_len</span> <span class="o">=</span> <span class="mi">9</span>  <span class="c1"># Exemple, à ajuster en fonction du nom d&#39;utilisateur réel</span>
+<span class="n">encrypted_password</span> <span class="o">=</span> <span class="p">[</span><span class="mi">93</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">97</span><span class="p">,</span> <span class="mi">33</span><span class="p">]</span>
+
+<span class="c1"># Hypothèse de mot de passe initial (à partir de l&#39;énoncé)</span>
+<span class="n">mot_de_passe</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">encrypted_password</span><span class="p">)):</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="n">encrypted_password</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="n">cle</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="c1"># Décryptage basé sur XOR et ajustement de la longueur de l&#39;utilisateur</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">127</span><span class="p">):</span>  <span class="c1"># Recherche parmi les caractères imprimables</span>
+        <span class="n">decrypted</span> <span class="o">=</span> <span class="p">(</span><span class="n">target</span> <span class="o">+</span> <span class="n">username_len</span><span class="p">)</span> <span class="o">%</span> <span class="p">(</span><span class="mi">13</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">^</span> <span class="n">key</span><span class="p">)</span> <span class="o">==</span> <span class="n">decrypted</span><span class="p">:</span>
+            <span class="n">mot_de_passe</span> <span class="o">+=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+            <span class="k">break</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mot de passe décrypté:&quot;</span><span class="p">,</span> <span class="n">mot_de_passe</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Flag : <strong>L&#64;Fus33D3c0ll3!!</strong></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="_index.html" class="btn btn-neutral float-left" title="404CTF 2025" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="cbizarre.html" class="btn btn-neutral float-right" title="Reverse - cbizarre 1/2" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

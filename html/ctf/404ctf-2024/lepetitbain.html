@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cryptanalyse - Le petit bain &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Reverse - Echauffement" href="echauffement.html" />
+    <link rel="prev" title="Crypto - Bébé nageur" href="bebenageur.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Capture The Flag (CTF)</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2024/_index.html">MidNight Flag CTF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">404CTF 2024</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gorfou42.html">Web - Le Gorfou 42</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bugdroidfight.html">Reverse - Bugdroid Fight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bebenageur.html">Crypto - Bébé nageur</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cryptanalyse - Le petit bain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="echauffement.html">Reverse - Echauffement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dartsbank.html">Forensic - Darts Bank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="laboutique.html">Web - La boutique officielle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="laboutique.html#resolution">Résolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homerun.html">Forensic / Osint / Divers - Coup de circuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="secretraining.html">OSINT - Secret Training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grandecart.html">Stegano - Le grand ecart</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2025/_index.html">404CTF 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2024/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">404CTF 2024</a></li>
+      <li class="breadcrumb-item active">Cryptanalyse - Le petit bain</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/404ctf-2024/lepetitbain.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cryptanalyse-le-petit-bain">
+<h1>Cryptanalyse - Le petit bain<a class="headerlink" href="#cryptanalyse-le-petit-bain" title="Lien vers cette rubrique"></a></h1>
+<p>C’est clairement la suite du bébé nageur</p>
+<p>Donc on va reprendre le même fonctionnement, le code du challenge avec mes annotations pour chaque fonction et les calculs de A et B :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="nn">rd</span>
+    <span class="kn">from</span> <span class="nn">flag</span> <span class="kn">import</span> <span class="n">FLAG</span>
+
+    <span class="k">assert</span> <span class="n">FLAG</span><span class="p">[:</span><span class="mi">12</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;404CTF{tHe_c&quot;</span>
+
+    <span class="n">charset</span> <span class="o">=</span> <span class="s2">&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</span><span class="si">{}</span><span class="s2">_-!&quot;</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">charset</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="n">b</span><span class="p">)</span><span class="o">%</span><span class="n">n</span>
+
+
+    <span class="c1"># OUTPUT : C_ef8K8rT83JC8I0fOPiN6P!liE03W2NXFh1viJCROAqXb6o</span>
+    <span class="c1"># INPOUT : 404CTF{tHe_c                                   }</span>
+
+    <span class="c1"># 4 = 56</span>
+    <span class="c1"># 28 = (a*56+b)%67</span>
+    <span class="c1"># { = 62</span>
+    <span class="c1"># 60 = (a*62+b)%67</span>
+    <span class="c1"># A=50</span>
+    <span class="c1"># B=42</span>
+
+    <span class="c1"># 0 = 52</span>
+    <span class="c1"># 64 = (a*52+b)%67</span>
+    <span class="c1"># t = 19</span>
+    <span class="c1"># 17 = (a*19+b)%67</span>
+    <span class="c1"># A=40</span>
+    <span class="c1"># B=61</span>
+
+    <span class="c1"># 4 = 56</span>
+    <span class="c1"># 4 = (a*56+b)%67</span>
+    <span class="c1"># H = 33</span>
+    <span class="c1"># 45 = (a*33+b)%67</span>
+    <span class="c1"># A=39</span>
+    <span class="c1"># B=31</span>
+
+    <span class="c1"># C = 28</span>
+    <span class="c1"># 5 = (a*28+b)%67</span>
+    <span class="c1"># e = 4</span>
+    <span class="c1"># 60 = (a*4+b)%67</span>
+    <span class="c1"># A = 34</span>
+    <span class="c1"># B = 58</span>
+
+    <span class="c1"># T = 45</span>
+    <span class="c1"># 60 = (a*45+b)%67</span>
+    <span class="c1"># _ = 64</span>
+    <span class="c1"># 55 = (a*64+b)%67</span>
+    <span class="c1"># A=35</span>
+    <span class="c1"># B=26</span>
+
+    <span class="c1"># F = 31</span>
+    <span class="c1"># 36 = (a*31+b)%67</span>
+    <span class="c1"># c = 2</span>
+    <span class="c1"># 35 = (a*2+b)%67</span>
+    <span class="c1"># A=37</span>
+    <span class="c1"># B=28</span>
+
+    <span class="c1"># A = 50,40,39,34,35,37</span>
+    <span class="c1"># B= 42,61,31,58,26,28</span>
+
+
+    <span class="c1"># fonction Round</span>
+    <span class="c1"># Pour i de 0 a 48</span>
+    <span class="c1"># x c&#39;est l&#39;index des caractères 1 a 1</span>
+    <span class="c1"># a c&#39;est le premier de la liste jusqu&#39;au 6eme</span>
+    <span class="c1"># Pareil pour B</span>
+    <span class="c1"># on envoi tout a la meme fonction que le challenge d&#39;avant</span>
+    <span class="k">def</span> <span class="nf">round</span><span class="p">(</span><span class="n">message</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+            <span class="n">encrypted</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">message</span><span class="p">)):</span>
+                    <span class="n">x</span> <span class="o">=</span> <span class="n">charset</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">message</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                    <span class="n">a</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="mi">6</span><span class="p">]</span>
+                    <span class="n">b</span> <span class="o">=</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="mi">6</span><span class="p">]</span>
+                    <span class="n">x</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+                    <span class="n">encrypted</span> <span class="o">+=</span> <span class="n">charset</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+            <span class="k">return</span> <span class="n">permute</span><span class="p">(</span><span class="n">encrypted</span><span class="p">)</span>
+
+    <span class="c1"># Fonction encryt</span>
+    <span class="c1"># Pour K entre 0 et 6</span>
+    <span class="c1"># A = Liste aléatoire de 6 nombre entre 2 et 67</span>
+    <span class="c1"># B = Liste aléatoire de 6 nombre entre 1 et 67</span>
+    <span class="c1"># Envoi le flag (encrytped), A, B et n=67</span>
+    <span class="k">def</span> <span class="nf">encrypt</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+            <span class="n">encrypted</span> <span class="o">=</span> <span class="n">message</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+                    <span class="n">A</span> <span class="o">=</span> <span class="p">[</span> <span class="n">rd</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)]</span>
+                    <span class="n">B</span> <span class="o">=</span> <span class="p">[</span> <span class="n">rd</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">)]</span>
+                    <span class="n">encrypted</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">encrypted</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">encrypted</span>
+
+
+    <span class="k">def</span> <span class="nf">permute</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">44</span><span class="p">]</span>
+            <span class="n">permuted</span> <span class="o">=</span> <span class="p">[</span> <span class="n">message</span><span class="p">[</span><span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">message</span><span class="p">))]</span>
+            <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">permuted</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">encrypt</span><span class="p">(</span><span class="n">FLAG</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>On a récupérer tous les index avec :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">charset</span> <span class="o">=</span> <span class="s2">&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</span><span class="si">{}</span><span class="s2">_-!&quot;</span>
+
+<span class="n">message2</span> <span class="o">=</span> <span class="s2">&quot;C_ef8K8rT83J&quot;</span>
+<span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;404CTF{tHe_c&quot;</span>
+
+<span class="c1"># Calculer et afficher les index de chaque caractère du message dans le charset</span>
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">message</span><span class="p">:</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">charset</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le caractère &#39;</span><span class="si">{</span><span class="n">char</span><span class="si">}</span><span class="s2">&#39; a l&#39;index </span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2"> dans charset.&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">message2</span><span class="p">:</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">charset</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Le caractère &#39;</span><span class="si">{</span><span class="n">char</span><span class="si">}</span><span class="s2">&#39; a l&#39;index </span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2"> dans charset.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>On résoud les équations en modifiant les deux équations a chaque fois (on aurait aussi pu mettre les 6 dans le meme script) :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Définition des équations congruentes à résoudre</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">67</span>  <span class="c1"># La taille du module</span>
+
+<span class="c1"># Nous parcourons toutes les valeurs de a de 1 à 66</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="c1"># Nous parcourons toutes les valeurs de b de 1 à 66</span>
+    <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="c1"># Testons si les valeurs de a et b satisfont les deux équations congruentes</span>
+        <span class="n">equation1</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="mi">56</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">%</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">65</span>  <span class="c1"># Première équation congruente</span>
+        <span class="n">equation2</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="mi">52</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">%</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">56</span>  <span class="c1"># Deuxième équation congruente</span>
+
+        <span class="c1"># Si a et b satisfont les deux équations, afficher les valeurs de a et b</span>
+        <span class="k">if</span> <span class="n">equation1</span> <span class="ow">and</span> <span class="n">equation2</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Valeurs de a et b trouvées : a = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">, b = </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">break</span>  <span class="c1"># Sortir de la boucle si une solution est trouvée</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Si les valeurs de a et b ne satisfont pas les équations, passer à l&#39;itération suivante</span>
+        <span class="k">continue</span>
+    <span class="c1"># Si une solution est trouvée, sortir de la boucle principale</span>
+    <span class="k">break</span>
+</pre></div>
+</div>
+<p>Et on décode le tout une fois qu’on à la liste des A et des B, on sait pas pourquoi, la fonction permute sert a rien, pas besoin de la reverse :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Définissez votre charset et n.</span>
+<span class="n">charset</span> <span class="o">=</span> <span class="s2">&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</span><span class="si">{}</span><span class="s2">_-!&quot;</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">charset</span><span class="p">)</span>  <span class="c1"># n = 67</span>
+
+<span class="c1"># Fonction pour calculer l&#39;inverse modulaire d&#39;un nombre</span>
+<span class="k">def</span> <span class="nf">mod_inverse</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="n">t</span><span class="p">,</span> <span class="n">new_t</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="n">r</span><span class="p">,</span> <span class="n">new_r</span> <span class="o">=</span> <span class="n">n</span><span class="p">,</span> <span class="n">a</span>
+    <span class="k">while</span> <span class="n">new_r</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">quotient</span> <span class="o">=</span> <span class="n">r</span> <span class="o">//</span> <span class="n">new_r</span>
+        <span class="n">t</span><span class="p">,</span> <span class="n">new_t</span> <span class="o">=</span> <span class="n">new_t</span><span class="p">,</span> <span class="n">t</span> <span class="o">-</span> <span class="n">quotient</span> <span class="o">*</span> <span class="n">new_t</span>
+        <span class="n">r</span><span class="p">,</span> <span class="n">new_r</span> <span class="o">=</span> <span class="n">new_r</span><span class="p">,</span> <span class="n">r</span> <span class="o">-</span> <span class="n">quotient</span> <span class="o">*</span> <span class="n">new_r</span>
+    <span class="k">if</span> <span class="n">r</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Aucun inverse pour </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2"> modulo </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">t</span> <span class="o">+=</span> <span class="n">n</span>
+    <span class="k">return</span> <span class="n">t</span>
+
+<span class="c1"># Fonction de déchiffrement d&#39;un caractère</span>
+<span class="k">def</span> <span class="nf">decrypt_char</span><span class="p">(</span><span class="n">encrypted_char</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="c1"># Trouver l&#39;index du caractère chiffré dans le charset</span>
+    <span class="n">encrypted_index</span> <span class="o">=</span> <span class="n">charset</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">encrypted_char</span><span class="p">)</span>
+
+    <span class="c1"># Calculer l&#39;inverse de a modulo n</span>
+    <span class="n">inv_a</span> <span class="o">=</span> <span class="n">mod_inverse</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+
+    <span class="c1"># Déchiffrer l&#39;index du caractère original</span>
+    <span class="n">original_index</span> <span class="o">=</span> <span class="p">(</span><span class="n">inv_a</span> <span class="o">*</span> <span class="p">(</span><span class="n">encrypted_index</span> <span class="o">-</span> <span class="n">b</span><span class="p">))</span> <span class="o">%</span> <span class="n">n</span>
+
+    <span class="c1"># Retourner le caractère original</span>
+    <span class="k">return</span> <span class="n">charset</span><span class="p">[</span><span class="n">original_index</span><span class="p">]</span>
+
+<span class="c1"># Fonction pour déchiffrer un message entier</span>
+<span class="k">def</span> <span class="nf">decrypt</span><span class="p">(</span><span class="n">encrypted_message</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span>
+    <span class="n">decrypted_message</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># Déchiffrer chaque caractère du message</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">encrypted_message</span><span class="p">)):</span>
+        <span class="c1"># Obtenir les coefficients a et b appropriés pour la position actuelle</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="mi">6</span><span class="p">]</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="mi">6</span><span class="p">]</span>
+
+        <span class="c1"># Déchiffrer le caractère</span>
+        <span class="n">decrypted_char</span> <span class="o">=</span> <span class="n">decrypt_char</span><span class="p">(</span><span class="n">encrypted_message</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+        <span class="n">decrypted_message</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">decrypted_char</span><span class="p">)</span>
+
+    <span class="c1"># Convertir la liste de caractères en chaîne de caractères</span>
+    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">decrypted_message</span><span class="p">)</span>
+
+<span class="c1"># Les listes de coefficients</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">37</span><span class="p">]</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">[</span><span class="mi">42</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">28</span><span class="p">]</span>
+
+<span class="c1"># Le message chiffré</span>
+<span class="n">encrypted_message</span> <span class="o">=</span> <span class="s2">&quot;C_ef8K8rT83JC8I0fOPiN6P!liE03W2NXFh1viJCROAqXb6o&quot;</span>
+
+<span class="c1"># Déchiffrer le message</span>
+<span class="n">decrypted_message</span> <span class="o">=</span> <span class="n">decrypt</span><span class="p">(</span><span class="n">encrypted_message</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+
+<span class="c1"># Afficher le message déchiffré</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Le message déchiffré est :&quot;</span><span class="p">,</span> <span class="n">decrypted_message</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Le flag : <strong>404CTF{tHe_c4fF31ne_MakE5_m3_StR0nG3r_th4n_y0u!}</strong></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="bebenageur.html" class="btn btn-neutral float-left" title="Crypto - Bébé nageur" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="echauffement.html" class="btn btn-neutral float-right" title="Reverse - Echauffement" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

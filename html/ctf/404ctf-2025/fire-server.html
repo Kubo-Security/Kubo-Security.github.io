@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web - Fire Server &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="The LDAP Chronicles 1/6" href="realist.html" />
+    <link rel="prev" title="Osint - En eaux sombres" href="en_eaux_sombres.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Capture The Flag (CTF)</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2024/_index.html">MidNight Flag CTF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2024/_index.html">404CTF 2024</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">404CTF 2025</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="3x3cut3-m3.html">Reverse - 3x3cut3_m3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cbizarre.html">Reverse - cbizarre 1/2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cbizarre.html#reverse-cbizarre-2-2">Reverse - cbizarre 2/2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dockerflag.html">Forensic - Dockerflag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="en_eaux_sombres.html">Osint - En eaux sombres</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Web - Fire Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html">The LDAP Chronicles 1/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html#houston-we-have-a-problem-2-6">Houston, we have a problem 2/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html#named-resolve-3-6">Named Resolve 3/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html#the-gpo-mission-4-6">The GPO Mission 4/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html#the-ad-guardians-5-6">The AD Guardians 5/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="realist.html#ghost-membership-6-6">Ghost Membership 6/6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="space-fleet-command.html">Web - Space Fleet Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tape_ton_mdp.html">Forensic - Tape ton mdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toorkit.html">Forensic - Toortik triflexation 1/2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toorkit.html#forensic-toortik-triflexation-2-2">Forensic - Toortik triflexation 2/2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2024/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">404CTF 2025</a></li>
+      <li class="breadcrumb-item active">Web - Fire Server</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/404ctf-2025/fire-server.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="web-fire-server">
+<h1>Web - Fire Server<a class="headerlink" href="#web-fire-server" title="Lien vers cette rubrique"></a></h1>
+<p>Dans le docker file on trouve :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">echo &quot;Mission Selenium – Niveau 5 Confidentiel\nAnalyse de l’organisme prélevé sur la face cachée lunaire : activité bioélectrique persistante.\nExpérimentations poursuivies malgré les objections éthiques.\n404CTF{fakeflag}&quot; &gt; /var/files/classified/selenium &amp;&amp;</span>
+</pre></div>
+</div>
+<p>On sait quel fichier on souhaite récupérer : /var/files/classified/selenium</p>
+<p>Dans le fichier index.php on voit bien qu’il y a une local file inclusion :</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">$decodedPath = urldecode($path);</span>
+<span class="x">$decodedPath = str_replace(&quot;../&quot;, &quot;&quot;, $decodedPath);</span>
+<span class="x">$fullPath = realpath($baseDir . $decodedPath);</span>
+</pre></div>
+</div>
+<p>On va donc faire : ?path=….//….//….//var/files/classified/selenium</p>
+<p>Le code va supprimer les ../ ce qui va donner ../../../var/files/classified/selenium</p>
+<p>On obtient le flag :</p>
+<p>Mission Selenium – Niveau 5 Confidentiel
+Analyse de l’organisme prélevé sur la face cachée lunaire : activité bioélectrique persistante.
+Expérimentations poursuivies malgré les objections éthiques.
+404CTF{m0oN_S3cRe7s_4r3_bUr1eD_d33p}</p>
+<p>Flag : <strong>404CTF{m0oN_S3cRe7s_4r3_bUr1eD_d33p}</strong></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="en_eaux_sombres.html" class="btn btn-neutral float-left" title="Osint - En eaux sombres" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="realist.html" class="btn btn-neutral float-right" title="The LDAP Chronicles 1/6" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

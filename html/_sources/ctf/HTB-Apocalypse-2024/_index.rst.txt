@@ -1,0 +1,15 @@
+.. figure:: ../../_static/img/404ctf/404ctf.png
+    :alt: Osint
+    :align: center
+    :width: 400
+
+
+HTB Apocalypse 2024
+===================
+
+Voici la liste des Write up : 
+
+.. toctree::
+   :maxdepth: 1
+
+   iaandweb.rst
