@@ -2,13 +2,13 @@ Toortik triflexation 1/2
 ====================================
 
 Voyons le type de machine ; 
-vol -s . -f toortik_triflexation.elf banners: 
+vol -f toortik_triflexation.elf banners: 
 
-A COMPLETE
+**J'ai oublié de le noté**
 
 On récupre le profil sur https://github.com/Abyss-W4tcher 
 
-On l'ajoute au dossier avec le challenge, et on peut ensuite continuer avec : 
+On l'ajoute au dossier avec le challenge, et on peut ensuite continuer avec : vol -s . -f toortik_triflexation.elf <PLUGIN>
 
 On regarde les processus :
 

@@ -75,6 +75,7 @@ Dockerfile pour python2 :
     COPY . /app
 
 On modifie connback.py pour mettre notre host et notre port de reverse shell
+
 Et on modifie la commande /bin/bash par /get_flag ici : 
 
 .. code-block:: console

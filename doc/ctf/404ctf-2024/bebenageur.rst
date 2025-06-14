@@ -1,7 +1,7 @@
 Bébé nageur
 =======================
 
-Merci Cédric pour la méthode ! 
+Merci Zohjin pour la méthode ! 
 Et chat GPT pour le code !
 
 

@@ -57,7 +57,8 @@ Malheureusement on ne trouve aucun commentaire sur aucune de ces  boulangeries.
 
 On va finalement, prendre la liste des petites villes de l'aveyron (entre 3k et 2k Habitant) et allez voir les commentaires de TOUTES les boulangeries une par une 
 
-Saint Afrique 8k6
+Saint Afrique 8k6 : 
+
 - Le fournil : non
 - La grignote  : non
 - Le beaulieu 1 : non
@@ -70,6 +71,7 @@ Saint Afrique 8k6
 - azais : non
 
 Villefranche de Rouergue 12k : 
+
 - Marcel et thomas : non 
 - Fournier mirau : non
 - Maison bedel : non 
@@ -83,6 +85,7 @@ Villefranche de Rouergue 12k :
 - Verdier dominique : non 
 
 Baraque ville 3k2 :
+
 - L'épi du rouergue : non 
 - Palous Michel : non
 - Victoire : non
@@ -90,6 +93,7 @@ Baraque ville 3k2 :
 - Lacombe Cyril : non 
 
 Brozoul 3k : 
+
 - Sainte fauste : non 
 - Lacan Jean Raymond : non 
 - Bouzou : non 
@@ -97,6 +101,7 @@ Brozoul 3k :
 - Lévézou : non 
 
 Capdenac gare 4k5 : 
+
 - Le plaisir du fournil : non 
 - Le four a pain : non 
 - Guibal Jérôme : non 
@@ -105,6 +110,7 @@ Capdenac gare 4k5 :
 - Montheuil : non 
 
 Decazeville 5k4 : 
+
 - Ptit blé doré : non
 - Halles de la découverte : non
 - Pon-pon : non 
@@ -112,6 +118,7 @@ Decazeville 5k4 :
 - Blanc Pascal : non 
 
 Aubin 3k7 : 
+
 - Le paradis des saveur : Bingo !
 https://www.google.com/maps/contrib/105348503067788767785/reviews/@44.5274042,2.2440333,17z/data=!3m1!4b1!4m3!8m2!3m1!1e1?hl=fr&entry=ttu
 - Boulangerie Aubin : 

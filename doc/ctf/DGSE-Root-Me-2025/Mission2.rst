@@ -57,6 +57,7 @@ On regarde ce qu'il a fait avant, il y a des tentatives de "LFI" Local File Incl
 Résumé :
 ------------
 On a : 
+
 - Local file inclusion : CWE-98
 - Upload de fichier (.php.png) : CWE-434
 - L'adresse IP du serveur : 163.172.67.201

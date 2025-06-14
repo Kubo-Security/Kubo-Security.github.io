@@ -147,114 +147,114 @@ Et la fonction de déchiffrement des messages :
 
 On va récupérer la liste des devices google : https://storage.googleapis.com/play_public/supported_devices.html
 
-Google;guybrush
-Google;skyrim
-Google;zork
-Google;grunt
-Google;kalista
-Google;Acer Chromebook 14 (CB3-431)
-Google;Chromebook 14 (CB3-431)
-Google;Google Chromebook Pixel (2015)
-Google;Chromebox Reference
-Google;fizz
-Google;puff
-Google;Chromecast
-Google;Chromecast HD
-Google;AOSP on IA Emulator
-Google;Android SDK built for x86
-Google;Android SDK built for x86_64
-Google;GT-I9505G
-Google;sdk_gphone_x86
-Google;Android SDK built for x86_64
-Google;Car on x86_64 emulator
-Google;HPE device
-Google;Google TV Streamer
-Google;brya
-Google;brask
-Google;nissa
-Google;rammus
-Google;coral
-Google;ASUS Chromebook C213NA
-Google;Intel Apollo Lake Chromebook
-Google;reef
-Google;Braswell Chrome OS Device
-Google;Intel Braswell Chromebook
-Google;Intel Braswell Chromebook
-Google;hatch
-Google;octopus
-Google;dedede
-Google;keeby
-Google;nami
-Google;rex
-Google;volteer
-Google;jacuzzi
-Google;kukui
-Google;corsola
-Google;staryu
-Google;geralt
-Google;asurada
-Google;cherry
-Google;Lenovo N23 Yoga/Flex 11 Chromebook
-Google;Mediatek MT8173 Chromebook
-Google;Mediatek MTK8173 Chromebook
-Google;Pixel
-Google;Pixel 2
-Google;Pixel 2 XL
-Google;Pixel 3
-Google;Pixel 3 XL
-Google;Pixel 3a
-Google;Pixel 3a XL
-Google;Pixel 4
-Google;Pixel 4 XL
-Google;Pixel 4a
-Google;Pixel 4a (5G)
-Google;Pixel 5
-Google;Pixel 5a
-Google;Pixel 6
-Google;Pixel 6 Pro
-Google;Pixel 6a
-Google;Pixel 7
-Google;Pixel 7 Pro
-Google;Pixel 7a
-Google;Pixel 8
-Google;Pixel 8 Pro
-Google;Pixel 8a
-Google;Pixel 9
-Google;Pixel 9 Pro
-Google;Pixel 9 Pro Fold
-Google;Pixel 9 Pro XL
-Google;Pixel 9a
-Google;Pixel C
-Google;Pixel Fold
-Google;Google Pixel Slate
-Google;Pixel Slate
-Google;nocturne
-Google;Pixel Tablet
-Google;Google Pixel Watch
-Google;Google Pixel Watch
-Google;Google Pixel Watch 2
-Google;Google Pixel Watch 2
-Google;Pixel XL
-Google;Pixel Watch 3
-Google;Pixel Watch 3
-Google;Pixel Watch 3
-Google;Pixel Watch 3
-Google;Google Pixelbook Go
-Google;atlas
-Google;Google Pixelbook
-Google;Project Tango Tablet Development Kit
-Google;Yellowstone
-Google;trogdor
-Google;trogdor64
-Google;strongbad
-Google;RK3288 Chrome OS Device
-Google;Rockchip RK3288 Chromebook
-Google;RK3288 Chrome OS Device
-Google;Rockchip RK3288 Chromebook
-Google;sdk_gphone64_x86_64
-Google;Automotive SDK built for x86_64
-Google;AOSP on x86
-Google;Automotive SDK built for x86
+- Google;guybrush
+- Google;skyrim
+- Google;zork
+- Google;grunt
+- Google;kalista
+- Google;Acer Chromebook 14 (CB3-431)
+- Google;Chromebook 14 (CB3-431)
+- Google;Google Chromebook Pixel (2015)
+- Google;Chromebox Reference
+- Google;fizz
+- Google;puff
+- Google;Chromecast
+- Google;Chromecast HD
+- Google;AOSP on IA Emulator
+- Google;Android SDK built for x86
+- Google;Android SDK built for x86_64
+- Google;GT-I9505G
+- Google;sdk_gphone_x86
+- Google;Android SDK built for x86_64
+- Google;Car on x86_64 emulator
+- Google;HPE device
+- Google;Google TV Streamer
+- Google;brya
+- Google;brask
+- Google;nissa
+- Google;rammus
+- Google;coral
+- Google;ASUS Chromebook C213NA
+- Google;Intel Apollo Lake Chromebook
+- Google;reef
+- Google;Braswell Chrome OS Device
+- Google;Intel Braswell Chromebook
+- Google;Intel Braswell Chromebook
+- Google;hatch
+- Google;octopus
+- Google;dedede
+- Google;keeby
+- Google;nami
+- Google;rex
+- Google;volteer
+- Google;jacuzzi
+- Google;kukui
+- Google;corsola
+- Google;staryu
+- Google;geralt
+- Google;asurada
+- Google;cherry
+- Google;Lenovo N23 Yoga/Flex 11 Chromebook
+- Google;Mediatek MT8173 Chromebook
+- Google;Mediatek MTK8173 Chromebook
+- Google;Pixel
+- Google;Pixel 2
+- Google;Pixel 2 XL
+- Google;Pixel 3
+- Google;Pixel 3 XL
+- Google;Pixel 3a
+- Google;Pixel 3a XL
+- Google;Pixel 4
+- Google;Pixel 4 XL
+- Google;Pixel 4a
+- Google;Pixel 4a (5G)
+- Google;Pixel 5
+- Google;Pixel 5a
+- Google;Pixel 6
+- Google;Pixel 6 Pro
+- Google;Pixel 6a
+- Google;Pixel 7
+- Google;Pixel 7 Pro
+- Google;Pixel 7a
+- Google;Pixel 8
+- Google;Pixel 8 Pro
+- Google;Pixel 8a
+- Google;Pixel 9
+- Google;Pixel 9 Pro
+- Google;Pixel 9 Pro Fold
+- Google;Pixel 9 Pro XL
+- Google;Pixel 9a
+- Google;Pixel C
+- Google;Pixel Fold
+- Google;Google Pixel Slate
+- Google;Pixel Slate
+- Google;nocturne
+- Google;Pixel Tablet
+- Google;Google Pixel Watch
+- Google;Google Pixel Watch
+- Google;Google Pixel Watch 2
+- Google;Google Pixel Watch 2
+- Google;Pixel XL
+- Google;Pixel Watch 3
+- Google;Pixel Watch 3
+- Google;Pixel Watch 3
+- Google;Pixel Watch 3
+- Google;Google Pixelbook Go
+- Google;atlas
+- Google;Google Pixelbook
+- Google;Project Tango Tablet Development Kit
+- Google;Yellowstone
+- Google;trogdor
+- Google;trogdor64
+- Google;strongbad
+- Google;RK3288 Chrome OS Device
+- Google;Rockchip RK3288 Chromebook
+- Google;RK3288 Chrome OS Device
+- Google;Rockchip RK3288 Chromebook
+- Google;sdk_gphone64_x86_64
+- Google;Automotive SDK built for x86_64
+- Google;AOSP on x86
+- Google;Automotive SDK built for x86
 
 
 On fait un script python qui permet de détecter le bon couple Model / Brand : Yellowstone/Google
