@@ -1,0 +1,566 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Writeup - ΦShell-M-HackÅ &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="prev" title="Hackosint 2025" href="_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Liste des CTFs :</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2024/_index.html">Midnight Flag 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2024/_index.html">404CTF 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2025/_index.html">404CTF 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2025/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Hackosint 2025</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Writeup - ΦShell-M-HackÅ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#welcome-back">Welcome back</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#interview">Interview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#qui-es-tu">Qui es tu ?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pseudonyme">Pseudonyme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#premiere-approche">Première approche</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#toctoctoc">TocTocToc</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#hotel">Hotel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#identite">Identité</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#un-chanceux">Un chanceux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#double-identite">Double identité</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ou-es-tu">Ou es tu ?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#november">November</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#revele-ton-secret">Révèle ton secret</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#combien-d-hivers">Combien d’hivers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hotel-california">HOTEL CALIFORNIA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cctv">CCTV</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#bravo">Bravo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#les-amoureuses">Les amoureuses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#joyeux-anniversaire">Joyeux anniversaire</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#mike">Mike</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#l-element-cle">L’élément clé</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#le-cote-obscur">Le côté obscur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pardon-vous-etes">Pardon vous êtes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#home-sweet-home">Home Sweet Home</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#petit-bateau">Petit bateau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#site-vitrine-1">Site vitrine 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#communication">Communication</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#l-enqueteur">L’enquêteur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#l-allie">L’allié</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cyberbunker">CyberBunker</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#nouvelle-cible-2">Nouvelle cible 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#envole-toi">Envole toi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#objectif-eagle">Objectif Eagle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jour-j">Jour J</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#final-coutdown">Final Coutdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#une-drole-d-entreprise">Une drôle d’entreprise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#site-vitrine-2">Site vitrine 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#discretion-assure">Discrétion Assuré</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">Hackosint 2025</a></li>
+      <li class="breadcrumb-item active">Writeup - ΦShell-M-HackÅ</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/Hackosint-2025/writeup.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="writeup-shell-m-hacka">
+<h1>Writeup - ΦShell-M-HackÅ<a class="headerlink" href="#writeup-shell-m-hacka" title="Lien vers cette rubrique"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Lien vers cette rubrique"></a></h2>
+<p>Voici notre WU de la 2eme édition du Hackosint (2025).
+Résultat : Top 22 - 1576 Points</p>
+</section>
+<section id="welcome-back">
+<h2>Welcome back<a class="headerlink" href="#welcome-back" title="Lien vers cette rubrique"></a></h2>
+<p>Chapitre 1.</p>
+<section id="interview">
+<h3>Interview<a class="headerlink" href="#interview" title="Lien vers cette rubrique"></a></h3>
+<p><em>Le document précédent montre que l’interview donnée par Charlotte constitue un bon point de départ.
+Pouvez-vous retrouver à quelle date cette interview a été réalisée ?
+Flag format : JJ/MM/AAAA</em></p>
+<p>On retourne sur le Twitter de Charlotte Nectoux :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://x.com/CN_CumSpe?t=1QFYRGNPWeEhnPAGVdrn6g&amp;s=09">https://x.com/CN_CumSpe?t=1QFYRGNPWeEhnPAGVdrn6g&amp;s=09</a></p></li>
+</ul>
+<p>Dans ces tweets on peut voir qu’elle a donné une interview le : <strong>02/02/2025</strong></p>
+</section>
+<section id="qui-es-tu">
+<h3>Qui es tu ?<a class="headerlink" href="#qui-es-tu" title="Lien vers cette rubrique"></a></h3>
+<p><em>Dans cette interview, Charlotte mentionne le nom d’une personne ayant eu un comportement suspect envers elle.
+Seriez-vous en mesure de nous indiquer l’identité de cette personne ?
+Flag format : Henri le Montclair</em></p>
+<p>Pour retrouver l’interview on va chercher le journaliste Marc Steiner avec Google « Steiner Charlotte Nectoux »</p>
+<p>On tombe sur ce blog medium : <a class="reference external" href="https://medium.com/&#64;marcsteinerdailynews">https://medium.com/&#64;marcsteinerdailynews</a></p>
+<p>Et on retrouve l’interview ici : <a class="reference external" href="https://medium.com/&#64;marcsteinerdailynews">https://medium.com/&#64;marcsteinerdailynews</a>/cybersécurité-le-piège-du-phishing-et-la-chute-du-groupe-509-60db7eab364e</p>
+<p>Dans cette interview, Charlotte parle de <strong>Nicolas de Richelieu</strong></p>
+</section>
+<section id="pseudonyme">
+<h3>Pseudonyme<a class="headerlink" href="#pseudonyme" title="Lien vers cette rubrique"></a></h3>
+<p><em>Ce Nicolas semble très actif sur les réseaux. Pouvez-vous retrouver sous quel pseudonyme il se cache ?
+Flag format : xhacker</em></p>
+<p>Sur facebook on retrouve un certain Nicolas de Richelieu qui semble suspect : <a class="reference external" href="https://www.facebook.com/profile.php?id=61576075067801">https://www.facebook.com/profile.php?id=61576075067801</a></p>
+<p>Dans ses stories on peut voir une photo de sa chambre avec un tshirt contenant un pseudo au dos : <a class="reference external" href="https://www.facebook.com/stories/701492352275324/?source=profile_highlight">https://www.facebook.com/stories/701492352275324/?source=profile_highlight</a></p>
+<img alt="Storie Nicolas" src="../../_images/nico1.jpg" />
+<p>On récupère alors son pseudo : <strong>xnicolasht</strong></p>
+</section>
+<section id="premiere-approche">
+<h3>Première approche<a class="headerlink" href="#premiere-approche" title="Lien vers cette rubrique"></a></h3>
+<p><em>En enquêtant sur ce pseudonyme, vous découvrez un lieu rempli de secrets, qui aurait dû rester confidentiel.
+Pouvez-vous déterminer depuis quand, précisément, Nicolas a commencé à échanger avec Foxtrot (ancien membre d’APT-509 arrêté en 2024) ?
+Flag format : JJ/MM/AAAA</em></p>
+<p>Avec le pseudo on retrouve un compte bluesky : <a class="reference external" href="https://bsky.app/profile/xnicolasht.bsky.social">https://bsky.app/profile/xnicolasht.bsky.social</a></p>
+<p>Sur ce bluesky on retrouve une photo intéressante affichant un écran et son contenu.</p>
+<img alt="Photo Nicolas bluesky" src="../../_images/nico2.jpg" />
+<p>Sur cette image on aperçoit un partage drive avec son url, mais on ne possède pas le nom de domaine.</p>
+<p>Heureusement dans ces follow bluesky on retrouve « Cryptpad ».</p>
+<p>On peut donc obtenir l’accès au drive via : <a class="reference external" href="https://cryptpad.fr/drive/#/2/drive/view/f3YGBpPsdLVDxwpvH+PfWsHBS2nNHpOgLwGr-VP9cHI">https://cryptpad.fr/drive/#/2/drive/view/f3YGBpPsdLVDxwpvH+PfWsHBS2nNHpOgLwGr-VP9cHI</a></p>
+<p>Dans ce cryptpad, on va retrouver des copies d’écrans des conversations entre lui et Hugo (personnage de l’édition précédente).</p>
+<p>On récupère tout et on les remet dans l’ordre :</p>
+<img alt="Conversation Nicolas Hugo" src="../../_images/nico3.jpg" />
+<p>On récupère donc la date : <strong>07/09/2023</strong></p>
+<p>Ces conversations nous donne d’ailleurs beaucoup d’informations pour la suite.</p>
+</section>
+<section id="toctoctoc">
+<h3>TocTocToc<a class="headerlink" href="#toctoctoc" title="Lien vers cette rubrique"></a></h3>
+<p><em>Grâce aux informations dont vous disposez, pouvez-vous retrouver où habite précisement Nicolas ?
+Flag format : cordonnées</em></p>
+<p>Non réalisé mais on a :
+- Département de l’ain (bluesky)
+- Lycée privé de saint joseph (facebook) : Bourg en Bresse ou Miribel
+- Rue en travaux (conversation)
+- Maison en travaux (conversation)</p>
+<p>On a cherché beaucoup de rue en travaux via les sites des mairies mais il fallait utiliser la wayback machine.</p>
+</section>
+</section>
+<section id="hotel">
+<h2>Hotel<a class="headerlink" href="#hotel" title="Lien vers cette rubrique"></a></h2>
+<p>Chapitre 2.</p>
+<section id="identite">
+<h3>Identité<a class="headerlink" href="#identite" title="Lien vers cette rubrique"></a></h3>
+<p><em>En enquêtant sur le voyage de Foxtrot et Hotel à Marrakech, pouvez-vous retrouver l’identité (nom et prénom) de Hotel ?
+Flag format : Léonore Dupont</em></p>
+<p>On retrouve le restaurant grâce aux photos dans la conversation entre Hugo et Nicolas : <a class="reference external" href="https://www.tripadvisor.fr/Restaurant_Review-g293734-d12328096-Reviews-Dar_Chef-Marrakech_Marrakech_Safi.html">https://www.tripadvisor.fr/Restaurant_Review-g293734-d12328096-Reviews-Dar_Chef-Marrakech_Marrakech_Safi.html</a></p>
+<p>En cherchant dans les avis, on retrouve le profil de Hotel : <a class="reference external" href="https://www.tripadvisor.fr/Profile/78478HBethune?fid=ee67eec2-4316-4828-bed3-678592c0c6a8">https://www.tripadvisor.fr/Profile/78478HBethune?fid=ee67eec2-4316-4828-bed3-678592c0c6a8</a></p>
+<p>On obtient alors son nom et prénom : <strong>Henry Bethune</strong></p>
+</section>
+<section id="un-chanceux">
+<h3>Un chanceux<a class="headerlink" href="#un-chanceux" title="Lien vers cette rubrique"></a></h3>
+<p><em>Henry semble avoir échappé aux mailles du filet lors de la première enquête en 2024.
+Seriez-vous en mesure de déterminer où il se trouvait au moment de l’arrestation des premiers membres d’APT en 2024 ?
+Flag Format : coordonnées</em></p>
+<p>On sait via les conversation entre Hugo et Nicolas que Henry est japonais.
+On a maintenant son nom / prénom et son pseudo : 78478HBethune</p>
+<p>On trouve alors son profil Bluesky : <a class="reference external" href="https://bsky.app/profile/78478hbethune.bsky.social">https://bsky.app/profile/78478hbethune.bsky.social</a></p>
+<p>Ici beaucoup d’informations sur ses voyages, et notamment son voyage au japon.</p>
+<p>On y trouve également un autre pseudo pour son réseau social snapchat : henrybtravel</p>
+<p>On remet les éléments de l’autre, et on regarde aussi les autres photos de son profil.</p>
+<img alt="Voyage Henry" src="../../_images/henry1.jpg" />
+<p>On sait également via l’article de Marc Steiner que l’arrestation a eu lieu le 23 Juin 2024 à 11H.
+Attention au décalage horaire : +7h, donc a 18h au japon</p>
+<p>Sur une image il semble y avoir une réservation pour un restaurant ce jour là a 18h :</p>
+<img alt="Ticket VIP" src="../../_images/henry2.jpg" />
+<p>En déchiffrant les kanjis avec Google Lens, on finit par retrouvé un restaurant le Wanko &amp; Chanko</p>
+<p>On retrouve sa localisation dans Maps, et on saisie les coordonnées pour flag.</p>
+</section>
+<section id="double-identite">
+<h3>Double identité<a class="headerlink" href="#double-identite" title="Lien vers cette rubrique"></a></h3>
+<p><em>Henry Bethune semble être originaire d’un autre pays.
+En partant de son compte tripadvisor, pouvez-vous retrouver sa deuxième identité et nous l’indiquer dans la forme linguistiquement correcte de sa langue d’origine ?
+Flag format : Jérome Lévêque</em></p>
+<p>On a bien galéré alors qu’en faites c’était facile, sur une de ses images blueskye, en bas de l’écran on peut voir des kanji apparaître :</p>
+<img alt="Kanji bluesky" src="../../_images/henry3.png" />
+<p>Les voici : クレジット：佐藤廉</p>
+<p>Une fois traduit on obtient : Crédit : <strong>Ren Sato</strong></p>
+</section>
+<section id="ou-es-tu">
+<h3>Ou es tu ?<a class="headerlink" href="#ou-es-tu" title="Lien vers cette rubrique"></a></h3>
+<p><em>Pouvez-vous déterminer où se trouve actuellement Hotel ?
+Flag format : Portaventura World</em></p>
+<p>Sur le snapchat d’Henry : <a class="reference external" href="https://www.snapchat.com/add/henrybtravel">https://www.snapchat.com/add/henrybtravel</a>
+On peut voir une story avec plein de photos et vidéos de Disneyland Paris (tout est écrit en français).</p>
+<p>On peut donc flag avec : <strong>Parc Walt Disney Studio</strong></p>
+</section>
+</section>
+<section id="november">
+<h2>November<a class="headerlink" href="#november" title="Lien vers cette rubrique"></a></h2>
+<p>Chapitre 3.</p>
+<section id="revele-ton-secret">
+<h3>Révèle ton secret<a class="headerlink" href="#revele-ton-secret" title="Lien vers cette rubrique"></a></h3>
+<p><em>N’appelez/contactez aucun numéro de telephone / Do not call/contact any telephone number !
+Hotel semble être en contact avec une autre personne. Il serait intéressant d’enquêter sur elle ! Pouvez-vous déterminer son identité complète (nom et prénom) ?
+Flag format : Jeanne d’Arc</em></p>
+<p>Grace au snapchat d’Henry, on retrouve le snapchat de notre personnage : <a class="reference external" href="https://www.snapchat.com/add/lg-account">https://www.snapchat.com/add/lg-account</a></p>
+<p>On y trouve deux story avec son chien et au cinéma.</p>
+<p>Sur la story du chien on peut retrouver son numéro de téléphone : 0756834814 ou 0656834814</p>
+<p>On ajoute les deux sur notre téléphone, et on regarde si on retrouve le contact dans WhatsApp.</p>
+<p>Sur sa photo de profil WhatsApp on peut lire en bas a droite : LG by eliasphotography.blog</p>
+<p>On va donc se rendre sur ce site : <a class="reference external" href="https://eliasphotography.blog">https://eliasphotography.blog</a></p>
+<p>On ne voit aucun moyen de contacter Elias, mais il y a une newsletter. On va donc s’y inscrire.</p>
+<p>Quelques minutes plus tard on reçoit un email, et on obtient alors l’adresse d’Elias : <a class="reference external" href="mailto:eliasmphotography&#37;&#52;&#48;outlook&#46;com">eliasmphotography<span>&#64;</span>outlook<span>&#46;</span>com</a></p>
+<p>On va donc le contacter en lui disant qu’on a vu les photos de « LG » et qu’on est intéressé par son travail.</p>
+<p>Il nous réponds : Ah, greetings from the darkroom. I’m Elias Moreau — once a photographer of whispers and blurred truths. Your mention of LG transports me to a cherished collaboration with <strong>Lea Gaudreau</strong>, a ballet of light and shadow we danced through. As for your wedding, while the frames of joy and celebration call to me, I must first ask: have you explored the depths of your own memories captured? The right photographer can weave magic, but tell me — what do you envision beyond the frame?</p>
+<p>On obtient alors le nom dans la réponse : <strong>Lea Gaudreau</strong></p>
+</section>
+<section id="combien-d-hivers">
+<h3>Combien d’hivers<a class="headerlink" href="#combien-d-hivers" title="Lien vers cette rubrique"></a></h3>
+<p><em>L’âge est toujours un élément important, notamment pour déterminer les sanctions prévues par la loi. Pouvez-vous nous dire quel âge a Léa Gaudreau ?
+Flag format : 78</em></p>
+<p>On a maintenant son pseudo : lg-account
+Et son nom prénom : Lea Gaudreau</p>
+<p>Cela va nous permettre de retrouver un compte Instagram avec IdCrawl : <a class="reference external" href="https://www.instagram.com/lgaudreau_/">Instagram</a></p>
+<p>Sur son Instagram on peut lire : <strong>27</strong> ans</p>
+<p>On récupère également son adresse email : <a class="reference external" href="mailto:lea&#46;gaudreau&#46;pro&#37;&#52;&#48;gmail&#46;com">lea<span>&#46;</span>gaudreau<span>&#46;</span>pro<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+</section>
+<section id="hotel-california">
+<h3>HOTEL CALIFORNIA<a class="headerlink" href="#hotel-california" title="Lien vers cette rubrique"></a></h3>
+<p><em>November ne semble pas avoir de lieu de résidence fixe. Pouvez-vous déterminer précisément l’appartement où elle réside actuellement ?
+Flag format : cordonnées</em></p>
+<p>Avec son pseudo instagram « lgaudreau » on a également retrouvé d’autres comptes :</p>
+<p>Threads : <a class="reference external" href="https://www.threads.com/&#64;lgaudreau_?xmt=AQF0zpUy2vE7Rt-okbOb9CP3iMlw1nm5pTTAyw_u-9IfUlU">https://www.threads.com/&#64;lgaudreau_?xmt=AQF0zpUy2vE7Rt-okbOb9CP3iMlw1nm5pTTAyw_u-9IfUlU</a>
+Vinted : <a class="reference external" href="https://www.vinted.fr/member/266597511">https://www.vinted.fr/member/266597511</a></p>
+<p>Avec epieos et son email « <a class="reference external" href="mailto:lea&#46;gaudreau&#46;pro&#37;&#52;&#48;gmail&#46;com">lea<span>&#46;</span>gaudreau<span>&#46;</span>pro<span>&#64;</span>gmail<span>&#46;</span>com</a> » on va obtenir son Calendrier Google qui contient pas mal de choses : <a class="reference external" href="https://calendar.google.com/calendar/u/0/embed?src=lea.gaudreau.pro&#64;gmail.com">https://calendar.google.com/calendar/u/0/embed?src=lea.gaudreau.pro&#64;gmail.com</a></p>
+<p>Sur Thread elle indique loger dans un AirBnb avec vue sur la Tour Eiffel et dont le propriétaire s’appelle Nicolas.
+Sur Vinted on retrouve une photo d’une écharpe depuis un balcon avec vu sur la Tour Eiffel</p>
+<p>On va donc chercher tous les airbnb qui correspondent aux critères :
+- Vue sur la Tour Eiffeil
+- Propriétaire Nicolas</p>
+<p>On trouve celui ci qui ressemble fort : <a class="reference external" href="https://www.airbnb.fr/rooms/53885435?source_impression_id=p3_1748132934_P3e-ySq9qqqay1NY&amp;modal=PHOTO_TOUR_SCROLLABLE">https://www.airbnb.fr/rooms/53885435?source_impression_id=p3_1748132934_P3e-ySq9qqqay1NY&amp;modal=PHOTO_TOUR_SCROLLABLE</a></p>
+<p>Et on compare les photos du balcon avec les photos de l’écharpe.</p>
+<img alt="Echarpe" src="../../_images/lea1.png" />
+<img alt="Balcon airbnb" src="../../_images/lea2.png" />
+<p>Ca correspond complétement
+Sur Airbnb on peut avoir une localisation approximative de l’appartement, on va donc chercher via Google Earth une vue qui correspondrait.</p>
+<img alt="Google Earth" src="../../_images/lea3.png" />
+<p>On trouve finalement l’adresse de ce Airbnb : <strong>13 Bd de la Tour-Maubourg au dessus du petrossian</strong></p>
+</section>
+<section id="cctv">
+<h3>CCTV<a class="headerlink" href="#cctv" title="Lien vers cette rubrique"></a></h3>
+<p><em>Grâce aux informations en votre possession, pouvez-vous identifier un magasin très précis que November a fréquenté ? Cela nous permettrait de récupérer les enregistrements vidéo (même anciens) et d’en apprendre davantage sur elle et, potentiellement, sur son entourage.
+Flag format : Avenue du colonel 7 Rue de la Liberté 75019 Paris</em></p>
+<p>Non réalisé mais on a :</p>
+<ul class="simple">
+<li><p>Soit un lien avec son chien</p></li>
+<li><p>Soit un lien avec son Iphone</p></li>
+</ul>
+</section>
+</section>
+<section id="bravo">
+<h2>Bravo<a class="headerlink" href="#bravo" title="Lien vers cette rubrique"></a></h2>
+<p>Chapitre 4.</p>
+<section id="les-amoureuses">
+<h3>Les amoureuses<a class="headerlink" href="#les-amoureuses" title="Lien vers cette rubrique"></a></h3>
+<p><em>D’après vos découvertes concernant November, il semble qu’elle soit en couple avec un membre d’APT-509. Pouvez-vous retrouver l’identité complète (nom et prénom) de cette personne ?
+Flag format : Antoine Dupont</em></p>
+<p>Sur Thread, Lea indique que sa copine joue régulièrement a un jeu de plateau avec JLMaigot
+En faisant une recherche IDCrawl on trouve son compte Chess.com : <a class="reference external" href="https://www.chess.com/member/jlmaigot">https://www.chess.com/member/jlmaigot</a></p>
+<p>Elle est amie avec une seule personne avec qui elle joue régulièrement : <a class="reference external" href="https://www.chess.com/member/chessm8_saunier">https://www.chess.com/member/chessm8_saunier</a></p>
+<p>On a priori son nom de famille « Saunier » et on obtient un lien linktr.ee : linktr.ee/m8_lsaunier
+Et sur Thread Léa nous donne son prénom : Lise</p>
+<p>On a donc : <strong>Lise Saunier</strong></p>
+</section>
+<section id="joyeux-anniversaire">
+<h3>Joyeux anniversaire<a class="headerlink" href="#joyeux-anniversaire" title="Lien vers cette rubrique"></a></h3>
+<p><em>Pour compléter notre dossier d’enquête, pourriez-vous nous fournir la date de naissance complète de Bravo ainsi que son département de naissance ? Grâce à ces informations, nous pourrions vérifier dans nos archives si elle est déjà impliquée dans d’autres affaires de cybercriminalité.
+Flag format : JJ/MM/AAAA Yonne</em></p>
+<p>Le calendrier de Léa (<a class="reference external" href="https://calendar.google.com/calendar/u/0/embed?src=lea.gaudreau.pro&#64;gmail.com">https://calendar.google.com/calendar/u/0/embed?src=lea.gaudreau.pro&#64;gmail.com</a> )nous donne la date de son anniversaire : 14 Aout</p>
+<p>Sur son Linktr.ee on retrouve un site : <a class="reference external" href="https://mymemoriegram.xyz/">https://mymemoriegram.xyz/</a></p>
+<p>On y trouve une photo d’elle avec notamment des tatouages, dont un code bar :</p>
+<img alt="Code Bar" src="../../_images/lise1.png" />
+<p>Ce code est en faites un numéro de sécu : 293088400300522</p>
+<p>On sait donc que son mois de naissance est 08, ça colle avec le calendrier de Léa
+Son année de naissance : 1993
+Et son département 84 : Le Vaucluse</p>
+<p>On a donc : <strong>14/08/1993 Vaucluse</strong></p>
+</section>
+</section>
+<section id="mike">
+<h2>Mike<a class="headerlink" href="#mike" title="Lien vers cette rubrique"></a></h2>
+<p>Chapitre 5.</p>
+<section id="l-element-cle">
+<h3>L’élément clé<a class="headerlink" href="#l-element-cle" title="Lien vers cette rubrique"></a></h3>
+<p><em>En analysant les différentes informations dont vous disposez sur Bravo, une conversation mentionnant une application paraît particulièrement intéressante.
+Quel est l’identifiant (ID) de cette application mentionnée ?
+Flag format : Flag format : tarte.aux.pommes</em></p>
+<p>On trouve sur le site de lise un ficheir robots.txt : <a class="reference external" href="https://mymemoriegram.xyz/robots.txt">https://mymemoriegram.xyz/robots.txt</a></p>
+<p>On peut voir qu’il y a un dossier /private/ accessible uniquement avec le user-agent « bravo ».</p>
+<p>On y récupère des screenshots de conversations dont celui ci :</p>
+<img alt="Conversation App Fishing" src="../../_images/mike1.png" />
+<p>On sait que l’application s’appelle Fishing, et qu’elle a été développé par Mike
+A force de recherche sur le playstore on la retrouve avec « Fishing Mike 509 »</p>
+<p>On peut donc récupérer l’application et obtenir son ID : <strong>JELAIPASNOTE</strong></p>
+</section>
+<section id="le-cote-obscur">
+<h3>Le côté obscur<a class="headerlink" href="#le-cote-obscur" title="Lien vers cette rubrique"></a></h3>
+<p><em>Quelle drôle d’application ! Une fois lancée, celle-ci semble être une façade dissimulant les activités cybercriminelles du groupe APT-509. L’un de nos experts a analysé l’application et a constaté, en examinant son code source, qu’une adresse e-mail y était potentiellement dissimulée. Malheureusement, il n’a pas réussi à la localiser.
+En naviguant sur l’application, pouvez-vous aider notre expert à retrouver cette adresse ?
+Flag format : cenestpasladressemaildhackolytequonrecherche&#64;stpneflagpasca.fr</em></p>
+<p>Dans l’application en mode sombre on retrouve cette adresse email en visitant toutes les pages : <strong>str3etf1sher&#64;mail.com</strong></p>
+<p>Ce qui nous donne notamment son pseudo : str3etf1sher</p>
+</section>
+<section id="pardon-vous-etes">
+<h3>Pardon vous êtes<a class="headerlink" href="#pardon-vous-etes" title="Lien vers cette rubrique"></a></h3>
+<p><em>Eh bien, cette application renferme de sacrés secrets ! 🎣 Cette adresse e-mail semble un bon point de départ pour retrouver Mike.
+Seriez- vous capable de nous donner l’identité complète de Mike (prénom et nom) ?
+Flag format : Teddy Riner</em></p>
+<p>Avec son pseudo on va trouver son compte Bluesky : <a class="reference external" href="https://mastodon.social/&#64;str3etf1sher">https://mastodon.social/&#64;str3etf1sher</a></p>
+<p>Et on sait déjà qu’il s’appelle Fabien via les conversations obtenues précédemment.</p>
+<p>On a donc : <strong>Fabien Daucourt</strong></p>
+</section>
+<section id="home-sweet-home">
+<h3>Home Sweet Home<a class="headerlink" href="#home-sweet-home" title="Lien vers cette rubrique"></a></h3>
+<p><em>À partir des informations dont vous disposez, pourriez-vous déterminer le nom du village où habite Mike ?
+Flag format : Saint-Cirq-Lapopie</em></p>
+<p>On sait grâce a son compte Bluesky qu’il est inscrit sur un forum de pêche.
+En cherchant « Forum peche Daucourt » on retrouve ce forum et son compte : <a class="reference external" href="https://absolu-peche.fr/profil/10018-f-daucourt">https://absolu-peche.fr/profil/10018-f-daucourt</a></p>
+<p>On y obtient plein d’informations sur ses zones de pêches et aussi le nom de son bateau « Seashell Injection »</p>
+<p>Via les infos sur les zones de pêche on va retrouver son village via ce commentaire sur le Lac de Saint Agnan:</p>
+<p>« Super coin découvert ce matin pour pêcher, à environ un quart d’heure de chez moi. Un petit tour par la D6, puis la D211, et quelques petits chemins à explorer en voiture.
+Le tout après un bon petit déj’ pris à la boulangerie juste à côté de chez moi — parce qu’on ne va pas pêcher l’estomac vide »</p>
+<p>On se rend dans gmaps sur le Lac, on remonte la D211 jusqu’à retrouvé la D6, puis on cherche un village qui contient une boulangerie.</p>
+<p>On peut confirmer avec overpass turbo :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">[out:json][timeout:25];</span>
+<span class="go">// gather results</span>
+<span class="go">nwr[shop=bakery]({{bbox}});</span>
+<span class="go">// print results</span>
+<span class="go">out geom;</span>
+</pre></div>
+</div>
+<p>On trouve alors <strong>Dun-les-Places</strong></p>
+</section>
+<section id="petit-bateau">
+<h3>Petit bateau<a class="headerlink" href="#petit-bateau" title="Lien vers cette rubrique"></a></h3>
+<p><em>Ce Mike semble être un passionné de pêche et comme tout bon pêcheur celui-ci est très bien équipé ! Pouvez-vous retrouver l’identifiant (code MMSI) du bateau qu’il utilise ?
+Flag format : 918950185</em></p>
+<p>On peut retrouver le nom de son bateau sur le forum : Seashell Injection</p>
+<p>On le retrouve avec MarineTraffic : <a class="reference external" href="https://www.marinetraffic.com/en/ais/details/ships/shipid:9565794/mmsi:912010044/imo:0/vessel:SEASHELL_INJECTION">https://www.marinetraffic.com/en/ais/details/ships/shipid:9565794/mmsi:912010044/imo:0/vessel:SEASHELL_INJECTION</a></p>
+<p>On obtient alors son MMSI : <strong>912010044</strong></p>
+</section>
+<section id="site-vitrine-1">
+<h3>Site vitrine 1<a class="headerlink" href="#site-vitrine-1" title="Lien vers cette rubrique"></a></h3>
+<p><em>À en juger par les agissements et la méthode de travail d’APT-509, cette histoire de pêche semble bien plus complexe qu’elle n’en a l’air… et pourrait dissimuler quelque chose. Vers quel site ce bateau nous mène-t-il ?
+Flag format : truewebsite.org</em></p>
+<p>Sur marinetraffic, on peut voir en naviguant sur les différentes pages : For more information, you can find us at <strong>loueuneencre.online</strong></p>
+</section>
+<section id="communication">
+<h3>Communication<a class="headerlink" href="#communication" title="Lien vers cette rubrique"></a></h3>
+<p><em>Il semble également qu’APT-509 utilise un autre canal de communication, en plus de cette application, pour échanger entre ses membres. Pourriez-vous nous préciser la date de création de cet autre canal ?
+Flag format : JJ/MM/AAAA</em></p>
+<p>Dans l’application de « Fishing » on y trouve une conversation secrète en appuyant 3 fois sur infos, comme indiqué dans la conversation de Lise et Léa.</p>
+<p>On y trouve des informations sur un canal telegram que l’on retrouve facilement : <a class="reference external" href="https://t.me/APT509TMP">https://t.me/APT509TMP</a></p>
+</section>
+</section>
+<section id="l-enqueteur">
+<h2>L’enquêteur<a class="headerlink" href="#l-enqueteur" title="Lien vers cette rubrique"></a></h2>
+<p>Chapitre 6.</p>
+<section id="l-allie">
+<h3>L’allié<a class="headerlink" href="#l-allie" title="Lien vers cette rubrique"></a></h3>
+<p>Non résolu :
+- Site : <a class="reference external" href="https://loueuneencre.online">https://loueuneencre.online</a>
+- Wayback machine nous donne le dashboard : <a class="reference external" href="https://loueuneencre.online/CMNoCxqsn321.php">https://loueuneencre.online/CMNoCxqsn321.php</a></p>
+<p>Il fallait regardé le code dans la wayback machine pour trouver le pseudo de l’allié.</p>
+</section>
+</section>
+<section id="cyberbunker">
+<h2>CyberBunker<a class="headerlink" href="#cyberbunker" title="Lien vers cette rubrique"></a></h2>
+<p>Chapitre 7.</p>
+<section id="nouvelle-cible-2">
+<h3>Nouvelle cible 2<a class="headerlink" href="#nouvelle-cible-2" title="Lien vers cette rubrique"></a></h3>
+<p><em>Après l’arrestation d’une partie de leurs membres en 2024, les activités du groupe APT 509 sont en net déclin. Leur attaque prévue cette même année contre la ville de Geelong, en Australie, a échoué. Par conséquent, leur trésorerie a été directement impactée. Pour tenter de se relancer, le groupe envisage désormais une cyberattaque contre un établissement français.
+Pouvez-vous identifier quelle entreprise est visée par APT 509 ?
+Flag format : Société nationale des chemins de fer français</em></p>
+<p>Sur telegram on a obtenu un lien cryptad : <a class="reference external" href="https://cryptpad.fr/drive/#/2/drive/edit/l2MS2EEV9OuI0mEnOo2rW7Xw/p/">https://cryptpad.fr/drive/#/2/drive/edit/l2MS2EEV9OuI0mEnOo2rW7Xw/p/</a></p>
+<p>Le mdp été donné dans les conversations entre Léa et Lise : kmMBRAS9J&amp;$jonnF</p>
+<p>On va récupérer ici beaucoup d’informations sur le groupe, et la fin de l’enquête.~</p>
+<p>On y trouve notamment un fichier PDF avec cette image :</p>
+<img alt="Cible PDF" src="../../_images/bunker1.png" />
+<p>On sait que cette cible se trouve dans l’Est de la france.</p>
+<p>Sur l’image on peut remarquer une gare. On a donc chercher les gare des grandes villes de l’Est :</p>
+<ul class="simple">
+<li><p>Strasbourg</p></li>
+<li><p>Nancy</p></li>
+<li><p>Metz</p></li>
+<li><p>Reims</p></li>
+</ul>
+<p>On voit une ressemblance flagrante avec Reims :</p>
+<img alt="Cible PDF" src="../../_images/bunker2.png" />
+<p>On peut donc retrouver l’emplacement de la flèche et trouver la cible un CIC : <strong>Crédit industriel et commercial</strong></p>
+</section>
+<section id="envole-toi">
+<h3>Envole toi<a class="headerlink" href="#envole-toi" title="Lien vers cette rubrique"></a></h3>
+<p><em>En examinant ce drive, vous tombez sur une vidéo réalisée par un drone d’Alpha, montrant un repérage d’un nouvel emplacement potentiel pour le cyberbunker. Pouvez-vous identifier le lieu de décollage du drone ?
+Flag format : cordonnées</em></p>
+<p>On trouve effectivement un lien vers une vidéo : <a class="reference external" href="https://vimeo.com/1079165051/4addc0ed2c?share=copy">https://vimeo.com/1079165051/4addc0ed2c?share=copy</a></p>
+<p>Sur cette image on peut voir (Google Lens) la station de ski abandonné de Saint Honoré</p>
+<p>A force de test dans Gmaps, on finit par retrouver l’emplacement exact : <a class="reference external" href="https://www.google.fr/maps/place/Saint+Honor%C3%A9+1500/&#64;44.9704883,5.8215723,830m/data=!3m1!1e3!4m6!3m5!1s0x478a7d271a7bab65:0xe7785b8c4773be4a!8m2!3d44.941634!4d5.813028!16s%2Fg%2F11kbc100rb?hl=fr&amp;entry=ttu&amp;g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D">https://www.google.fr/maps/place/Saint+Honor%C3%A9+1500/&#64;44.9704883,5.8215723,830m/data=!3m1!1e3!4m6!3m5!1s0x478a7d271a7bab65:0xe7785b8c4773be4a!8m2!3d44.941634!4d5.813028!16s%2Fg%2F11kbc100rb?hl=fr&amp;entry=ttu&amp;g_ep=EgoyMDI1MDUyNi4wIKXMDSoASAFQAw%3D%3D</a></p>
+<p>Au niveau de relais du Tabor</p>
+</section>
+<section id="objectif-eagle">
+<h3>Objectif Eagle<a class="headerlink" href="#objectif-eagle" title="Lien vers cette rubrique"></a></h3>
+<p><em>Cette zone semble fortement convoitée par les dronistes. Pouvez-vous identifier le modèle exact utilisé par Alpha lors de ses survols ? Cette information nous sera précieuse pour l’identifier si nous décidons de l’interpeller sur place.
+Flag format : KARUISRC Gps 8</em></p>
+<p>Sur le drive on a un fichier txt « DATADRONE.txt » qui n’est pas lisible.</p>
+<p>On va l’envoyer dans <a class="reference external" href="https://www.phantomhelp.com/LogViewer/upload/">https://www.phantomhelp.com/LogViewer/upload/</a></p>
+<p>Ce qui va nous permettre de récupérer les logs de vol et le modèle : <strong>DJI Mavic 3</strong></p>
+</section>
+<section id="jour-j">
+<h3>Jour J<a class="headerlink" href="#jour-j" title="Lien vers cette rubrique"></a></h3>
+<p><em>Êtes-vous en mesure de déterminer la date prévue de cette nouvelle cyberattaque menée par APT-509 ?
+Flag format : JJ/MM/AAAA</em></p>
+<p>Sur le drive on trouve également un fichier .glb
+On va chercher « glb viewer » dans google, et l’upload sur ce site : <a class="reference external" href="https://gltf-viewer.donmccurdy.com/">https://gltf-viewer.donmccurdy.com/</a></p>
+<p>On y voit un renard dans une sphère, sur ce renard on peut voir des étiquettes avec des kanjis, qui seront finalemenet inutile.</p>
+<p>Et une date sous les pieds du renard : <strong>17/07/2025</strong></p>
+</section>
+</section>
+<section id="final-coutdown">
+<h2>Final Coutdown<a class="headerlink" href="#final-coutdown" title="Lien vers cette rubrique"></a></h2>
+<p>Chapitre final</p>
+<section id="une-drole-d-entreprise">
+<h3>Une drôle d’entreprise<a class="headerlink" href="#une-drole-d-entreprise" title="Lien vers cette rubrique"></a></h3>
+<p><em>L’achat de fournitures pour la construction de leur nouveau bunker semble avoir déjà commencé. APT-509, désormais mondialement connu, ne peut plus effectuer ce type d’achats sous sa véritable identité ou celle de l’un de ses membres, sans risquer l’arrestation.
+Pouvez-vous identifier sous quelle fausse identité le groupe APT-509 procède à l’acquisition de son matériel ?
+Flag format : Bouygues Construction Telephonique</em></p>
+<p>Sur le drive, encore une fois, on a un devis réalisé par l’entreprise « Merlin Lenchanteur ».
+Dans les données exif on trouve un champ destinataire: betaoespatulaparker</p>
+<p>On a donc le nom de l’entreprise: <strong>Betao Espatula Parker</strong></p>
+</section>
+<section id="site-vitrine-2">
+<h3>Site vitrine 2<a class="headerlink" href="#site-vitrine-2" title="Lien vers cette rubrique"></a></h3>
+<p><em>Comme toute entreprise digne de ce nom (même fictive), celle-ci dispose très probablement d’un site vitrine sur Internet.
+Pouvez-vous retrouver l’adresse de ce site ?
+Flag format : droledesite.com</em></p>
+<p>On a utiliser security trails pour retrouver le site : <a class="reference external" href="https://securitytrails.com/list/keyword/espatula%20parker">https://securitytrails.com/list/keyword/espatula%20parker</a></p>
+<p>On obtient <strong>betaoespatulaparker.eu</strong></p>
+<p>Cependant ce site est inaccessible.</p>
+</section>
+<section id="discretion-assure">
+<h3>Discrétion Assuré<a class="headerlink" href="#discretion-assure" title="Lien vers cette rubrique"></a></h3>
+<p><em>Ce site semble avoir été mis en ligne récemment et ne paraît pas encore entièrement sécurisé. À présent, grâce aux informations dont vous disposez, il est enfin temps d’aller rendre visite à ce fameux « Alpha ».
+Pouvez-vous déterminer où il se cache actuellement ?
+Flag format : cordonnées</em></p>
+<p>On a réussi a accéder au site en utilisant TOR et en modifiant la conf pour sortir depuis un noeud au portugal (merci GPT)
+On obtient quelques informations et notamment cette note :</p>
+<p>« OBJECTIF :
+RÃ©union trimestrielle en prÃ©sentielle</p>
+<p>MEMBRE :
+#A,#G,#N,#B,#H,#M #K?</p>
+<p>COMMUNICATION :
+T privÃ©-509</p>
+<p>SECURITE :
+#A hÃ©bergement sÃ©curisÃ© au milieu de rien
+#G,#N,#B,#H,#M venir tout seul, voyage solo</p>
+<p>LIEU :
+Chez #A REFUGE : XXX - ND.3QQB »</p>
+<p>Nous n’avons pas eu le temps d’allez plus loin.</p>
+<p>ND.3QQB est un MapCode, on pouvait trouver l’information dans un des articles du journaliste du tout début de l’enquête.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="_index.html" class="btn btn-neutral float-left" title="Hackosint 2025" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
