@@ -7,7 +7,7 @@
 HTB Apocalypse 2024
 ===================
 
-Liste des WU : 
+Write Up des challenges prompt injection et un challenge web non terminé : 
 
 .. toctree::
    :maxdepth: 1

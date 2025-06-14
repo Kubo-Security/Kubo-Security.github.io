@@ -7,7 +7,7 @@
 Hackosint 2025
 ===================
 
-Le WU avec tous les challenges qu'on à fait : 
+Voici notre Write Up du Hackosint 2025 contenant tous les challenges réalisés, et non réalisés avec les pistes explorées :
 
 .. toctree::
    :maxdepth: 1

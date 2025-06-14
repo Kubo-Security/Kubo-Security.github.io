@@ -1,4 +1,4 @@
-Web - Old is better than new
+Old is better than new
 =================================
 
 Enoncé

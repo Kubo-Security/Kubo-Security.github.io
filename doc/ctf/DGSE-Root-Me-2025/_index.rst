@@ -7,8 +7,6 @@
 DGSE Root-Me 2025
 ===================
 
-Liste des WU : 
-
 .. toctree::
    :maxdepth: 1
 

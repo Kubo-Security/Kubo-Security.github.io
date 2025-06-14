@@ -7,44 +7,48 @@
 404CTF 2024
 ===================
 
-Liste des WU : 
-
+Web 
+---------
 .. toctree::
    :maxdepth: 1
-   :caption: Web : 
 
    gorfou42.rst
    laboutique.rst
 
+Crypto 
+---------
 .. toctree::
    :maxdepth: 1
-   :caption: Crypto : 
 
    bebenageur.rst
    lepetitbain.rst
 
+Reverse 
+---------
 .. toctree::
    :maxdepth: 1
-   :caption: Reverse : 
 
    bugdroidfight.rst
    echauffement.rst
 
+Forensic
+---------
 .. toctree::
    :maxdepth: 1
-   :caption: Forensic : 
 
    dartsbank.rst
    homerun.rst
 
+Osint
+---------
 .. toctree::
    :maxdepth: 1
-   :caption: Osint : 
     
    secretraining.rst
 
+Stegano
+-----------
 .. toctree::
    :maxdepth: 1
-   :caption: Stegano : 
 
    grandecart.rst

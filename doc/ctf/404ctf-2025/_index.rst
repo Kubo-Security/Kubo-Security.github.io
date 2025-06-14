@@ -6,37 +6,40 @@
 404CTF 2025
 ===================
 
-Liste des WU : 
-
+Reverse 
+---------
 .. toctree::
    :maxdepth: 1
-   :caption: Reverse : 
 
    3x3cut3-m3.rst
    cbizarre.rst
 
+Forensic
+---------
 .. toctree::
    :maxdepth: 1
-   :caption: Forensic : 
 
    dockerflag.rst
    tape_ton_mdp.rst
    toorkit.rst
 
+Web 
+---------
 .. toctree::
    :maxdepth: 1
-   :caption: Web : 
 
    space-fleet-command.rst
    fire-server.rst
 
+Realiste
+---------
 .. toctree::
    :maxdepth: 1
-   :caption: Realiste : 
 
    realist.rst
 
-
+Osint
+---------
 .. toctree::
    :maxdepth: 1
    :caption: Osint : 

@@ -7,8 +7,8 @@
 FCSC 2025
 ===================
 
-Liste des WU : 
-
+Web 
+---------
 .. toctree::
    :maxdepth: 1
 

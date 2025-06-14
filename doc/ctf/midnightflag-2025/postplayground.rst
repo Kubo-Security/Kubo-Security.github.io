@@ -1,4 +1,4 @@
-Web - Post Playground 
+Post Playground 
 ===========================
 
 Enoncé
