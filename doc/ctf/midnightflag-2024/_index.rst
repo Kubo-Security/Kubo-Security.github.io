@@ -3,7 +3,7 @@
     :align: center
     :width: 400
 
-MidNight Flag CTF 2024
+MidNight Flag 2024
 ========================
 
 Liste des WU : 
