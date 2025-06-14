@@ -76,7 +76,7 @@ On va cherher des infos sur ce bokit, et trouver le type de malware :
 On a donc notre premier flag : **404CTF{/snap/firefox/.config/config-firefox:00:10:00:chall:keylogger}**
 
 
-Forensic - Toortik triflexation 2/2
+Toortik triflexation 2/2
 ======================================
 
 On nous donne le pcap, qui semble inaccessible dans le dump mémoire avec vol3

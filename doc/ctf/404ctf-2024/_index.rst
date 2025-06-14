@@ -20,31 +20,31 @@ Liste des WU :
    :maxdepth: 1
    :caption: Crypto : 
 
-    bebenageur.rst
-    lepetitbain.rst
+   bebenageur.rst
+   lepetitbain.rst
 
 .. toctree::
    :maxdepth: 1
    :caption: Reverse : 
 
-    bugdroidfight.rst
-    echauffement.rst
+   bugdroidfight.rst
+   echauffement.rst
 
 .. toctree::
    :maxdepth: 1
    :caption: Forensic : 
 
-    dartsbank.rst
-    homerun.rst
+   dartsbank.rst
+   homerun.rst
 
 .. toctree::
    :maxdepth: 1
    :caption: Osint : 
     
-    secretraining.rst
+   secretraining.rst
 
 .. toctree::
    :maxdepth: 1
    :caption: Stegano : 
 
-      grandecart.rst
+   grandecart.rst

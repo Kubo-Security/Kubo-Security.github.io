@@ -27,8 +27,8 @@ Liste des WU :
    :maxdepth: 1
    :caption: Web : 
 
-    space-fleet-command.rst
-    fire-server.rst
+   space-fleet-command.rst
+   fire-server.rst
 
 .. toctree::
    :maxdepth: 1
