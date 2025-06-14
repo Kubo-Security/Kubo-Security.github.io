@@ -6,7 +6,7 @@
 Kubow WU 
 =========
 
-Bienvenue sur Kubow WU ! 
+Write up des CTF réalisés par Kubow, et parfois en équipe avec Zohjin ! 
 
 .. toctree::
    :maxdepth: 1
