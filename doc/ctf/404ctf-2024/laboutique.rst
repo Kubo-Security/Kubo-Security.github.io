@@ -1,4 +1,4 @@
-Web - La boutique officielle
+La boutique officielle
 =================================
 
 Enoncé

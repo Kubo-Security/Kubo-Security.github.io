@@ -1,4 +1,4 @@
-Forensic / Osint / Divers - Coup de circuit
+Coup de circuit
 =================================================
 
 Partie 1 - Forensic

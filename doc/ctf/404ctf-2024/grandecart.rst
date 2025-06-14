@@ -1,4 +1,4 @@
-Stegano - Le grand ecart
+Le grand ecart
 ==============================
 
 On a le livre de mobydick en version .txt mais avec des caractères super étrange ! 

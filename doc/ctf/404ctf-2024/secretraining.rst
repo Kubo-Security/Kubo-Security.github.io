@@ -1,4 +1,4 @@
-OSINT - Secret Training
+Secret Training
 =================================
 
 Partie 1 : Retrouver son identité

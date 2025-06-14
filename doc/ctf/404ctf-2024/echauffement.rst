@@ -1,4 +1,4 @@
-Reverse - Echauffement
+Echauffement
 ===========================
 
 Enoncé

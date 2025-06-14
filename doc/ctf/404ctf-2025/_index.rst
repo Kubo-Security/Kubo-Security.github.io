@@ -10,13 +10,35 @@ Liste des WU :
 
 .. toctree::
    :maxdepth: 1
+   :caption: Reverse : 
 
    3x3cut3-m3.rst
    cbizarre.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Forensic : 
+
    dockerflag.rst
-   en_eaux_sombres.rst
-   fire-server.rst
-   realist.rst
-   space-fleet-command.rst
    tape_ton_mdp.rst
    toorkit.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Web : 
+
+    space-fleet-command.rst
+    fire-server.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Realiste : 
+
+   realist.rst
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Osint : 
+
+   en_eaux_sombres.rst

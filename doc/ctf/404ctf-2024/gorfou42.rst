@@ -1,4 +1,4 @@
-Web - Le Gorfou 42
+Le Gorfou 42
 ======================
 
 Enoncé

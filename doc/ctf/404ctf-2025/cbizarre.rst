@@ -1,11 +1,11 @@
-Reverse - cbizarre 1/2
+cbizarre 1/2
 =======================
 
 On fait simplement un strings du binaire, et on voit un lien pastebin : https://pastebin.com/raw/n8CXuwE0
 
 On se rend dessus et on obtient le flag : **404CTF{PAst3_mY_FL2g}**
 
-Reverse - cbizarre 2/2
+cbizarre 2/2
 =======================
 
 Cette fois on va devoir faire du reverse. On va donc lancer le binaire avec radare : r2 -d chall2 

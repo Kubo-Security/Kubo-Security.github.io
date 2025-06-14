@@ -1,4 +1,4 @@
-Crypto - Bébé nageur
+Bébé nageur
 =======================
 
 Merci Cédric pour la méthode ! 

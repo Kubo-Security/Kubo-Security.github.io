@@ -1,4 +1,4 @@
-Web - Fire Server 
+Fire Server 
 =======================
 
 Dans le docker file on trouve : 

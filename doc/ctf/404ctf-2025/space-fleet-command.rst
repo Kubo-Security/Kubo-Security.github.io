@@ -1,4 +1,4 @@
-Web - Space Fleet Command 
+Space Fleet Command 
 ===============================
 
 On commence par analyser le code de l'application. 

@@ -1,5 +1,4 @@
-
-Reverse - Bugdroid Fight
+Bugdroid Fight
 ============================
 
 Enoncé

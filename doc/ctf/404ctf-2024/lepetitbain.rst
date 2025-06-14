@@ -1,4 +1,4 @@
-Cryptanalyse - Le petit bain
+Le petit bain
 ================================
 
 C'est clairement la suite du bébé nageur
