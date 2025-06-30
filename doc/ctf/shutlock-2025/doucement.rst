@@ -62,115 +62,115 @@ Place du commandant Lamy
 
 On va faire une wordlist : 
 
-PlaceDuCommandantLamy
-PlaceCommandantLamy
-CommandantLamy
-DuCommandantLamy
-PlaceDuCommandantFrançoisLamy
-PlaceCommandantFrançoisLamy
-CommandantFrançoisLamy
-DuCommandantFrançoisLamy
-PlaceDuCommandantFrancoisLamy
-PlaceCommandantFrancoisLamy
-CommandantFrancoisLamy
-DuCommandantFrancoisLamy
-PlaceDuCommandantFrançois-Lamy
-PlaceCommandantFrançois-Lamy
-CommandantFrançois-
-DuCommandantFrançois-Lamy
-PlaceDuCommandantFrancois-Lamy
-PlaceCommandantFran-coisLamy
-CommandantFrancois-Lamy
-DuCommandantFrancois-Lamy
-PlaceFrancoisLamy
-PlaceFrançoisLamy
-FrancoisLamy
-FrançoisLamy
-PlaceGambetta
-Gambetta
-PlaceDu18Juin
-18Juin
-Du18Juin
-PlaceDuDixHuitJuin
-DixHuitJuin
-DuDixHuitJuin
-PlaceDuDix-Huit-Juin
-Dix-Huit-Juin
-DuDix-Huit-Juin
-PlaceBernard-Cornut-Gentille
-Bernard-Cornut-Gentille
-PlaceBernardCornutGentille
-BernardCornutGentille
-PlaceBernardCornut-Gentille
-BernardCornut-Gentille
-PlaceDuGénéral-De-Gaulle
-Général-De-Gaulle
-DuGénéral-De-Gaulle
-PlaceDuGeneral-De-Gaulle
-General-De-Gaulle
-DuGeneral-De-Gaulle
-PlaceDuGeneralDeGaulle
-GeneralDeGaulle
-DuGeneralDeGaulle
-PlaceDeLaGare
-DeLaGare
-Gare
-PlaceDeLaCastre
-DeLaCastre
-LaCastre
-Castre
-PlaceSommitaleDuSuquet
-SommitaleDuSuquet
-PlaceDuCommandantMaria
-PlaceDuCommandant-Maria
-CommandantMaria
-DuCommandantMaria
-Commandant-Maria
-DuCommandant-Maria
-PlaceFranklin-Roosevelt
-PlaceFranklinRoosevelt
-FranklinRoosevelt
-PlaceMassuque
-Massuque
-PlaceDuSuquet
-DuSuquet
-Suquet
-PlaceStanislas
-Stanislas
-PlaceVauban 
-Vauban
-SquareMérimée
-LeSquareMérimée
-SquareMerimee
-LeSquareMerimee
-SquareJosephBartelemy
-JosephBartelemy
-SquareDeMores
-Mores
-PlaceDeLaPantiero
-DeLaPantiero
-Pantiero
-SquareDu8Mai1945
-Du8Mai1945
-PlaceDuChanoinePaulGrau
-DuChanoinePaulGrau
-ChanoinePaulGrau
-SquareMéro
-SquareMero
-SquareLeoCallandry
-SquareLéoCallandry
-LeoCallandry
-LéoCallandry
-PlaceRocheville
-PlaceDeRocheville
-Rocheville
-PlaceBellevue
-Bellevue
-DèsirèPignatta
-DesirePignatta
-DesPins
-DeVilaDoConde
-DuMarché
+- PlaceDuCommandantLamy
+- PlaceCommandantLamy
+- CommandantLamy
+- DuCommandantLamy
+- PlaceDuCommandantFrançoisLamy
+- PlaceCommandantFrançoisLamy
+- CommandantFrançoisLamy
+- DuCommandantFrançoisLamy
+- PlaceDuCommandantFrancoisLamy
+- PlaceCommandantFrancoisLamy
+- CommandantFrancoisLamy
+- DuCommandantFrancoisLamy
+- PlaceDuCommandantFrançois-Lamy
+- PlaceCommandantFrançois-Lamy
+- CommandantFrançois-
+- DuCommandantFrançois-Lamy
+- PlaceDuCommandantFrancois-Lamy
+- PlaceCommandantFran-coisLamy
+- CommandantFrancois-Lamy
+- DuCommandantFrancois-Lamy
+- PlaceFrancoisLamy
+- PlaceFrançoisLamy
+- FrancoisLamy
+- FrançoisLamy
+- PlaceGambetta
+- Gambetta
+- PlaceDu18Juin
+- 18Juin
+- Du18Juin
+- PlaceDuDixHuitJuin
+- DixHuitJuin
+- DuDixHuitJuin
+- PlaceDuDix-Huit-Juin
+- Dix-Huit-Juin
+- DuDix-Huit-Juin
+- PlaceBernard-Cornut-Gentille
+- Bernard-Cornut-Gentille
+- PlaceBernardCornutGentille
+- BernardCornutGentille
+- PlaceBernardCornut-Gentille
+- BernardCornut-Gentille
+- PlaceDuGénéral-De-Gaulle
+- Général-De-Gaulle
+- DuGénéral-De-Gaulle
+- PlaceDuGeneral-De-Gaulle
+- General-De-Gaulle
+- DuGeneral-De-Gaulle
+- PlaceDuGeneralDeGaulle
+- GeneralDeGaulle
+- DuGeneralDeGaulle
+- PlaceDeLaGare
+- DeLaGare
+- Gare
+- PlaceDeLaCastre
+- DeLaCastre
+- LaCastre
+- Castre
+- PlaceSommitaleDuSuquet
+- SommitaleDuSuquet
+- PlaceDuCommandantMaria
+- PlaceDuCommandant-Maria
+- CommandantMaria
+- DuCommandantMaria
+- Commandant-Maria
+- DuCommandant-Maria
+- PlaceFranklin-Roosevelt
+- PlaceFranklinRoosevelt
+- FranklinRoosevelt
+- PlaceMassuque
+- Massuque
+- PlaceDuSuquet
+- DuSuquet
+- Suquet
+- PlaceStanislas
+- Stanislas
+- PlaceVauban 
+- Vauban
+- SquareMérimée
+- LeSquareMérimée
+- SquareMerimee
+- LeSquareMerimee
+- SquareJosephBartelemy
+- JosephBartelemy
+- SquareDeMores
+- Mores
+- PlaceDeLaPantiero
+- DeLaPantiero
+- Pantiero
+- SquareDu8Mai1945
+- Du8Mai1945
+- PlaceDuChanoinePaulGrau
+- DuChanoinePaulGrau
+- ChanoinePaulGrau
+- SquareMéro
+- SquareMero
+- SquareLeoCallandry
+- SquareLéoCallandry
+- LeoCallandry
+- LéoCallandry
+- PlaceRocheville
+- PlaceDeRocheville
+- Rocheville
+- PlaceBellevue
+- Bellevue
+- DèsirèPignatta
+- DesirePignatta
+- DesPins
+- DeVilaDoConde
+- DuMarché
 
 On fait un fcrackzip avec cette wordlist et on trouve le mdp : BernardCornutGentille
 

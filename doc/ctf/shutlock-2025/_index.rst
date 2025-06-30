@@ -1,4 +1,5 @@
 .. figure:: ../../_static/img/shutlock2025/shutlock.png
+    
     :alt: Osint
     :align: center
     :width: 400

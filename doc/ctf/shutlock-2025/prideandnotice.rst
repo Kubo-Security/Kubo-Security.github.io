@@ -83,7 +83,7 @@ On va donc regarder un peu les églises dans ce quartier, soit sur gmaps soit av
 
 Avec google earth, on va essayer de se positionner au même endroit que la prise de la photo : 
 
-.. figure:: ../_static/img/shutlock-2025/prideandnotice.png
+.. figure:: ../../_static/img/shutlock2025/prideandnotice.png
     :alt: Pride and notice
     :align: center
     :width: 1200
