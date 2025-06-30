@@ -60,7 +60,7 @@ Rapidement on trouve dans les SMS : **1_flag{Db_D3Let3d_m5G}**
 
 Dans le cache des images : **3{SN4psH0t_C4Che}**
 
-.. figure:: ../_static/img/shutlock2025/ios3.png
+.. figure:: ../../_static/img/shutlock2025/ios3.png
     :alt: ios3
     :align: center
     :width: 1200

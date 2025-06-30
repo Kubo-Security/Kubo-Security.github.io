@@ -17,7 +17,7 @@ Sur Reddit elle explique qu'on peut voir qui nous a partage une vidéo sur tikto
 
 On passe donc chrome en mode mobile et on visite son lien tiktok posté sur blueskye : vm.tiktok.com/ZNdjwpCF4/
 
-.. figure:: ../_static/img/shutlock2025/shutlock_1.png
+.. figure:: ../../_static/img/shutlock2025/shutlock_1.png
     :alt: Compte Tiktok
     :align: center
     :width: 1200
@@ -26,7 +26,7 @@ On retrouve alors son compte Tiktok et ses publications.
 
 Dans l'une d'elle on peut retrouver le flag : https://www.tiktok.com/@lestudiodutux/video/7500242847291968790 
 
-.. figure:: ../_static/img/shutlock2025/shutlock_2.png
+.. figure:: ../../_static/img/shutlock2025/shutlock_2.png
     :alt: Compte Tiktok
     :align: center
     :width: 1200
@@ -172,7 +172,7 @@ Osint - Find The Lab
 
 Il faut retrouver le lieu de la photo prise :
 
-.. figure:: ../_static/img/shutlock2025/lab.png
+.. figure:: ../../_static/img/shutlock2025/lab.png
     :alt: ALEAPP
     :align: center
     :width: 1200
@@ -278,7 +278,7 @@ Celui ci va nous pondre un petit rapport bien sympas !
 
 Dans la partie Google Message on va trouver ceci : 
 
-.. figure:: ../_static/img/shutlock2025/aleapp.png
+.. figure:: ../../_static/img/shutlock2025/aleapp.png
     :alt: ALEAPP
     :align: center
     :width: 1200
@@ -291,12 +291,12 @@ On obtient alors cette clé qui nous permet d'ouvrir le Keepass :
 
 Pour info on le trouve aussi ici dans l'image : 
 
-.. figure:: ../_static/img/shutlock2025/aleapp2.png
+.. figure:: ../../_static/img/shutlock2025/aleapp2.png
     :alt: ALEAPP
     :align: center
     :width: 1200
 
-.. figure:: ../_static/img/shutlock2025/aleapp3.jpg
+.. figure:: ../../_static/img/shutlock2025/aleapp3.jpg
     :alt: ALEAPP
     :align: center
     :width: 1200
@@ -313,7 +313,7 @@ On peut voir qu'il y a des fichiers "attachments" dans le keepass sur l'entrée.
 
 On va les récupérer : 
 
-.. figure:: ../_static/img/shutlock2025/boardpass.png
+.. figure:: ../../_static/img/shutlock2025/boardpass.png
     :alt: BoardPass
     :align: center
     :width: 1200
@@ -322,7 +322,7 @@ On a son identité, mais a priori ce n'est pas le flag.
 
 Finalement on trouve notre flag : 
 
-.. figure:: ../_static/img/shutlock2025/idcard.png
+.. figure:: ../../_static/img/shutlock2025/idcard.png
     :alt: ID Card
     :align: center
     :width: 1200
