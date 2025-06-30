@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coup de circuit &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Secret Training" href="secretraining.html" />
+    <link rel="prev" title="Darts Bank" href="dartsbank.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Liste des CTFs :</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2024/_index.html">Midnight Flag 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">404CTF 2024</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="_index.html#web">Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#crypto">Crypto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#reverse">Reverse</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="_index.html#forensic">Forensic</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dartsbank.html">Darts Bank</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Coup de circuit</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#partie-1-forensic">Partie 1 - Forensic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#osint-partie-2">OSINT - Partie 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#divers-partie-3">Divers - Partie 3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#osint">Osint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#stegano">Stegano</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2025/_index.html">404CTF 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2025/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hackosint-2025/_index.html">Hackosint 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shutlock-2025/_index.html">Shutlock 2025</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">404CTF 2024</a></li>
+      <li class="breadcrumb-item active">Coup de circuit</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/404ctf-2024/homerun.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="coup-de-circuit">
+<h1>Coup de circuit<a class="headerlink" href="#coup-de-circuit" title="Lien vers cette rubrique"></a></h1>
+<section id="partie-1-forensic">
+<h2>Partie 1 - Forensic<a class="headerlink" href="#partie-1-forensic" title="Lien vers cette rubrique"></a></h2>
+<section id="enonce">
+<h3>Enoncé<a class="headerlink" href="#enonce" title="Lien vers cette rubrique"></a></h3>
+<p>Ce challenge est le premier d’une série de trois challenges faciles. Le challenge suivant sera disponible dans la catégorie Renseignement en sources ouvertes une fois que vous aurez validé celui-ci.</p>
+<p>C’est la catastrophe ! Je me prépare pour mon prochain match de baseball, mais on m’a volé mon mojo ! Sans lui, je vais perdre, c’est certain… Je crois qu’on m’a eu en me faisant télécharger un virus ou je ne sais quoi, et le fichier a été supprimé de mon ordinateur. J’ai demandé de l’aide à un ami expert et il a extrait des choses du PC, mais il n’a pas le temps d’aller plus loin. Vous pourriez m’aider ?</p>
+<p>Identifiez le malware et donnez son condensat sha1. Le flag est au format suivant : 404CTF{sha1}</p>
+<p>Auteur : Smyler</p>
+</section>
+<section id="resolution">
+<h3>Résolution<a class="headerlink" href="#resolution" title="Lien vers cette rubrique"></a></h3>
+<p>On ouvre le zip Collection.zip</p>
+<p>On y trouve un ensemble de fichier CSV.</p>
+<p>On tombe rapidement sur cette ligne dans le seule fichier amcache qui contient des données :</p>
+<p>C’est bien le fichier étrange qui a été lancé par l’utilisateur !</p>
+<p>404CTF{5cf530e19c9df091f89cede690e5295c285ece3c}</p>
+</section>
+</section>
+<section id="osint-partie-2">
+<h2>OSINT - Partie 2<a class="headerlink" href="#osint-partie-2" title="Lien vers cette rubrique"></a></h2>
+<section id="id1">
+<h3>Enoncé<a class="headerlink" href="#id1" title="Lien vers cette rubrique"></a></h3>
+<p>Le challenge suivant sera disponible dans la catégorie Divers une fois que vous aurez validé celui-ci.</p>
+<p>Super ! Grace à vous j’ai pu retirer le fichier de mon PC, mais pensez-vous qu’il serait possible d’en savoir un peu plus sur ce malware ?</p>
+<p>Retrouvez l’interface web du panneau de Command &amp; Control du malware.</p>
+<p>Le flag y sera reconnaissable.</p>
+<p>Auteur : Smyler</p>
+</section>
+<section id="id2">
+<h3>Résolution<a class="headerlink" href="#id2" title="Lien vers cette rubrique"></a></h3>
+<p>On va donc utiliser le SHA1 du malware, et se rendre sur virustotal !</p>
+<p>On recherche le SHA1 et on retrouve rapidement notre malware : <a class="reference external" href="https://www.virustotal.com/gui/file/439bfbdc4ef8d94d36273714d7ef4a709e7228f7daf85aaa1cd295354ee5cb98">https://www.virustotal.com/gui/file/439bfbdc4ef8d94d36273714d7ef4a709e7228f7daf85aaa1cd295354ee5cb98</a></p>
+<p>Dans ses relations il y a un nom de domaine qui semble suspect, qui fait bien CTF : takemeoutotheballgame.space</p>
+<p><a class="reference external" href="https://www.virustotal.com/gui/domain/takemeouttotheballgame.space">https://www.virustotal.com/gui/domain/takemeouttotheballgame.space</a></p>
+<p>Et dans ses relations on retrouve : panel-5d4213f3bf078fb1656a3db8348282f482601690.takemeouttotheballgame.space</p>
+<p><a class="reference external" href="https://www.virustotal.com/gui/domain/panel-5d4213f3bf078fb1656a3db8348282f482601690.takemeouttotheballgame.space">https://www.virustotal.com/gui/domain/panel-5d4213f3bf078fb1656a3db8348282f482601690.takemeouttotheballgame.space</a></p>
+<p>La on est sur de tenir notre C2 !</p>
+<p>On se rend dessus et flag : <strong>404CTF{5up3r_b13n_c4Ch3_gr&#64;cE_Au_n0M_&#64;_r4lOngE}</strong></p>
+</section>
+</section>
+<section id="divers-partie-3">
+<h2>Divers - Partie 3<a class="headerlink" href="#divers-partie-3" title="Lien vers cette rubrique"></a></h2>
+<section id="id3">
+<h3>Enoncé<a class="headerlink" href="#id3" title="Lien vers cette rubrique"></a></h3>
+<p>Pour ce challenge, le service web à l’adresse suivante fait partie du périmètre : <a class="reference external" href="https://panel-5d4213f3bf078fb1656a3db8348282f482601690.takemeouttotheballgame.space">https://panel-5d4213f3bf078fb1656a3db8348282f482601690.takemeouttotheballgame.space</a>. L’énumération automatique est toujours interdite. Ce challenge est un mix de plusieurs catégories.</p>
+<p>Le fichier que l’on m’a volé se nomme Secret-Mojo.pdf. Vous pensez que l’on peut le retrouver à partir du panneau de contrôle ?</p>
+<p>Mettez la main sur le fichier dérobé.</p>
+<p>Auteur : Smyler</p>
+</section>
+<section id="id4">
+<h3>Résolution<a class="headerlink" href="#id4" title="Lien vers cette rubrique"></a></h3>
+<p>Voila ce qu’on à après avoir passé de longues heures a cherché en vain</p>
+<p>Les références au baseball :</p>
+<ul class="simple">
+<li><p>L’image de batte de baseball</p></li>
+<li><p>Batte C2</p></li>
+<li><p>C2 : L’ancien nom de la coupe d’europe</p></li>
+<li><p>Le nom de domaine : takemeouttotheballgame.space</p></li>
+<li><p>Take me out to the ballgame c’est une chanson, un hymne non officiel du baseball</p></li>
+<li><p>Dans la chanson il y a notamment une référence à Cracker Jack (John the ripper)</p></li>
+<li><p>Coup de circuit : c’est le français de Homerun</p></li>
+</ul>
+<p>Et le « Ze C2 to rule them all », référence au seigneur des anneaux je sais pas ce que ça vient faire la.</p>
+<p>Soit il faut chercher le seigneur du baseball, soit c’est pour le mot « rule » est la réponse est dans les règles du baseball ?</p>
+<p>Y’a un jeu éclaté lords of baseball mais pas utile !</p>
+<p>Un port 2 ouvert en http :</p>
+<ul class="simple">
+<li><p>/me qui renvoie notre propre IP</p></li>
+<li><p>/status qui ne renvoi rien</p></li>
+</ul>
+<p>Le ftp.takemeoutotheballgame.space qu’on a bien nmap aussi mais sans succès</p>
+<p>On sait que c’est pas du web, sinon ça serait dans web et on a déjà tenté mille et une chose.</p>
+<p>Franchement on sèche.</p>
+<p>On a chercher « BatteC2 » dans google, rien.</p>
+<p>Finalement on trouve BatteC2 sur github : <a class="reference external" href="https://github.com/BribriTireuse">https://github.com/BribriTireuse</a></p>
+<p>A partir de la on va s’intéresser au code python notamment : app.py</p>
+<p><a class="reference external" href="https://github.com/BribriTireuse/BatteC2/blob/main/app.py">https://github.com/BribriTireuse/BatteC2/blob/main/app.py</a></p>
+<p>Le mot de passe est une variable d’environnement, il n’est pas dans le code comme prévu.</p>
+<p>Par contre, on a le path pour télécharger les documents :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PASSWORD</span> <span class="o">=</span> <span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PASSWORD&quot;</span><span class="p">]</span>
+<span class="n">c2</span> <span class="o">=</span> <span class="n">C2</span><span class="p">((</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="mi">1337</span><span class="p">))</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">app</span><span class="o">.</span><span class="n">secret_key</span> <span class="o">=</span> <span class="n">PASSWORD</span>
+<span class="n">sock</span> <span class="o">=</span> <span class="n">Sock</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
+<span class="n">download_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;227eb601e5bf8ea0c5da13a26be3eba2e5fea2cd7d75dcd2951cf615dd790da5&quot;</span><span class="p">)</span>
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/agent/&lt;uuid&gt;/download&quot;</span><span class="p">)</span>
+<span class="nd">@require_login</span>
+<span class="k">def</span> <span class="nf">download_file</span><span class="p">(</span><span class="n">uuid</span><span class="p">):</span>
+    <span class="n">uuid</span> <span class="o">=</span> <span class="n">UUID</span><span class="p">(</span><span class="n">uuid</span><span class="p">)</span>
+    <span class="n">agent</span> <span class="o">=</span> <span class="n">c2</span><span class="o">.</span><span class="n">agents</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">uuid</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">agent</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Not found&quot;</span><span class="p">,</span> <span class="mi">404</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">args</span><span class="p">[</span><span class="s2">&quot;file&quot;</span><span class="p">]</span>
+    <span class="n">local</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="n">agent</span><span class="o">.</span><span class="n">download_file</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;static&quot;</span><span class="p">)</span> <span class="o">/</span> <span class="n">download_dir</span> <span class="o">/</span> <span class="n">local</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;/static/</span><span class="si">{</span><span class="n">download_dir</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">local</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>On va donc récupérer le fichier Secret-Mojo.pdf :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://panel-5d4213f3bf078fb1656a3db8348282f482601690.takemeouttotheballgame.space/static/227eb601e5bf8ea0c5da13a26be3eba2e5fea2cd7d75dcd2951cf615dd790da5/Secret-Mojo.pdf">https://panel-5d4213f3bf078fb1656a3db8348282f482601690.takemeouttotheballgame.space/static/227eb601e5bf8ea0c5da13a26be3eba2e5fea2cd7d75dcd2951cf615dd790da5/Secret-Mojo.pdf</a></p></li>
+</ul>
+<p>Le flag final : <strong>404CTF{M4i5_p0urt&#64;n7_mOn_s3rvEur_d3_C_&amp;_c_3t4i7_s1_53cUrisE}</strong></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="dartsbank.html" class="btn btn-neutral float-left" title="Darts Bank" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="secretraining.html" class="btn btn-neutral float-right" title="Secret Training" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

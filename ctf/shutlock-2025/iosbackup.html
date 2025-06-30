@@ -1,0 +1,199 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IOS Backup &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="SpyDroid" href="spydroid.html" />
+    <link rel="prev" title="Whisper of envy 1/2" href="whisper.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Liste des CTFs :</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2024/_index.html">Midnight Flag 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2024/_index.html">404CTF 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2025/_index.html">404CTF 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2025/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hackosint-2025/_index.html">Hackosint 2025</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Shutlock 2025</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="_index.html#story">Story</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#web">Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#osint">Osint</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="_index.html#forensic">Forensic</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">IOS Backup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="spydroid.html">SpyDroid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">Shutlock 2025</a></li>
+      <li class="breadcrumb-item active">IOS Backup</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/shutlock-2025/iosbackup.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ios-backup">
+<h1>IOS Backup<a class="headerlink" href="#ios-backup" title="Lien vers cette rubrique"></a></h1>
+<p>On a trouver un outil équivalent a aleapp pour iOS, super : <a class="reference external" href="https://github.com/abrignoni/iLEAPP.git">https://github.com/abrignoni/iLEAPP.git</a></p>
+<p>Probleme d’installation sous kali en venv, donc on va utiliser docker :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>Utiliser<span class="w"> </span>une<span class="w"> </span>image<span class="w"> </span>Python<span class="w"> </span><span class="m">3</span>.12<span class="w"> </span>officielle
+<span class="go">FROM python:3.12-slim</span>
+
+<span class="gp"># </span>Éviter<span class="w"> </span>les<span class="w"> </span>invites<span class="w"> </span>interactives<span class="w"> </span>pendant<span class="w"> </span>le<span class="w"> </span>build
+<span class="go">ENV DEBIAN_FRONTEND=noninteractive</span>
+
+<span class="gp"># </span>Installer<span class="w"> </span>les<span class="w"> </span>dépendances<span class="w"> </span>système<span class="w"> </span>nécessaires
+<span class="go">RUN apt-get update &amp;&amp; apt-get install -y --no-install-recommends \</span>
+<span class="go">    build-essential \</span>
+<span class="go">    git \</span>
+<span class="go">    curl \</span>
+<span class="go">    libffi-dev \</span>
+<span class="go">    libssl-dev \</span>
+<span class="go">    libbz2-dev \</span>
+<span class="go">    liblzma-dev \</span>
+<span class="go">    libsqlite3-dev \</span>
+<span class="go">    zlib1g-dev \</span>
+<span class="go">    ca-certificates \</span>
+<span class="go">    &amp;&amp; rm -rf /var/lib/apt/lists/*</span>
+
+<span class="gp"># </span>Créer<span class="w"> </span>un<span class="w"> </span>dossier<span class="w"> </span>de<span class="w"> </span>travail
+<span class="go">WORKDIR /app</span>
+
+<span class="gp"># </span>Cloner<span class="w"> </span>le<span class="w"> </span>repo<span class="w"> </span>iLEAPP
+<span class="go">RUN git clone https://github.com/abrignoni/iLEAPP.git .</span>
+
+<span class="go">COPY IOS_FINAL/ ./IOS_FINAL</span>
+
+<span class="gp"># </span><span class="o">(</span>Optionnel<span class="o">)</span><span class="w"> </span>basculer<span class="w"> </span>vers<span class="w"> </span>une<span class="w"> </span>branche<span class="w"> </span>précise
+<span class="gp"># </span>RUN<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>nom_de_branche
+
+<span class="gp"># </span>Mettre<span class="w"> </span>à<span class="w"> </span>jour<span class="w"> </span>pip<span class="w"> </span>et<span class="w"> </span>installer<span class="w"> </span>les<span class="w"> </span>dépendances
+<span class="go">RUN python -m pip install --upgrade pip setuptools wheel maturin \</span>
+<span class="go">&amp;&amp; pip install -r requirements.txt</span>
+
+<span class="gp"># </span>Commande<span class="w"> </span>par<span class="w"> </span>défaut<span class="w"> </span>pour<span class="w"> </span>lancer<span class="w"> </span>l<span class="err">&#39;</span>application<span class="w"> </span><span class="o">(</span>à<span class="w"> </span>adapter<span class="o">)</span>
+<span class="go">CMD [&quot;python&quot;, &quot;ileappGUI.py&quot;]</span>
+</pre></div>
+</div>
+<p>On le lance avec :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo docker build -t ileapp-py312 .</span>
+<span class="go">sudo docker run -it --rm ileapp-py312 /bin/bash</span>
+<span class="go">python ileapp.py -i IOS_FINAL -o . -t fs</span>
+<span class="go">sudo docker cp heuristic_lovelace:/app/iLEAPP_Reports_2025-06-27_Friday_200156 ./report</span>
+</pre></div>
+</div>
+<p>On a donc récupérer notre rapport, on va maintenant l’inspecter.</p>
+<p>Rapidement on trouve dans les SMS : <strong>1_flag{Db_D3Let3d_m5G}</strong></p>
+<p>Dans le cache des images : <strong>3{SN4psH0t_C4Che}</strong></p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/ios3.png"><img alt="ios3" src="../../_images/ios3.png" style="width: 1200px;" />
+</a>
+</figure>
+<p>La dernière partie est beaucoup plus complexe a trouver, on a chercher plein de type de fichier sans succès, on a regarder tous les PNG, on a chercher a obtenir les informations sur le site (adresse IP interne) visité en navigation privé, exactement</p>
+<p>Dans les images de l’appareil photo (DCIM) on trouve 3 images, dont une avec le projet en question Kingdom Requiem.</p>
+<p>On va chercher un peu plus d’informations sur celle ci.</p>
+<p>On remarque avec « file *.PNG » quelle est différentes (RGBA) des autres (RGB).</p>
+<p>Peut être un message caché. On a tester quelques trucs avec le LSB mais rien.</p>
+<p>Finalement avec strings on trouve ceci : curlx9self#jumbf=c2pa.assertions/c2pa.thumbnail.ingredient.jpegdhashX</p>
+<p>Donc on va s’intéresser a la thumbnail :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">exiftool -a -b -W %d%f_%t%-c.%s -preview:all IMG_0003.PNG</span>
+</pre></div>
+</div>
+<p>On obtient une image similaire avec ce message en dessous de l’image : « Hidden_Pixels »</p>
+<p>On va donc reprendre le png et le modifier avec TweakPNG, on passe la hauteur de 1200 a 1400 et on trouve la dernière partie : <strong>H1dd3n_P1x3ls</strong></p>
+<p>On a donc : <strong>Db_D3Let3d_m5G:H1dd3n_P1x3ls:SN4psH0t_C4Che</strong></p>
+<p>On fait le sha256 : b641761b66cce6d11d4b79a8440ee0faedced922ea229f8abca588748a47dc40</p>
+<p>Et voici notre flag : <strong>SHLK{b641761b66cce6d11d4b79a8440ee0faedced922ea229f8abca588748a47dc40}</strong></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="whisper.html" class="btn btn-neutral float-left" title="Whisper of envy 1/2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="spydroid.html" class="btn btn-neutral float-right" title="SpyDroid" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

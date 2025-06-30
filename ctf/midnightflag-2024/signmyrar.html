@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forensic - SignMyRar5 &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Steganography - s0uS_l3s_r4d4r" href="s0uS_l3s_r4d4r.html" />
+    <link rel="prev" title="Forensic - I want my tickets backs 1/5" href="i_want_my_ticket_backs_1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Liste des CTFs :</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Midnight Flag 2024</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="welcome.html">Introduction - Welcome !</a></li>
+<li class="toctree-l2"><a class="reference internal" href="silent_hill_p1.html">Web - Silent Hill Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="i_want_my_ticket_backs_1.html">Forensic - I want my tickets backs 1/5</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Forensic - SignMyRar5</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#enonce">Enoncé</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resolution">Résolution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="s0uS_l3s_r4d4r.html">Steganography - s0uS_l3s_r4d4r</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slow-and-low.html">Network - Slow and low</a></li>
+<li class="toctree-l2"><a class="reference internal" href="leak_http.html">Network - Leak http</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Thanks_DGA.html">Live (OSINT) - Thanks DGA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Script_Encoder.html">Misc - Script Encoder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OSINT_Redemption.html">OSINT - OSINT_Redemption</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2024/_index.html">404CTF 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2025/_index.html">404CTF 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2025/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hackosint-2025/_index.html">Hackosint 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shutlock-2025/_index.html">Shutlock 2025</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">Midnight Flag 2024</a></li>
+      <li class="breadcrumb-item active">Forensic - SignMyRar5</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/midnightflag-2024/signmyrar.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="forensic-signmyrar5">
+<h1>Forensic - SignMyRar5<a class="headerlink" href="#forensic-signmyrar5" title="Lien vers cette rubrique"></a></h1>
+<section id="enonce">
+<h2>Enoncé<a class="headerlink" href="#enonce" title="Lien vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>FR : Un attaquant a modifié l’hexa de l’archive avant de le supprimer pour être sur que personne ne puisse le récupérer !  un voyageur vous a laissé des messages pour retrouver l’archive.</p></li>
+<li><p>EN : An attacker modified the hex of the archive before deleting it to make sure that no one could recover it! a traveller left you messages to find the archive.</p></li>
+<li><p>Lien téléchargement / Download link :</p></li>
+</ul>
+<p>Google drive : <a class="reference external" href="https://drive.google.com/file/d/1FbsiFXNGXtS_c0bIyAioOIAD5RdODd6v/view?usp=sharing">https://drive.google.com/file/d/1FbsiFXNGXtS_c0bIyAioOIAD5RdODd6v/view?usp=sharing</a></p>
+<p>Mega : <a class="reference external" href="https://mega.nz/file/9dZnSCzB#cJR-BHb-zncq5JiSpwZ4bLykTqDeR7S3ukDjbkLRB98">https://mega.nz/file/9dZnSCzB#cJR-BHb-zncq5JiSpwZ4bLykTqDeR7S3ukDjbkLRB98</a></p>
+<ul class="simple">
+<li><p>Archive password : look the .txt file</p></li>
+</ul>
+<p><strong>Author: Chic0s</strong></p>
+</section>
+<section id="resolution">
+<h2>Résolution<a class="headerlink" href="#resolution" title="Lien vers cette rubrique"></a></h2>
+<ol class="arabic simple">
+<li><p>On récupère l’archive du fichier et on l’ouvre avec le mot de passe</p></li>
+<li><p>On récupère le dump mémoire et on commencer à l’analyser avec volatility</p></li>
+</ol>
+<p>D’abord on récupère le profile de l’image :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">./volatility_2.6_lin64_standalone -f Forensic\ -\ SignMyRar5.dmp imageinfo</span>
+</pre></div>
+</div>
+<p>Il s’agit d’un profil Windows XP :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Volatility Foundation Volatility Framework 2.6</span>
+<span class="go">INFO    : volatility.debug    : Determining profile based on KDBG search...</span>
+<span class="go">      Suggested Profile(s) : WinXPSP2x86, WinXPSP3x86 (Instantiated with WinXPSP2x86)</span>
+<span class="go">                 AS Layer1 : IA32PagedMemoryPae (Kernel AS)</span>
+<span class="go">                 AS Layer2 : FileAddressSpace (/home/kubow/Tools/volatility_2.6_lin64_standalone/Forensic - SignMyRar5.dmp)</span>
+<span class="go">                  PAE type : PAE</span>
+<span class="go">                       DTB : 0xaf8000L</span>
+<span class="go">                      KDBG : 0x8054d2e0L</span>
+<span class="go">      Number of Processors : 2</span>
+<span class="go">    Image Type (Service Pack) : 3</span>
+<span class="go">                KPCR for CPU 0 : 0xffdff000L</span>
+<span class="go">                KPCR for CPU 1 : 0xbab38000L</span>
+<span class="go">            KUSER_SHARED_DATA : 0xffdf0000L</span>
+<span class="go">        Image date and time : 2024-04-21 19:05:41 UTC+0000</span>
+<span class="go">    Image local date and time : 2024-04-21 21:05:41 +0200</span>
+</pre></div>
+</div>
+<p>On part à la recherche de l’archive rar dans le dump :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">./volatility_2.6_lin64_standalone -f Forensic\ -\ SignMyRar5.dmp profile=WinXPSP2x86 filescan | grep &quot;rar&quot;</span>
+</pre></div>
+</div>
+<p>Mais la recherche sur « rar » ne donne rien :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Volatility Foundation Volatility Framework 2.6</span>
+<span class="go">0x0000000009503408      2      1 RW-rw- \Device\HarddiskVolume1\Documents and Settings\Administrateur\Local Settings\Temporary Internet Files\Content.IE5\index.dat</span>
+<span class="go">0x0000000009a8df60      1      1 RW-rw- \Device\HarddiskVolume1\Documents and Settings\Administrateur\Local Settings\Temporary Internet Files\Content.IE5\index.dat</span>
+<span class="go">0x0000000009ac1570      2      1 RW-rw- \Device\HarddiskVolume1\Documents and Settings\LocalService\Local Settings\Temporary Internet Files\Content.IE5\index.dat</span>
+</pre></div>
+</div>
+<p>On va chercher d’autre fichiers utiles :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">./volatility_2.6_lin64_standalone -f Forensic\ -\ SignMyRar5.dmp profile=WinXPSP2x86 filescan | grep &quot;txt&quot;</span>
+</pre></div>
+</div>
+<p>Ah la ça devient intéressant !</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Volatility Foundation Volatility Framework 2.6</span>
+<span class="go">0x00000000095336d0      1      0 R--rwd \Device\HarddiskVolume1\Documents and Settings\All Users\Application Data\VMware\VMware Tools\manifest.txt</span>
+<span class="go">0x0000000009536ca0      4      2 -W-rw- \Device\HarddiskVolume1\Documents and Settings\All Users\Application Data\VMware\VMware VGAuth\logfile.txt.0</span>
+<span class="go">0x000000000954bd08      1      0 R--rw- \Device\HarddiskVolume1\Documents and Settings\All Users\Application Data\VMware\VMware Tools\Unity Filters\win7gadgets.txt</span>
+<span class="go">0x000000000954bf90      1      0 R--rw- \Device\HarddiskVolume1\Documents and Settings\All Users\Application Data\VMware\VMware Tools\Unity Filters\vmwarefilters.txt</span>
+<span class="go">0x00000000095568b8      1      0 R--r-- \Device\HarddiskVolume1\System Volume Information\_restore{0E4A1252-3B4D-4419-8C36-EE82040C97D3}\drivetable.txt</span>
+<span class="go">0x000000000955c220      1      0 R--rw- \Device\HarddiskVolume1\Documents and Settings\All Users\Application Data\VMware\VMware Tools\Unity Filters\microsoftoffice.txt</span>
+<span class="go">0x00000000095a7ba0      1      0 R--rw- \Device\HarddiskVolume1\Program Files\VMware\VMware Tools\vmacthlp.txt</span>
+<span class="go">0x00000000095ae218      1      0 R--rw- \Device\HarddiskVolume1\Documents and Settings\All Users\Application Data\VMware\VMware Tools\Unity Filters\adobeflashcs3.txt</span>
+<span class="go">0x0000000009abe310      1      0 RW-r-- \Device\HarddiskVolume1\Documents and Settings\Administrateur\Bureau\README.txt</span>
+<span class="go">0x0000000009ac9228      1      0 R--rw- \Device\HarddiskVolume1\Documents and Settings\All Users\Application Data\VMware\VMware Tools\Unity Filters\vistasidebar.txt</span>
+<span class="go">0x0000000009aeec38      1      0 R--rw- \Device\HarddiskVolume1\Documents and Settings\All Users\Application Data\VMware\VMware Tools\Unity Filters\visualstudio2005.txt</span>
+<span class="go">0x0000000009af4218      1      0 R--rw- \Device\HarddiskVolume1\Documents and Settings\All Users\Application Data\VMware\VMware Tools\Unity Filters\adobephotoshopcs3.txt</span>
+<span class="go">0x0000000009b13f28      1      0 R--rw- \Device\HarddiskVolume1\Documents and Settings\All Users\Application Data\VMware\VMware Tools\Unity Filters\googledesktop.txt</span>
+<span class="go">0x0000000009cb8388      1      0 R--rwd \Device\HarddiskVolume1\Documents and Settings\Administrateur\Mes documents\RarFile.txt</span>
+</pre></div>
+</div>
+<p>Les deux fichiers qui vont nous intéresser ici :</p>
+<ul class="simple">
+<li><p>DeviceHarddiskVolume1Documents and SettingsAdministrateurBureauREADME.txt</p></li>
+<li><p>DeviceHarddiskVolume1Documents and SettingsAdministrateurMes documentsRarFile.txt</p></li>
+</ul>
+<p>On va refaire tout de même la recherche sur « Rar » plutôt que « rar » pour être sur :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Volatility Foundation Volatility Framework 2.6</span>
+<span class="go">0x0000000009b46f90      1      0 RW-rw- \Device\HarddiskVolume1\Documents and Settings\Administrateur\Recent\RarFile.lnk</span>
+<span class="go">0x0000000009cb8388      1      0 R--rwd \Device\HarddiskVolume1\Documents and Settings\Administrateur\Mes documents\RarFile.txt</span>
+</pre></div>
+</div>
+<p>Et on trouve un fichier de plus, un lnk probablement du txt.</p>
+<p>On va télécharger tous ces fichiers et voir ce qu’ils contiennent :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">./volatility_2.6_lin64_standalone -f Forensic\ -\ SignMyRar5.dmp profile=WinXPSP2x86 dumpfiles -Q 0x0000000009abe310 -D test # README</span>
+<span class="go">./volatility_2.6_lin64_standalone -f Forensic\ -\ SignMyRar5.dmp profile=WinXPSP2x86 dumpfiles -Q 0x0000000009cb8388 -D test # RarFile.txt</span>
+<span class="go">./volatility_2.6_lin64_standalone -f Forensic\ -\ SignMyRar5.dmp profile=WinXPSP2x86 dumpfiles -Q 0x0000000009b46f90 -D test # RarFile.lnk</span>
+</pre></div>
+</div>
+<p>On regarde leur contenu :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>strings<span class="w"> </span>test/RarFile.txt
+<span class="go">Malheureusement ils ont supprim</span>
+<span class="go">s l&#39;archive, j&#39;arrive pas</span>
+<span class="go">la retrouver...</span>
+
+<span class="gp">$ </span>strings<span class="w"> </span>test/readme.txt
+<span class="go">J&#39;ai r</span>
+<span class="go">la derni</span>
+<span class="go">re archive qui contient les patchs de s</span>
+<span class="go">curit</span>
+<span class="go">, tu trouveras un fichier rar contenant le patch de s</span>
+<span class="go">curit</span>
+<span class="go">. Voici le mot de passe : dhZIDHndzj45</span>
+</pre></div>
+</div>
+<p>On a le mot de passe de l’archive : dhZIDHndzj45</p>
+<p>Mais toujours pas d’archive !</p>
+<p>On va tenter la MFT, qui pourraient contenir plus de données avec un peu de chance</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">./volatility_2.6_lin64_standalone -f Forensic\ -\ SignMyRar5.dmp profile=WinXPSP2x86 mftparser | grep -A 15 -B 15 &quot;Rar&quot;</span>
+</pre></div>
+</div>
+<p>Malheureusement pas plus d’informations :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Volatility Foundation Volatility Framework 2.6</span>
+<span class="go">***************************************************************************</span>
+<span class="go">MFT entry found at offset 0x1f1e4400</span>
+<span class="go">Attribute: In Use &amp; File</span>
+<span class="go">Record Number: 11057</span>
+<span class="go">Link count: 1</span>
+
+
+<span class="gp">$</span>STANDARD_INFORMATION
+<span class="go">Creation                       Modified                       MFT Altered                    Access Date                    Type</span>
+<span class="go">------------------------------ ------------------------------ ------------------------------ ------------------------------ ----</span>
+<span class="go">2024-04-21 19:04:52 UTC+0000 2024-04-21 19:05:09 UTC+0000   2024-04-21 19:05:09 UTC+0000   2024-04-21 19:05:09 UTC+0000   Archive</span>
+
+<span class="gp">$</span>FILE_NAME
+<span class="go">Creation                       Modified                       MFT Altered                    Access Date                    Name/Path</span>
+<span class="go">------------------------------ ------------------------------ ------------------------------ ------------------------------ ---------</span>
+<span class="go">2024-04-21 19:04:52 UTC+0000 2024-04-21 19:04:52 UTC+0000   2024-04-21 19:04:52 UTC+0000   2024-04-21 19:04:52 UTC+0000   Documents and Settings\ADMINI~1\MESDOC~1\RarFile.txt</span>
+
+<span class="gp">$</span>OBJECT_ID
+<span class="go">Object ID: 92b42cd7-1100-ef11-aa7c-000c29501a69</span>
+<span class="go">Birth Volume ID: 80000000-6800-0000-0000-180000000100</span>
+<span class="go">Birth Object ID: 4b000000-1800-0000-4d61-6c6865757265</span>
+<span class="go">Birth Domain ID: 7573656d-656e-7420-696c-73206f6e7420</span>
+
+<span class="gp">$</span>DATA
+<span class="go">0000000000: 4d 61 6c 68 65 75 72 65 75 73 65 6d 65 6e 74 20   Malheureusement.</span>
+<span class="go">0000000010: 69 6c 73 20 6f 6e 74 20 73 75 70 70 72 69 6d e9   ils.ont.supprim.</span>
+<span class="go">0000000020: 73 20 6c 27 61 72 63 68 69 76 65 2c 20 6a 27 61   s.l&#39;archive,.j&#39;a</span>
+<span class="go">0000000030: 72 72 69 76 65 20 70 61 73 20 e0 20 6c 61 20 72   rrive.pas...la.r</span>
+<span class="go">0000000040: 65 74 72 6f 75 76 65 72 2e 2e 2e                  etrouver...</span>
+
+<span class="go">***************************************************************************</span>
+<span class="go">***************************************************************************</span>
+<span class="go">MFT entry found at offset 0x1f1e4800</span>
+<span class="go">Attribute: In Use &amp; File</span>
+<span class="go">Record Number: 11058</span>
+<span class="go">Link count: 1</span>
+
+
+<span class="gp">$</span>STANDARD_INFORMATION
+<span class="go">Creation                       Modified                       MFT Altered                    Access Date                    Type</span>
+<span class="go">------------------------------ ------------------------------ ------------------------------ ------------------------------ ----</span>
+<span class="go">2024-04-21 19:05:00 UTC+0000 2024-04-21 19:05:00 UTC+0000   2024-04-21 19:05:00 UTC+0000   2024-04-21 19:05:00 UTC+0000   Archive</span>
+
+<span class="gp">$</span>FILE_NAME
+<span class="go">Creation                       Modified                       MFT Altered                    Access Date                    Name/Path</span>
+<span class="go">------------------------------ ------------------------------ ------------------------------ ------------------------------ ---------</span>
+<span class="go">2024-04-21 19:05:00 UTC+0000 2024-04-21 19:05:00 UTC+0000   2024-04-21 19:05:00 UTC+0000   2024-04-21 19:05:00 UTC+0000   Documents and Settings\ADMINI~1\Recent\RarFile.lnk</span>
+
+<span class="gp">$</span>DATA
+<span class="go">0000000000: 4c 00 00 00 01 14 02 00 00 00 00 00 c0 00 00 00   L...............</span>
+<span class="go">0000000010: 00 00 00 46 9b 00 00 00 20 00 00 00 9a 0f 52 ca   ...F..........R.</span>
+<span class="go">0000000020: 1e 94 da 01 9a 0f 52 ca 1e 94 da 01 9a 0f 52 ca   ......R.......R.</span>
+<span class="go">0000000030: 1e 94 da 01 00 00 00 00 00 00 00 00 01 00 00 00   ................</span>
+<span class="go">0000000040: 00 00 00 00 00 00 00 00 00 00 00 00 5e 00 14 00   ............^...</span>
+<span class="go">0000000050: 1f 48 ba 8f 0d 45 25 ad d0 11 98 a8 08 00 36 1b   .H...E%.......6.</span>
+<span class="go">0000000060: 11 03 48 00 32 00 00 00 00 00 95 58 9b 98 20 00   ..H.2......X....</span>
+<span class="go">0000000070: 52 61 72 46 69 6c 65 2e 74 78 74 00 2e 00 03 00   RarFile.txt.....</span>
+<span class="go">0000000080: 04 00 ef be 95 58 9b 98 95 58 9b 98 14 00 00 00   .....X...X......</span>
+<span class="go">0000000090: 52 00 61 00 72 00 46 00 69 00 6c 00 65 00 2e 00   R.a.r.F.i.l.e...</span>
+<span class="go">00000000a0: 74 00 78 00 74 00 00 00 1a 00 00 00 71 00 00 00   t.x.t.......q...</span>
+<span class="go">00000000b0: 1c 00 00 00 01 00 00 00 1c 00 00 00 2d 00 00 00   ............-...</span>
+<span class="go">00000000c0: 00 00 00 00 70 00 00 00 11 00 00 00 03 00 00 00   ....p...........</span>
+<span class="go">00000000d0: f9 5a d9 10 10 00 00 00 00 43 3a 5c 44 6f 63 75   .Z.......C:\Docu</span>
+<span class="go">00000000e0: 6d 65 6e 74 73 20 61 6e 64 20 53 65 74 74 69 6e   ments.and.Settin</span>
+<span class="go">00000000f0: 67 73 5c 41 64 6d 69 6e 69 73 74 72 61 74 65 75   gs\Administrateu</span>
+<span class="go">0000000100: 72 5c 4d 65 73 20 64 6f 63 75 6d 65 6e 74 73 5c   r\Mes.documents\</span>
+<span class="go">0000000110: 52 61 72 46 69 6c 65 2e 74 78 74 00 00 1c 00 2e   RarFile.txt.....</span>
+<span class="go">0000000120: 00 2e 00 5c 00 4d 00 65 00 73 00 20 00 64 00 6f   ...\.M.e.s...d.o</span>
+<span class="go">0000000130: 00 63 00 75 00 6d 00 65 00 6e 00 74 00 73 00 5c   .c.u.m.e.n.t.s.\</span>
+<span class="go">0000000140: 00 52 00 61 00 72 00 46 00 69 00 6c 00 65 00 2e   .R.a.r.F.i.l.e..</span>
+<span class="go">0000000150: 00 74 00 78 00 74 00 36 00 43 00 3a 00 5c 00 44   .t.x.t.6.C.:.\.D</span>
+<span class="go">0000000160: 00 6f 00 63 00 75 00 6d 00 65 00 6e 00 74 00 73   .o.c.u.m.e.n.t.s</span>
+<span class="go">0000000170: 00 20 00 61 00 6e 00 64 00 20 00 53 00 65 00 74   ...a.n.d...S.e.t</span>
+<span class="go">0000000180: 00 74 00 69 00 6e 00 67 00 73 00 5c 00 41 00 64   .t.i.n.g.s.\.A.d</span>
+<span class="go">0000000190: 00 6d 00 69 00 6e 00 69 00 73 00 74 00 72 00 61   .m.i.n.i.s.t.r.a</span>
+<span class="go">00000001a0: 00 74 00 65 00 75 00 72 00 5c 00 4d 00 65 00 73   .t.e.u.r.\.M.e.s</span>
+<span class="go">00000001b0: 00 20 00 64 00 6f 00 63 00 75 00 6d 00 65 00 6e   ...d.o.c.u.m.e.n</span>
+<span class="go">00000001c0: 00 74 00 73 00 10 00 00 00 05 00 00 a0 05 00 00   .t.s............</span>
+<span class="go">00000001d0: 00 14 00 00 00 60 00 00 00 03 00 00 a0 58 00 00   .....`.......X..</span>
+<span class="go">00000001e0: 00 00 00 00 00 6d 63 74 66 2d 62 34 31 39 62 36   .....mctf-b419b6</span>
+<span class="go">00000001f0: 37 65 35 63 00 1e a9 39 02 5d 3c 51 4b be b6 7c   7e5c...9.]&lt;QK..|</span>
+<span class="go">0000000200: f7 aa 93 03 09 92 b4 2c d7 11 00 ef 11 aa 7c 00   .......,......|.</span>
+</pre></div>
+</div>
+<p>On va donc s’intéresser à la corbeille, attention il faut chercher « RECYCLE »</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">./volatility_2.6_lin64_standalone -f Forensic\ -\ SignMyRar5.dmp profile=WinXPSP2x86 filescan | grep &quot;RECYCLE&quot;</span>
+</pre></div>
+</div>
+<p>Il y a 3 fichiers qui sont présent :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Volatility Foundation Volatility Framework 2.6</span>
+<span class="go">0x00000000094f7998      1      0 R--rwd \Device\HarddiskVolume1\RECYCLER\S-1-5-21-1202660629-448539723-725345543-500\desktop.ini</span>
+<span class="go">0x0000000009a7dad0      1      0 R--rw- \Device\HarddiskVolume1\RECYCLER\S-1-5-21-1202660629-448539723-7253455</span>
+<span class="go">0x0000000009cb3df8      1      0 RW---- \Device\HarddiskVolume1\RECYCLER\S-1-5-21-1202660629-448539723-725345543-500\INFO2</span>
+</pre></div>
+</div>
+<p>On va télécharger les trois, et le deuxième donne un résultat intéressant lorsqu’on fait un strings dessus :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">./volatility_2.6_lin64_standalone -f Forensic\ -\ SignMyRar5.dmp profile=WinXPSP2x86 dumpfiles -Q 0x0000000009a7dad0 -D test</span>
+
+
+<span class="gp">$ </span>strings<span class="w"> </span>test/file.None.0x89886c98.dat
+<span class="go">flag0</span>
+<span class="go">93Ob!</span>
+<span class="go">l2$[</span>
+<span class="go">{RB}</span>
+<span class="go">flag0</span>
+<span class="go">93Ob!</span>
+<span class="go">l2$[</span>
+</pre></div>
+</div>
+<p>Cependant, lorsqu’on le renomme en archive.rar, il s’ouvre mais rien n’apparaît, pas de prompt de mot de passe, pas de fichier.</p>
+<p>Après avoir demandé conseil j’ai examiné le fichier en hexadecimal :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>xxd<span class="w"> </span>archive.rar
+<span class="go">00000000: ffff ffff 1a07 0100 6b85 ba73 0d01 0509  ........k..s....</span>
+<span class="go">00000010: 0808 0103 8080 0098 8100 9158 ae06 5102  ...........X..Q.</span>
+<span class="go">00000020: 033c b000 04a0 0020 0983 84f5 8005 0004  .&lt;..... ........</span>
+<span class="go">00000030: 666c 6167 3001 0003 0fde d33c b71b f99a  flag0......&lt;....</span>
+<span class="go">00000040: 18d0 e739 334f 6221 c017 0f03 6e96 a16a  ...93Ob!....n..j</span>
+<span class="go">00000050: 087d 93a3 796d d9a5 1551 acf0 6c32 245b  .}..ym...Q..l2$[</span>
+<span class="go">00000060: f410 acbc 2a0a 0302 eb83 4b40 0294 da01  ....*.....K@....</span>
+<span class="go">00000070: c4b2 a111 b7dd 503b 6cca 56de 61c4 2288  ......P;l.V.a.&quot;.</span>
+<span class="go">00000080: 884c e1d5 ecba 7e07 f191 189f 0140 71a8  .L....~......@q.</span>
+<span class="go">00000090: 9f67 0232 44e4 84a2 835d 53b7 94d9 2f55  .g.2D....]S.../U</span>
+<span class="go">000000a0: 2ff2 73d3 1203 0703 f001 00f0 0100 8000  /.s.............</span>
+<span class="go">000000b0: 0002 5252 0207 037b 5242 7dd1 d87d 1378  ..RR...{RB}..}.x</span>
+<span class="go">000000c0: 6cda 61f0 0000 0050 0000 0001 0100 0000  l.a....P........</span>
+<span class="go">000000d0: 0000 0000 00a0 0000 00a0 0000 0000 0000  ................</span>
+<span class="go">000000e0: 00a0 0000 0000 0000 00f0 0000 0000 0000  ................</span>
+<span class="go">000000f0: 0001 0001 0000 00e6 76cd d668 782c 88b3  ........v..hx,..</span>
+<span class="go">00000100: 0f05 44dd 859a 6eff ffff ff1a 0701 006b  ..D...n........k</span>
+<span class="go">00000110: 85ba 730d 0105 0908 0801 0380 8000 9881  ..s.............</span>
+<span class="go">00000120: 0091 58ae 0651 0203 3cb0 0004 a000 2009  ..X..Q..&lt;..... .</span>
+<span class="go">00000130: 8384 f580 0500 0466 6c61 6730 0100 030f  .......flag0....</span>
+<span class="go">00000140: ded3 3cb7 1bf9 9a18 d0e7 3933 4f62 21c0  ..&lt;.......93Ob!.</span>
+<span class="go">00000150: 170f 036e 96a1 6a08 7d93 a379 6dd9 a515  ...n..j.}..ym...</span>
+<span class="go">00000160: 51ac f06c 3224 5bf4 10ac bc2a 0a03 02eb  Q..l2$[....*....</span>
+<span class="go">00000170: 834b 4002 94da 01c4 b2a1 11b7 dd50 3b6c  .K@..........P;l</span>
+<span class="go">00000180: ca56 de61 c422 8888 4ce1 d5ec ba7e 07f1  .V.a.&quot;..L....~..</span>
+<span class="go">00000190: 9118 9f01 4071 a89f 6702 3244 e484 a283  ....@q..g.2D....</span>
+<span class="go">000001a0: 5d53 b794 d92f 551d 7756 5103 0504 0000  ]S.../U.wVQ.....</span>
+</pre></div>
+</div>
+<p>Ce site m’a permis de découvrir que la signature du RAR était corrompue : <a class="reference external" href="https://ctf-wiki.mahaloz.re/misc/archive/rar/">https://ctf-wiki.mahaloz.re/misc/archive/rar/</a></p>
+<p>Normalement, un fichier RAR doit commencer par 52 61 72 21 1A 07 00</p>
+<p>Or on peut voir que nous avons : ffff ffff 1a07 0</p>
+<p>On va donc ouvrir le rar avec hexedit et on saisit 52 61 72 21 pour remplacer les ff ff ff ff</p>
+<p>On ferme et on sauvegarde, on rouvre l’archive et la bingo ! On a un fichier flag et le prompt du mot de passe</p>
+<p>On utilise le mot de passe et on obtient le flag : MCTF{H3ll0_H4ck3r_Y0u-F1nd_D4t4}</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="i_want_my_ticket_backs_1.html" class="btn btn-neutral float-left" title="Forensic - I want my tickets backs 1/5" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="s0uS_l3s_r4d4r.html" class="btn btn-neutral float-right" title="Steganography - s0uS_l3s_r4d4r" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
