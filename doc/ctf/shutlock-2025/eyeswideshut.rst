@@ -92,7 +92,7 @@ Ou un hotel entre le cinéma et le bar a jeu
 
 En cherchant porte clé hotel rose on trouve des portes clés de ce style : 
 
-.. figure:: ../../_static/img/shutlock-2025/clehotel.jpg
+.. figure:: ../../_static/img/shutlock2025/clehotel.jpg
     :alt: CleHotel
     :align: center
     :width: 1200
