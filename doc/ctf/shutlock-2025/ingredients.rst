@@ -60,7 +60,7 @@ Dedans on trouve :
 
 Dans la story une image attire notre attention, la 4eme. Elle indique "un ajustement" dans la recette du pain pita. 
 
-.. figure:: ../../_static/img/shutlock2025/ingredient.jpg
+.. figure:: ../../_static/img/shutlock2025/ingredients.jpg
     :alt: ingredient
     :align: center
     :width: 1200

@@ -43,22 +43,23 @@ On y apprend :
 - Qu'il a un compte Gitlab
 - Qu'il a un compte Discord
 
+Mais on ne les a jamais trouvés ! 
+
 On trouve également un zip avec une facture protégé par un mot de passe.
 
 On trouve également cette adresse email : jacques.pot.pro@gmail.com 
 
-Finalement en continuant a chercher on trouve un compte pastebin avec H_jacques 
+Finalement en continuant a chercher on trouve un compte pastebin avec H_jacques (Tool : sherlock)
 
 Et notamment ceci : https://pastebin.com/ntG83D1V 
 
 "Si tu oublies le mdp du zip, c'est la place près de la maison à Cannes en Pascal Case."
 
-En Psacal Case : ça veut dire tout les mots sans espaces avec une majuscule 
+En Pascal Case : ça veut dire tout les mots sans espaces avec une majuscule 
 
 On retourne sur Thread et on trouve "Franchement, je pige toujours pas comment le parking Lamy à Cannes est constamment plein, même en pleine soirée."
 
-Il ne doit pas habiter très loin, allons voir sur Gmaps : PlaceDuCommandantLamy
-Place du commandant Lamy
+Il ne doit pas habiter très loin, allons voir sur Gmaps : PlaceDuCommandantLamy, c'est non ! 
 
 On va faire une wordlist : 
 

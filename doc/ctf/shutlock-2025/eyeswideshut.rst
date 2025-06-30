@@ -31,7 +31,7 @@ Sur le twitter on a des informations sur le cinéma et le film qui a été vu.
 
 On retrouve ce cinéma : https://maxlinder.com/#programme grâce à l'image et a google image.
 
-Pas beaucoup de cinéma tout noir avec des balcons à paris 
+Pas beaucoup de cinéma tout noir avec des balcons à paris a priori !
 
 Et les informations sur Nathan Nazario (nom écrit au générique) nous donne la liste des films sur lesquels il a participé : https://www.imdb.com/fr/name/nm1018585/ 
 
@@ -45,12 +45,12 @@ On est donc bien dans le bon cinéma, avec le bon film, mais a quelle séance ?
 
 Un peu plus tard dans nos recherches on trouve : https://letterboxd.com/pierot_j25 
 
-On peut donc confirmer que la séance est celle de 21h30
+On peut donc confirmer que la séance est celle de **21h30**
 
 Le cocktail
 ~~~~~~~~~~~~~~
 
-On trouve égalemenet un instagram ave son pseudo avec une image d'une boisson dans la story : 
+On trouve également un instagram avec son pseudo avec une image d'une boisson dans la story : 
 
 https://www.instagram.com/pierot_j25/ 
 
@@ -92,8 +92,8 @@ Ou un hotel entre le cinéma et le bar a jeu
 
 En cherchant porte clé hotel rose on trouve des portes clés de ce style : 
 
-.. figure:: ../_static/img/shutlock-2025/clehotel.jpg
-    :alt: Pride and notice
+.. figure:: ../../_static/img/shutlock-2025/clehotel.jpg
+    :alt: CleHotel
     :align: center
     :width: 1200
 
@@ -103,7 +103,7 @@ https://www.sororityshop.com/collections/motel-key-chains
 
 Après avoir testé plein d'hotel rose, et des hotels pas en France qui ont un porte clé similaire, c'était finalement la réponse la plus "évidente". 
 
-On a testé **Grand Budapest** et c'était bien ça ! C'est en lien avec le thème du CTF !
+On a testé **Grand Budapest** et c'était bien ça ! C'est en lien avec le thème du CTF : le cinéma !
 
 Flag : **SHLK{21-30_Arrakis_Grand-Budapest}**
 

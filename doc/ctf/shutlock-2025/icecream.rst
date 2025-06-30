@@ -124,7 +124,7 @@ On peut maintenant lire les différents fichiers :
 
 - index.php 
 
-.. code-block:: console 
+.. code-block:: php 
 
     <?php
     include_once('admin.php'); 
@@ -221,7 +221,7 @@ On peut maintenant lire les différents fichiers :
 
 Les autres fichiers sont inaccessible, on peut tout même trouver l'ingrédient secret mais résultat : http://57.128.112.118:10570/?dir=%2Fsecrets&file=ingr%C3%A9dient+secret
 
-"OH LE BAIT AHAHA...
+"OH LE BAIT AHAHA..."
 
 Jamais je ne mettrai mon ingredient secret dans un fichier visible comme ca.
 
