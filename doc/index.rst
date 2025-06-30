@@ -20,6 +20,7 @@ Write up des CTF réalisés par Kubow, et parfois en équipe avec Zohjin !
    ./ctf/FCSC-2025/_index.rst
    ./ctf/DGSE-Root-Me-2025/_index.rst
    ./ctf/Hackosint-2025/_index.rst
+   ./ctf/shutlock-2025/_index.rst
 
 
 Désolé d'avance pour les fautes, ces WU sont réalisés en live durant les CTF et très peu de modifications sont apportées à la fin :D 
