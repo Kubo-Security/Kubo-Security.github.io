@@ -18,8 +18,8 @@ On commence par les 100 premiers :
 
 .. code-block:: console
 
-    r : 300m | Rayon fontaine autour du bar : 20m
-    : bars/cafés autour de chaque POI du lot
+    //bar : 300m | fontaine : 20m
+    //bars/cafés autour de chaque POI du lot
     (
     node["amenity"="cafe"](around:300,48.683432,2.296373); 
     way["amenity"="cafe"](around:300,48.683432,2.296373);
