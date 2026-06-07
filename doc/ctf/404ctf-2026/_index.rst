@@ -3,7 +3,7 @@
     :align: center
     :width: 400
 
-404CTF 2025
+404CTF 2026
 ===================
 
 Osint
