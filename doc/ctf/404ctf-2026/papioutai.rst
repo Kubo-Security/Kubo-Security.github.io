@@ -15,7 +15,9 @@ https://www.archicubes.ens.fr/annuaire/annuaire_chercher?identite=roux
 
 Jean Roux 1912, on a donc l'année.
 
-On cherche les villes en "demanges", je n'ai trouvé que courdemanges 
+On cherche les villes en "demanges", je n'ai trouvé que courdemanges (https://www.data.gouv.fr/datasets/communes-et-villes-de-france-en-csv-excel-json-parquet-et-feather)
+
+On télécharge le CSV, et grep "demanges" sur le fichier.
 
 On cherche les gens décédés dans cette ville pendant la guerre : 
 
