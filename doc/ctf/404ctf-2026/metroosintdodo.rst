@@ -12,7 +12,7 @@ Format du flag : 404CTF{les-halles_les-halles}
 Solution 
 ----------------
 
-On récupère les plans de métros : https://planmetro.paris/ligne-7/?utm_source=chatgpt.com
+On récupère les plans de métros : https://planmetro.paris/ligne-7/
 
 La ligne 7 semble être un bon candidat avec plusieurs noms de scientifiques (cadet, jussieu, pierre et marie curie) mais rien ne correspond.
 
