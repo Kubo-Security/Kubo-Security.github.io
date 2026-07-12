@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Tacosint.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_wht-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_wht-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_wht-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_grn-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_red-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_wht-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="sn_grn-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_grn-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_red-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_wht-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+	</Style>
+	<Folder>
+		<name>Tacosint</name>
+		<Placemark>
+			<name>Joseph Delamarre</name>
+			<description>11 rue notre dame de recouvrance Orléans
+Adresse de Joseph Delamarre, le Pet-sitter</description>
+			<LookAt>
+				<longitude>1.90078776663758</longitude>
+				<latitude>47.8987559294956</latitude>
+				<altitude>0</altitude>
+				<heading>-0.004456170290094036</heading>
+				<tilt>25.38859418467112</tilt>
+				<range>159.8574717815057</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<gx:balloonVisibility>1</gx:balloonVisibility>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.90057836229873,47.89878662700693,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cachette des catnappers</name>
+			<description>
+51 Bis Rue de la Montjoie Saran</description>
+			<LookAt>
+				<longitude>1.891982795278018</longitude>
+				<latitude>47.95107152378001</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0001252094856905042</heading>
+				<tilt>20.70855163526332</tilt>
+				<range>303.4889451876531</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-pushpin1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.891339327777035,47.9509715075459,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Jean Michelle Jr</name>
+			<description>
+saint Léonard de noblat
+Course avec des amies du 03/07/2026 au 05/07/2026</description>
+			<LookAt>
+				<longitude>1.489621255706461</longitude>
+				<latitude>45.83565607776345</latitude>
+				<altitude>0</altitude>
+				<heading>-0.002737156177215174</heading>
+				<tilt>30.00183763116253</tilt>
+				<range>409.1487772386437</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.490212276313936,45.8351055133741,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lucia Michelle</name>
+			<description>Residenza Benizzi Via de&apos; Guicciardini, Florence, Italie
+
+
+
+Week-end du 03/01/2026</description>
+			<LookAt>
+				<longitude>11.25083894810528</longitude>
+				<latitude>43.76665253479048</latitude>
+				<altitude>0</altitude>
+				<heading>0.0003015013432810504</heading>
+				<tilt>29.59215830898258</tilt>
+				<range>123.8744047317089</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>11.25091541648344,43.76660124098056,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rencontre fournisseurs</name>
+			<description>Lieu de rencontre entre Marisa Giraud et les fournisseurs</description>
+			<LookAt>
+				<longitude>1.5364990304417</longitude>
+				<latitude>39.10805047275824</latitude>
+				<altitude>0</altitude>
+				<heading>0.4917648295329577</heading>
+				<tilt>30.00187059112618</tilt>
+				<range>416.4918241242248</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.536427168115511,39.10729141270401,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Boite au lettre morte</name>
+			<description>Boite au lettre morte de la meute rouge</description>
+			<Camera>
+				<longitude>1.910539136426306</longitude>
+				<latitude>47.90643054814264</latitude>
+				<altitude>213.1265238441707</altitude>
+				<heading>0.8944894477255712</heading>
+				<tilt>17.5644581550118</tilt>
+				<roll>-2.60115400368717</roll>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</Camera>
+			<styleUrl>#msn_red-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.91085235119159,47.90719003045644,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sylvie Durand</name>
+			<description>Adresse de Sylvie Durand
+
+215 Rue de Bourgogne, Orléans</description>
+			<LookAt>
+				<longitude>1.908912266548593</longitude>
+				<latitude>47.90007659443192</latitude>
+				<altitude>0</altitude>
+				<heading>0.004598710801195171</heading>
+				<tilt>28.33242760282326</tilt>
+				<range>99.68235735864953</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.908960909055035,47.90006121875592,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Prise en charge des animaux</name>
+			<description>Tahat Hotel
+
+Av. 1er Novembre, Tamanrasset, Algérie</description>
+			<LookAt>
+				<longitude>5.536182859647701</longitude>
+				<latitude>22.78219706336307</latitude>
+				<altitude>0</altitude>
+				<heading>-0.00164169749644732</heading>
+				<tilt>30.00322672914927</tilt>
+				<range>718.446718139716</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>5.535301143452445,22.78271478615278,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Passage de la frontiere</name>
+			<LookAt>
+				<longitude>1.94088002777705</longitude>
+				<latitude>42.4336862607499</latitude>
+				<altitude>0</altitude>
+				<heading>2.096317648186895e-05</heading>
+				<tilt>16.85845140657437</tilt>
+				<range>423.3659363709214</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.94088002777705,42.4336862607499,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rencontre avec le groupe du Sud-Ouest</name>
+			<LookAt>
+				<longitude>1.298353920617463</longitude>
+				<latitude>43.77099659286971</latitude>
+				<altitude>0</altitude>
+				<heading>-0.04269668164594433</heading>
+				<tilt>19.83491923014552</tilt>
+				<range>177.2359758594037</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.298922697098377,43.77114771833223,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Port de depart</name>
+			<LookAt>
+				<longitude>-2.922684013477737</longitude>
+				<latitude>35.16735545920091</latitude>
+				<altitude>0</altitude>
+				<heading>0.006431359324558585</heading>
+				<tilt>4.004656783225836</tilt>
+				<range>6801.715812126369</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-2.910766474861719,35.16771296094836,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>port d&apos;arrivé</name>
+			<LookAt>
+				<longitude>-0.3626983622660296</longitude>
+				<latitude>39.45774694878386</latitude>
+				<altitude>0</altitude>
+				<heading>0.01123891876857784</heading>
+				<tilt>0</tilt>
+				<range>25405.80385066948</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-0.3139855907750955,39.43945220951218,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sorée Bellerophon</name>
+			<description>Prevue le 06/07/2026</description>
+			<LookAt>
+				<longitude>1.341079544153356</longitude>
+				<latitude>47.70215060037838</latitude>
+				<altitude>0</altitude>
+				<heading>0.009013306463167529</heading>
+				<tilt>13.01471979258838</tilt>
+				<range>506.8524960365521</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.34225335117262,47.70180066363984,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Jean Charpentier</name>
+			<description>Adresse de Jean Charpentier
+12 rue des carmes, Orléans</description>
+			<LookAt>
+				<longitude>1.901189406086059</longitude>
+				<latitude>47.90162274501532</latitude>
+				<altitude>0</altitude>
+				<heading>-2.793061997453485e-05</heading>
+				<tilt>23.61333359219286</tilt>
+				<range>245.6571585438301</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.901189406086059,47.90162274501532,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Marisa Giraud</name>
+			<description>Adresse de Marisa Giraud
+25 rue Kléber Fleury-les-Aubrais</description>
+			<LookAt>
+				<longitude>1.909764292416372</longitude>
+				<latitude>47.92329524922118</latitude>
+				<altitude>0</altitude>
+				<heading>5.509139002403446e-05</heading>
+				<tilt>22.90796440330455</tilt>
+				<range>252.1158878635262</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.909687683149062,47.92329813199037,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Hubert LeMaitre &amp; Emma Poirier</name>
+			<description>Adresse de Hubert LeMaitre &amp; Emma Poirier
+16 Rue Jacqueline Domergue
+Boulay-les-Barres</description>
+			<LookAt>
+				<longitude>1.782833129442079</longitude>
+				<latitude>47.98120847707034</latitude>
+				<altitude>0</altitude>
+				<heading>-6.144956378488874e-05</heading>
+				<tilt>17.92994227812167</tilt>
+				<range>421.5733082831769</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_red-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.782568362582622,47.98139632944724,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Planque de Guillaume Calidur</name>
+			<LookAt>
+				<longitude>1.922095320424595</longitude>
+				<latitude>47.92993257003874</latitude>
+				<altitude>0</altitude>
+				<heading>-0.0001352607906203333</heading>
+				<tilt>13.60388566986724</tilt>
+				<range>455.6382682925437</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_grn-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>1.922315082913282,47.92995068439906,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Transport des Animaux</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					5.427268606344589,22.78369211504787,0 -2.957256534274521,35.10354418442289,0 0.7378583933364036,38.57164944663288,0 -0.2058702739386076,39.398403002049,0 -0.3833975378458232,39.48213411001792,0 1.89750433019968,42.34858592478619,0 1.231911015785001,43.73916143723903,0 1.287659385096942,47.67355428142599,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Trajet retour Sylvie Durand</name>
+			<styleUrl>#msn_ylw-pushpin1</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					1.299183510093458,43.770958615537,0 1.296823061747554,43.76782932367637,0 1.304634408401322,43.75168658869303,0 1.308124907208112,43.74411618971124,0 1.319683603198576,43.73130935482515,0 1.330602935258201,43.71984295502468,0 1.348780954602404,43.69840855272822,0 1.350942800150741,43.69542437433424,0 1.358335308309302,43.69002625260537,0 1.365108586236092,43.67610620272397,0 1.360133453337478,43.67388931443443,0 1.359292408264792,43.67277397931685,0 1.359824924092585,43.67064453094067,0 1.357714127604328,43.66992448961493,0 1.358768975484712,43.6669209194336,0 1.359336170910579,43.66539299508661,0 1.363446429773485,43.65865726663257,0 1.364810773236951,43.65613476681459,0 1.35854961108165,43.6547560816894,0 2.380947454739089,48.72797424224919,0 2.387057000952628,48.7599163803232,0 2.376546793005012,48.83276993937819,0 2.366915323466954,48.84104290260321,0 1.907440475223658,47.92544519637689,0 1.906438581025753,47.92142002687016,0 1.906462171393533,47.9211236436711,0 1.904249995540173,47.9206528539684,0 1.903408905653954,47.91934608328053,0 1.901933944336112,47.91828562759393,0 1.90043072170442,47.91767468474481,0 1.900154065566262,47.91687824093289,0 1.900489342173239,47.91552278181497,0 1.900644491222707,47.91490381632875,0 1.900472021160535,47.9105911777117,0 1.90288045190897,47.90131383338518,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.7.1155"></atom:link>
+	</Folder>
+</Document>
+</kml>
