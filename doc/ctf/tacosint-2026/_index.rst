@@ -9,5 +9,5 @@ Tacosint 2026
 ===================
 
 `Wu.pdf <../../_static/tacosint2026/wu.pdf>`_
-`Tacosint.kml <../../_static/tacosint2026/tacosint.kml>`_
+`Tacosint.kml <../../_static/tacosint2026/Tacosint.kml>`_
 `Board.png <../../_static/tacosint2026/board.png>`_
