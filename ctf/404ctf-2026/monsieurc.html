@@ -1,0 +1,223 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSINT - Monsieur C : Découverte &mdash; Documentation Kubow WU 1</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=a12a2fe1"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../_static/translations.js?v=e6b791cb"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="OSINT - Papioutai" href="papioutai.html" />
+    <link rel="prev" title="OSINT - Metro Osint Dodo" href="metroosintdodo.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Kubow WU
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Liste des CTFs :</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2024/_index.html">Midnight Flag 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midnightflag-2025/_index.html">Midnight Flag 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2024/_index.html">404CTF 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../404ctf-2025/_index.html">404CTF 2025</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="_index.html">404CTF 2026</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="_index.html#osint">Osint</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="aiguille.html">OSINT - Une aiguille dans une Île-de-France</a></li>
+<li class="toctree-l3"><a class="reference internal" href="alice.html">OSINT - C’était caché</a></li>
+<li class="toctree-l3"><a class="reference internal" href="canularsavant.html">OSINT - Canular Savant 1/3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="canularsavant.html#osint-canular-savant-2-3">OSINT - Canular Savant 2/3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="canularsavant.html#osint-canular-savant-3-3">OSINT - Canular Savant 3/3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chauddevant.html">OSINT - Chaud Devant</a></li>
+<li class="toctree-l3"><a class="reference internal" href="doctor.html">OSINT - Doctor Es Langues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="enfancegourmande.html">OSINT - Enfance Gourmande</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metroosintdodo.html">OSINT - Metro Osint Dodo</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">OSINT - Monsieur C : Découverte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#solution">Solution</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#osint-monsieur-c-voyage-voyage">OSINT - Monsieur C : Voyage voyage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Solution</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#osint-monsieur-c-somebody-is-watching-me">OSINT - Monsieur C : Somebody Is Watching Me</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Solution</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#osint-monsieur-c-fan-de-sciences">OSINT - Monsieur C : Fan de sciences</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Solution</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="papioutai.html">OSINT - Papioutai</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standpasstandard.html">OSINT - Stand pas standard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../HTB-Apocalypse-2025/_index.html">HTB Apocalypse 2024</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FCSC-2025/_index.html">FCSC 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DGSE-Root-Me-2025/_index.html">DGSE Root-Me 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Hackosint-2025/_index.html">Hackosint 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shutlock-2025/_index.html">Shutlock 2025</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tacosint-2026/_index.html">Tacosint 2026</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Kubow WU</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="_index.html">404CTF 2026</a></li>
+      <li class="breadcrumb-item active">OSINT - Monsieur C : Découverte</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/ctf/404ctf-2026/monsieurc.rst.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="osint-monsieur-c-decouverte">
+<h1>OSINT - Monsieur C : Découverte<a class="headerlink" href="#osint-monsieur-c-decouverte" title="Lien vers cette rubrique"></a></h1>
+<section id="description">
+<h2>Description<a class="headerlink" href="#description" title="Lien vers cette rubrique"></a></h2>
+<p>Un étrange personnage se présentant comme « Monsieur C » est venu me voir pour faire de la pub pour son nouveau blog en partageant son URL. Il était si sympathique que je n’ai pu refuser. Quel est l’URL du blog ?</p>
+<p>Format du flag : 404CTF{blog.404ctf.fr}</p>
+</section>
+<section id="solution">
+<h2>Solution<a class="headerlink" href="#solution" title="Lien vers cette rubrique"></a></h2>
+<p>crt.sh/?q=404ctf.fr</p>
+<p>On y trouve : <a class="reference external" href="https://lab.c.404ctf.fr/">https://lab.c.404ctf.fr/</a></p>
+<p>On le visite, c’est bien notre site.</p>
+<p>Flag : <a href="#id1"><span class="problematic" id="id2">**</span></a>40CTF{lab.c.404ctf.fr}</p>
+</section>
+</section>
+<section id="osint-monsieur-c-voyage-voyage">
+<h1>OSINT - Monsieur C : Voyage voyage<a class="headerlink" href="#osint-monsieur-c-voyage-voyage" title="Lien vers cette rubrique"></a></h1>
+<section id="id3">
+<h2>Description<a class="headerlink" href="#id3" title="Lien vers cette rubrique"></a></h2>
+<p>Monsieur C est récemment parti en vacances. Il y a quelques siècles, un explorateur français s’était lui aussi rendu pour la première fois sur ce lieu, accompagné d’un naturaliste. Comment s’appelle ce naturaliste ?</p>
+<p>Format du flag : 404CTF{jean-jean_quete}</p>
+</section>
+<section id="id4">
+<h2>Solution<a class="headerlink" href="#id4" title="Lien vers cette rubrique"></a></h2>
+<p>Grace a son blog on sait qu’il a une chaine youtube.</p>
+<p>On trouve sa chaine Youtube avec son nom : <a class="reference external" href="https://www.youtube.com/&#64;IntCarlos">https://www.youtube.com/&#64;IntCarlos</a></p>
+<p>Sa vidéo de vacances : <a class="reference external" href="https://www.youtube.com/watch?v=Y-mu1x0LMZs">https://www.youtube.com/watch?v=Y-mu1x0LMZs</a></p>
+<p>On y voit cette fleur : Leucheria suaveolens</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">https://identify.plantnet.org/fr/k-world-flora/species/Leucheria%20suaveolens%20(d&#39;Urv.)%</span>20Speg./data
+
+<span class="go">https://en.wikipedia.org/wiki/Leucheria_suaveolens</span>
+</pre></div>
+</div>
+<p>Elle est endémique des iles malouines : <a class="reference external" href="https://en.wikipedia.org/wiki/Falkland_Islands">https://en.wikipedia.org/wiki/Falkland_Islands</a></p>
+<p>On cherche « explorateur français iles malouines », on trouve : <a class="reference external" href="https://fr.wikipedia.org/wiki/Louis-Antoine_de_Bougainville">https://fr.wikipedia.org/wiki/Louis-Antoine_de_Bougainville</a></p>
+<p>CTRL+f « naturaliste » : « Il est accompagné pour ce voyage d’Antoine-Joseph Pernety qui officie en tant qu’aumônier et naturaliste. »</p>
+<p>Flag : <strong>404CTF{antoine-joseph_pernety}</strong></p>
+</section>
+</section>
+<section id="osint-monsieur-c-somebody-is-watching-me">
+<h1>OSINT - Monsieur C : Somebody Is Watching Me<a class="headerlink" href="#osint-monsieur-c-somebody-is-watching-me" title="Lien vers cette rubrique"></a></h1>
+<section id="id5">
+<h2>Description<a class="headerlink" href="#id5" title="Lien vers cette rubrique"></a></h2>
+<p>L’individu surveillé cache probablement des informations d’importance capitale chez lui. D’après nos renseignements, il dispose d’un dispositif de surveillance à son domicile. Encore faut-il trouver un moyen d’y accéder…</p>
+</section>
+<section id="id6">
+<h2>Solution<a class="headerlink" href="#id6" title="Lien vers cette rubrique"></a></h2>
+<p>Dans l’une des images de cette vidéo on peut voir un tableau avec un login et un mot de passe : <a class="reference external" href="https://www.youtube.com/shorts/cR_RMPZ6QF8">https://www.youtube.com/shorts/cR_RMPZ6QF8</a></p>
+<p>rootcam:W19ub7d08!</p>
+<p>On se connecte <a class="reference external" href="https://lab.c.404ctf.fr/login">https://lab.c.404ctf.fr/login</a></p>
+<p>Et on obtient le flag : <strong>404CTF{67}</strong></p>
+</section>
+</section>
+<section id="osint-monsieur-c-fan-de-sciences">
+<h1>OSINT - Monsieur C : Fan de sciences<a class="headerlink" href="#osint-monsieur-c-fan-de-sciences" title="Lien vers cette rubrique"></a></h1>
+<section id="id7">
+<h2>Description<a class="headerlink" href="#id7" title="Lien vers cette rubrique"></a></h2>
+<p>Qui est le scientifique préféré de « Monsieur C » ?</p>
+<p>Format du flag : 404CTF{jean_quete}</p>
+</section>
+<section id="id8">
+<h2>Solution<a class="headerlink" href="#id8" title="Lien vers cette rubrique"></a></h2>
+<p>Après de nombreuses recherches, on s’est enfin intéressé au numéro de téléphone,</p>
+<p>Qui nous donne un compte duolingo datant de 2022, avec Epieos, cela ne semblait pas être une piste convenable.</p>
+<p>Cependant en l’ajoutant au répertoire de contact de notre téléphone, et en regardant dans WhatsApp, on découvre un compte avec une photo.</p>
+<p>La personne sur la photo est Camille Guérin</p>
+<p>Flag : <a href="#id9"><span class="problematic" id="id10">**</span></a>404CTF{camille_guerin}</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="metroosintdodo.html" class="btn btn-neutral float-left" title="OSINT - Metro Osint Dodo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="papioutai.html" class="btn btn-neutral float-right" title="OSINT - Papioutai" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur 2025, Kubow.</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
